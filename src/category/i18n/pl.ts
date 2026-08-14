@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'Trendem roku 2026 jest <strong>Trening Oparty na Danych (VBT)</strong>. Urządzenia ubieralne i aplikacje do śledzenia postępów demokratyzują dostęp do analityki, która wcześniej była zarezerwowana dla sportu wyczynowego. Te narzędzia stawiają Cię w awangardzie, pozwalając trenować mądrzej, a niekoniecznie ciężej.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Refleks', html: '<p>Milisecundy precyzji</p>' },
-        { type: 'card', title: 'Postęp', html: '<p>Wizualizacja historyczna</p>' },
-        { type: 'card', title: 'Zawody', html: '<p>Zarządzanie strukturalne</p>' },
-        { type: 'card', title: 'Precyzja', html: '<p>Dane absolutne</p>' },
-      ],
-    },
+    { type: 'card', title: 'Refleks', html: '<p>Milisecundy precyzji</p>' },
+    { type: 'card', title: 'Postęp', html: '<p>Wizualizacja historyczna</p>' },
+    { type: 'card', title: 'Zawody', html: '<p>Zarządzanie strukturalne</p>' },
+    { type: 'card', title: 'Precyzja', html: '<p>Dane absolutne</p>' },
   ],
 };

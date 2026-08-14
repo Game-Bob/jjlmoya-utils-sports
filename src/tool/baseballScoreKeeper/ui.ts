@@ -1,4 +1,4 @@
-export interface BaseballScoreKeeperUI {
+export interface BaseballScoreKeeperUI extends Record<string, string> {
   title: string;
   description: string;
   away: string;

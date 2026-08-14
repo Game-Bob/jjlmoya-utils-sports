@@ -1,4 +1,4 @@
-﻿import type { CategoryLocaleContent } from '../../types';
+import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
   slug: 'sports',
@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'Трендом 2026 года является <strong>тренировка на основе скорости (Velocity-Based Training, VBT)</strong>. Носимые устройства и приложения для отслеживания демократизируют доступ к аналитике, которая когда-то была эксклюзивной для элитного спорта. Эти инструменты ставят вас на передовую, позволяя тренироваться умнее, а не просто интенсивнее.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Рефлексы', html: '<p>Прецизионность в миллисекундах</p>' },
-        { type: 'card', title: 'Прогресс', html: '<p>Историческая визуализация</p>' },
-        { type: 'card', title: 'Соревнования', html: '<p>Структурированное управление</p>' },
-        { type: 'card', title: 'Точность', html: '<p>Абсолютные данные</p>' },
-      ],
-    },
+    { type: 'card', title: 'Рефлексы', html: '<p>Прецизионность в миллисекундах</p>' },
+    { type: 'card', title: 'Прогресс', html: '<p>Историческая визуализация</p>' },
+    { type: 'card', title: 'Соревнования', html: '<p>Структурированное управление</p>' },
+    { type: 'card', title: 'Точность', html: '<p>Абсолютные данные</p>' },
   ],
 };

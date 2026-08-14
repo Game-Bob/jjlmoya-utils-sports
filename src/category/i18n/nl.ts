@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'De trend van 2026 is <strong>Data-Driven Training (VBT)</strong>. Wearables en tracking-apps democratiseren de toegang tot analytics die voorheen exclusief waren voor de topsport. Deze tools plaatsen je in de voorhoede, waardoor je slimmer kunt trainen, niet per se harder.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Reflexen', html: '<p>Milliseconden precisie</p>' },
-        { type: 'card', title: 'Voortgang', html: '<p>Historische visualisatie</p>' },
-        { type: 'card', title: 'Competitie', html: '<p>Gestructureerd beheer</p>' },
-        { type: 'card', title: 'Precisie', html: '<p>Absolute gegevens</p>' },
-      ],
-    },
+    { type: 'card', title: 'Reflexen', html: '<p>Milliseconden precisie</p>' },
+    { type: 'card', title: 'Voortgang', html: '<p>Historische visualisatie</p>' },
+    { type: 'card', title: 'Competitie', html: '<p>Gestructureerd beheer</p>' },
+    { type: 'card', title: 'Precisie', html: '<p>Absolute gegevens</p>' },
   ],
 };

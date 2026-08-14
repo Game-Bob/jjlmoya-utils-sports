@@ -34,3 +34,6 @@ export type { EloRatingCalculatorUI, EloRatingCalculatorLocaleContent } from './
 
 export { PENALTY_SHOOTOUT_TOOL, penaltyShootout } from './tool/penaltyShootout/index';
 export type { PenaltyShootoutUI, PenaltyShootoutLocaleContent } from './tool/penaltyShootout/index';
+
+export { VOLLEYBALL_SCOREKEEPER_TOOL, volleyballScoreKeeper } from './tool/volleyballScoreKeeper/index';
+export type { VolleyballScoreKeeperUI, VolleyballScoreKeeperLocaleContent } from './tool/volleyballScoreKeeper/index';

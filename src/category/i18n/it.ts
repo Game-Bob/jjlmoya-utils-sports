@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'La tendenza del 2026 è l\'<strong>Allenamento Basato sui Dati (VBT)</strong>. I dispositivi indossabili e le app di monitoraggio stanno democratizzando l\'accesso all\'analitica che prima era esclusiva dello sport d\'élite. Questi strumenti ti pongono all\'avanguardia, permettendoti di allenarti in modo più intelligente, non necessariamente più duramente.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Riflessi', html: '<p>Millisecondi di precisione</p>' },
-        { type: 'card', title: 'Progresso', html: '<p>Visualizzazione storica</p>' },
-        { type: 'card', title: 'Competizione', html: '<p>Gestione strutturata</p>' },
-        { type: 'card', title: 'Precisione', html: '<p>Dati assoluti</p>' },
-      ],
-    },
+    { type: 'card', title: 'Riflessi', html: '<p>Precisione al millisecondo</p>' },
+    { type: 'card', title: 'Progresso', html: '<p>Visualizzazione storica</p>' },
+    { type: 'card', title: 'Competizione', html: '<p>Gestione strutturata</p>' },
+    { type: 'card', title: 'Precisione', html: '<p>Dati assoluti</p>' },
   ],
 };

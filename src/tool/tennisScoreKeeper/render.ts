@@ -35,33 +35,38 @@ function renderStatus(score: MatchScore, t: TennisScoreKeeperUI): void {
   st.textContent = '';
 }
 
+function fillHistorySetBox(boxA: HTMLDivElement, boxB: HTMLDivElement, set: { gamesA: number; gamesB: number; tiebreakPointsA?: number; tiebreakPointsB?: number }): void {
+  boxA.textContent = String(set.gamesA);
+  boxB.textContent = String(set.gamesB);
+  if (set.tiebreakPointsA !== undefined) {
+    appendTiebreakScore(boxA, String(set.tiebreakPointsA));
+    appendTiebreakScore(boxB, String(set.tiebreakPointsB));
+  }
+}
+
+function fillActiveSetBox(boxA: HTMLDivElement, boxB: HTMLDivElement, score: MatchScore): void {
+  boxA.classList.add('tn-set-box-active');
+  boxB.classList.add('tn-set-box-active');
+  boxA.textContent = String(score.gamesWonInCurrentSetA);
+  boxB.textContent = String(score.gamesWonInCurrentSetB);
+  if (score.inTiebreak) {
+    appendTiebreakScore(boxA, String(score.tiebreakPointsA));
+    appendTiebreakScore(boxB, String(score.tiebreakPointsB));
+  }
+}
+
 function buildSetBox(score: MatchScore, i: number): { boxA: HTMLDivElement; boxB: HTMLDivElement } {
   const boxA = document.createElement('div');
   boxA.className = 'tn-set-box';
   const boxB = document.createElement('div');
   boxB.className = 'tn-set-box';
   const activeIndex = score.setHistory.length;
+  const set = score.setHistory[i];
 
-  if (i < score.setHistory.length) {
-    const set = score.setHistory[i];
-    boxA.textContent = String(set.gamesA);
-    boxB.textContent = String(set.gamesB);
-    if (set.tiebreakPointsA !== undefined) {
-      appendTiebreakScore(boxA, String(set.tiebreakPointsA));
-      appendTiebreakScore(boxB, String(set.tiebreakPointsB));
-    }
+  if (set) {
+    fillHistorySetBox(boxA, boxB, set);
   } else if (i === activeIndex && !checkSetOver(score)) {
-    boxA.classList.add('tn-set-box-active');
-    boxB.classList.add('tn-set-box-active');
-    boxA.textContent = String(score.gamesWonInCurrentSetA);
-    boxB.textContent = String(score.gamesWonInCurrentSetB);
-    if (score.inTiebreak) {
-      appendTiebreakScore(boxA, String(score.tiebreakPointsA));
-      appendTiebreakScore(boxB, String(score.tiebreakPointsB));
-    }
-  } else {
-    boxA.textContent = '';
-    boxB.textContent = '';
+    fillActiveSetBox(boxA, boxB, score);
   }
   return { boxA, boxB };
 }
@@ -136,7 +141,7 @@ function getInputName(side: PlayerSide, fallback: string): string {
   return inp?.value?.trim() || fallback;
 }
 
-function renderPlayerNames(score: MatchScore, t: TennisScoreKeeperUI): void {
+function renderPlayerNames(_score: MatchScore, t: TennisScoreKeeperUI): void {
   const nameA = getInputName('a', t.playerA);
   const nameB = getInputName('b', t.playerB);
   const hA = el('tn-hist-name-a');
@@ -191,7 +196,7 @@ export function showWinner(name: string, score: MatchScore): void {
     const d = document.createElement('div');
     d.className = 'tn-confetti-particle';
     d.style.left = `${Math.random() * 100}%`;
-    d.style.background = colors[Math.floor(Math.random() * colors.length)];
+    d.style.background = colors[Math.floor(Math.random() * colors.length)] ?? '#ccff00';
     d.style.animationDuration = `${2 + Math.random() * 3}s`;
     d.style.animationDelay = `${Math.random() * 0.6}s`;
     c.appendChild(d);

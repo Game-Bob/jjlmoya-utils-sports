@@ -82,14 +82,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'La tendance de 2026 est l\'<strong>Entraînement Basé sur la Vélocité (EBV)</strong>. Les appareils connectés et les applications de suivi démocratisent l\'accès à l\'analytique autrefois réservée au sport d\'élite. Ces outils vous placent à l\'avant-garde, vous permettant de vous entraîner plus intelligemment, pas nécessairement plus durement.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Réflexes', html: '<p>Précision en millisecondes</p>' },
-        { type: 'card', title: 'Progression', html: '<p>Visualisation historique</p>' },
-        { type: 'card', title: 'Compétition', html: '<p>Gestion structurée</p>' },
-        { type: 'card', title: 'Précision', html: '<p>Données absolues</p>' },
-      ],
-    },
+    { type: 'card', title: 'Réflexes', html: '<p>Précision en millisecondes</p>' },
+    { type: 'card', title: 'Progression', html: '<p>Visualisation historique</p>' },
+    { type: 'card', title: 'Compétition', html: '<p>Gestion structurée</p>' },
+    { type: 'card', title: 'Précision', html: '<p>Données absolues</p>' },
   ],
 };

@@ -1,4 +1,4 @@
-export interface SwimCssCalculatorUI {
+export interface SwimCssCalculatorUI extends Record<string, string> {
   title: string;
   subtitle: string;
   unitLabel: string;

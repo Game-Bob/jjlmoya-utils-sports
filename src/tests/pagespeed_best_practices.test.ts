@@ -171,8 +171,8 @@ describe('PageSpeed best-practice guards', () => {
   ALL_TOOLS.forEach((tool) => {
     Object.entries(tool.entry.i18n).forEach(([locale, loader]) => {
       it(`${tool.entry.id}/${locale} keeps SEO headings sequential`, async () => {
-        if (!loader) return;
-        const content = (await loader()) as ToolLocaleContent;
+        if (typeof loader !== 'function') return;
+        const content = (await (loader as () => Promise<ToolLocaleContent>)());
         const levels = headingLevels(content.seo);
         const failures = findHeadingLevelJumps(levels);
 

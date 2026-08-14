@@ -1,5 +1,8 @@
-import type { SportsToolEntry } from '../../types';
+import type { SportsToolEntry, ToolLocaleContent } from '../../types';
 import type { SwimCssCalculatorUI } from './ui';
+
+export type { SwimCssCalculatorUI };
+export type SwimCssCalculatorLocaleContent = ToolLocaleContent<SwimCssCalculatorUI>;
 
 export const swimCssCalculatorEntry: SportsToolEntry<SwimCssCalculatorUI> = {
   id: 'css-swim-calculator',

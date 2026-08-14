@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'The 2026 trend is <strong>Velocity-Based Training (VBT)</strong>. Wearable devices and tracking apps are democratizing access to analytics that were once exclusive to elite sports. These tools put you at the cutting edge, allowing you to train smarter, not necessarily harder.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Reflexes', html: '<p>Millisecond precision</p>' },
-        { type: 'card', title: 'Progress', html: '<p>Historical visualization</p>' },
-        { type: 'card', title: 'Competition', html: '<p>Structured management</p>' },
-        { type: 'card', title: 'Precision', html: '<p>Absolute data</p>' },
-      ],
-    },
+    { type: 'card', title: 'Reflexes', html: '<p>Millisecond precision</p>' },
+    { type: 'card', title: 'Progress', html: '<p>Historical visualization</p>' },
+    { type: 'card', title: 'Competition', html: '<p>Structured management</p>' },
+    { type: 'card', title: 'Precision', html: '<p>Absolute data</p>' },
   ],
 };

@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: '2026년 트렌드는 <strong>속도 기반 트레이닝(VBT)</strong>입니다. 웨어러블 장치와 추적 앱은 한때 엘리트 스포츠에만 국한되었던 분석에 대한 접근을 대중화하고 있습니다. 이러한 도구는 귀하를 최첨단에 두어 단순히 더 열심히 하는 것이 아니라 더 똑똑하게 트레이닝할 수 있게 해줍니다.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: '반사 신경', html: '<p>밀리초 단위 정밀도</p>' },
-        { type: 'card', title: '진행 상황', html: '<p>과거 시각화</p>' },
-        { type: 'card', title: '경쟁', html: '<p>구조화된 관리</p>' },
-        { type: 'card', title: '정밀도', html: '<p>절대적인 데이터</p>' },
-      ],
-    },
+    { type: 'card', title: '반사 신경', html: '<p>밀리초 단위 정밀도</p>' },
+    { type: 'card', title: '진행 상황', html: '<p>과거 시각화</p>' },
+    { type: 'card', title: '경쟁', html: '<p>구조화된 관리</p>' },
+    { type: 'card', title: '정밀도', html: '<p>절대적인 데이터</p>' },
   ],
 };

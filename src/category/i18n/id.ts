@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'Tren tahun 2026 adalah <strong>Data-Driven Training (VBT)</strong>. Perangkat yang dapat dikenakan dan aplikasi pelacakan mendemokrasikan akses ke analitik yang dulunya eksklusif untuk olahraga elit. Alat-alat ini menempatkan Anda di garis depan, memungkinkan Anda berlatih dengan lebih cerdas, bukan harus lebih keras.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Refleks', html: '<p>Presisi milidetik</p>' },
-        { type: 'card', title: 'Kemajuan', html: '<p>Visualisasi historis</p>' },
-        { type: 'card', title: 'Kompetisi', html: '<p>Manajemen terstruktur</p>' },
-        { type: 'card', title: 'Presisi', html: '<p>Data absolut</p>' },
-      ],
-    },
+    { type: 'card', title: 'Refleks', html: '<p>Presisi milidetik</p>' },
+    { type: 'card', title: 'Kemajuan', html: '<p>Visualisasi historis</p>' },
+    { type: 'card', title: 'Kompetisi', html: '<p>Manajemen terstruktur</p>' },
+    { type: 'card', title: 'Presisi', html: '<p>Data absolut</p>' },
   ],
 };

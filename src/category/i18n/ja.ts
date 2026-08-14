@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: '2026年のトレンドは、<strong>ベロシティ・ベースド・トレーニング（VBT）</strong>です。ウェアラブルデバイスやトラッキングアプリにより、かつてはエリートスポーツに限定されていた分析へのアクセスが民主化されています。これらのツールは、あなたを最先端に位置づけ、単にハードにではなく、よりスマートにトレーニングすることを可能にします。',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: '反射神経', html: '<p>ミリ秒単位の精度</p>' },
-        { type: 'card', title: '進捗', html: '<p>履歴の視覚化</p>' },
-        { type: 'card', title: '競技', html: '<p>構造化された管理</p>' },
-        { type: 'card', title: '精度', html: '<p>絶対的なデータ</p>' },
-      ],
-    },
+    { type: 'card', title: '反射神経', html: '<p>ミリ秒単位の精度</p>' },
+    { type: 'card', title: '進捗', html: '<p>履歴の視覚化</p>' },
+    { type: 'card', title: '競技', html: '<p>構造化された管理</p>' },
+    { type: 'card', title: '精度', html: '<p>絶対的なデータ</p>' },
   ],
 };

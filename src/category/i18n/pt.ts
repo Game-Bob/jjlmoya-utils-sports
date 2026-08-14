@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'A tendência de 2026 é o <strong>Treino Baseado em Dados (VBT)</strong>. Os dispositivos vestíveis e as aplicações de acompanhamento estão a democratizar o acesso à analítica que antes era exclusiva do desporto de elite. Estas ferramentas colocam-no na vanguarda, permitindo-lhe treinar de forma mais inteligente, não necessariamente mais dura.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Reflexos', html: '<p>Milissegundos de precisão</p>' },
-        { type: 'card', title: 'Progresso', html: '<p>Visualização histórica</p>' },
-        { type: 'card', title: 'Competição', html: '<p>Gestão estruturada</p>' },
-        { type: 'card', title: 'Precisão', html: '<p>Dados absolutos</p>' },
-      ],
-    },
+    { type: 'card', title: 'Reflexos', html: '<p>Milissegundos de precisão</p>' },
+    { type: 'card', title: 'Progresso', html: '<p>Visualização histórica</p>' },
+    { type: 'card', title: 'Competição', html: '<p>Gestão estruturada</p>' },
+    { type: 'card', title: 'Precisão', html: '<p>Dados absolutos</p>' },
   ],
 };

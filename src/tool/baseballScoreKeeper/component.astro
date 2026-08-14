@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { ui } = Astro.props;
-const t = (ui ?? {}) as BaseballScoreKeeperUI;
+const t = (ui ?? {}) as unknown as BaseballScoreKeeperUI;
 ---
 
 <div class="bb-app" id="bb-app" data-bb-ui={JSON.stringify(t)}>

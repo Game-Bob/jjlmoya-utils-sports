@@ -1,4 +1,4 @@
-export interface TennisScoreKeeperUI {
+export interface TennisScoreKeeperUI extends Record<string, string> {
   playerA: string;
   playerB: string;
   winnerLabel: string;

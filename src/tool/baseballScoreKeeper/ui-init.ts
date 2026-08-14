@@ -38,7 +38,7 @@ function renderAll(state: GameState) {
   renderInnings(state);
 }
 
-function renderDots(id: string, filled: number, total: number, color: string) {
+function renderDots(id: string, filled: number, _total: number, color: string) {
   const el = q(id);
   if (!el) return;
   const dots = el.querySelectorAll('.bb-dot');

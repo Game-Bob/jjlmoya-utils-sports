@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: 'Trenden för 2026 är <strong>Databaserad Träning (VBT)</strong>. Wearables och spårningsappar demokratiserar tillgången till analys som tidigare var exklusiv för elitidrott. Dessa verktyg placerar dig i framkant och låter dig träna smartare, inte nödvändigtvis hårdare.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Reflexer', html: '<p>Millisekunds precision</p>' },
-        { type: 'card', title: 'Framsteg', html: '<p>Historisk visualisering</p>' },
-        { type: 'card', title: 'Tävling', html: '<p>Strukturerad hantering</p>' },
-        { type: 'card', title: 'Precision', html: '<p>Absolut data</p>' },
-      ],
-    },
+    { type: 'card', title: 'Reflexer', html: '<p>Millisekunds precision</p>' },
+    { type: 'card', title: 'Framsteg', html: '<p>Historisk visualisering</p>' },
+    { type: 'card', title: 'Tävling', html: '<p>Strukturerad hantering</p>' },
+    { type: 'card', title: 'Precision', html: '<p>Absolut data</p>' },
   ],
 };

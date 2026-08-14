@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: '2026 eğilimi, <strong>Veriye Dayalı Antrenman (VBT)</strong>\'dır. Giyilebilir cihazlar ve takip uygulamaları, eskiden elit sporlara özel olan analitiklere erişimi demokratikleştiriyor. Bu araçlar sizi ön plana çıkararak daha sert değil, daha akıllıca antrenman yapmanızı sağlar.',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: 'Refleksler', html: '<p>Milisaniye hassasiyeti</p>' },
-        { type: 'card', title: 'İlerleme', html: '<p>Geçmiş görselleştirme</p>' },
-        { type: 'card', title: 'Müsabaka', html: '<p>Yapılandırılmış yönetim</p>' },
-        { type: 'card', title: 'Hassasiyet', html: '<p>Mutlak veriler</p>' },
-      ],
-    },
+    { type: 'card', title: 'Refleksler', html: '<p>Milisaniye hassasiyeti</p>' },
+    { type: 'card', title: 'İlerleme', html: '<p>Geçmiş görselleştirme</p>' },
+    { type: 'card', title: 'Müsabaka', html: '<p>Yapılandırılmış yönetim</p>' },
+    { type: 'card', title: 'Hassasiyet', html: '<p>Mutlak veriler</p>' },
   ],
 };

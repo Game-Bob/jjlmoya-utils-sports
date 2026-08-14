@@ -102,7 +102,7 @@ export function setupFullscreen(card: HTMLElement, api: TennisAPI): void {
   });
 }
 
-export function setupNameInputs(score: Record<string, unknown>, save: () => void): void {
+export function setupNameInputs(_score: unknown, save: () => void): void {
   const na = document.getElementById('tn-name-a') as HTMLInputElement;
   const nb = document.getElementById('tn-name-b') as HTMLInputElement;
   [na, nb].forEach((inp) => {

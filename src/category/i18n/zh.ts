@@ -95,14 +95,9 @@ export const content: CategoryLocaleContent = {
       type: 'paragraph',
       html: '2026 年的趋势是<strong>基于速度的训练 (Velocity-Based Training, VBT)</strong>。穿戴式设备和追踪应用正使曾经专属精英运动的数据分析变得平民化。这些工具让您处于前沿，让您更聪明地训练，而不仅仅是更刻苦。',
     },
-    {
-      type: 'grid',
-      columns: [
-        { type: 'card', title: '反应', html: '<p>毫秒级精度</p>' },
-        { type: 'card', title: '进度', html: '<p>历史可视化</p>' },
-        { type: 'card', title: '竞赛', html: '<p>规范化管理</p>' },
-        { type: 'card', title: '精准度', html: '<p>绝对数据</p>' },
-      ],
-    },
+    { type: 'card', title: '反应', html: '<p>毫秒级精度</p>' },
+    { type: 'card', title: '进度', html: '<p>历史可视化</p>' },
+    { type: 'card', title: '竞赛', html: '<p>规范化管理</p>' },
+    { type: 'card', title: '精准度', html: '<p>绝对数据</p>' },
   ],
 };
