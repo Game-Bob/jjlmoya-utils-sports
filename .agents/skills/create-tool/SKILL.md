@@ -177,11 +177,17 @@ Before declaring the task finished, pause and perform a **Double-Check Audit** a
 
 ## 6. Mandatory Post-Skill Self-Reflection Questions
 
-AL ALWAYS and WITHOUT EXCEPTION, after completing any tool implementation, you MUST explicitly ask yourself and evaluate the following 6 core reflection questions before finishing:
+ALWAYS and WITHOUT EXCEPTION, after completing any tool implementation, you MUST explicitly ask yourself and evaluate the following core reflection questions before finishing:
 
+### A. UX & UI Reflection Questions
 1. **¿Esto puede ser más bonito?** (Is the UI visually striking, sports themed, glassmorphic, dynamic, and premium?)
 2. **¿Esto puede ser más útil para el usuario?** (Does it add immediate value, visual chips, tactile sliders, or instant presets?)
 3. **¿Esto podría simplificarse?** (Can we reduce input fatigue or simplify controls without losing power?)
 4. **¿Podría hacer algo para que el usuario lo disfrute más?** (Are there micro-interactions, particles, animations, or dynamic feedback?)
 5. **¿Son los resultados suficientemente visuales?** (Are results presented as rich visual cards, progress bars, gauges, or stat badges instead of raw tables/text?)
 6. **¿Puedo aportar algo más al usuario?** (Can we offer extra insights, split target matrix, zone guides, or copy helpers?)
+
+### B. SEO & Content Reflection Questions
+1. **¿Esto es útil para el usuario?** (Aporta valor práctico real, cálculos fiables y resuelve una necesidad concreta sin paja ni relleno).
+2. **¿Esto responde a la intención de búsqueda?** (Cubre la query objetivo con exactitud, respondiendo al "qué", "cómo" y "por qué" de la búsqueda).
+3. **¿Puedo aportar mayor utilidad al usuario final?** (Proporciona tablas comparativas, alertas diagnósticas, tips accionables, preguntas frecuentes y fuentes autoritativas que superan a cualquier competidor).
