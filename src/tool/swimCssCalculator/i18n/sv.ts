@@ -16,6 +16,14 @@ const faqData = [
     question: 'Kan CSS beraknas i yards istallet for meter?',
     answer: 'Ja. Den matematiska CSS formeln galler pa exakt samma satt for yard bassanger.',
   },
+  {
+    question: 'Varfor anvands 400m- och 200m-test for att berakna CSS?',
+    answer: '400m-testet mater kontinuerlig aerob uthallighet, medan 200m-testet visar maximal anaerob hastighet. Lutningen mellan resultaten isolerar den funktionella aeroba simhastigheten.',
+  },
+  {
+    question: 'Hur anvands CSS-maltempo under intervaller i bassangen?',
+    answer: 'I ett troskelpass, till exempel tio repetitioner pa 100 meter, ska varje repetition ligga nara det beraknade CSS-tempot med 15 till 20 sekunders vila. Jamn fart minskar tidig laktatansamling.',
+  },
 ];
 
 const howToData = [

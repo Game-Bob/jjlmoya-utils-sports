@@ -16,6 +16,14 @@ const faqData = [
     question: 'CSS yard cinsinden hesaplanabilir mi?',
     answer: 'Evet. Kritik yuzme hizi matematiksel formulu yardlik kulvarlarda da birebir ayni sekilde gecerlidir.',
   },
+  {
+    question: 'CSS hesaplamasinda neden 400m ve 200m testleri kullanilir?',
+    answer: '400m testi surekli aerobik dayanıkliligi, 200m testi ise maksimum anaerobik hizi olcer. Iki performans arasindaki egim, islevsel aerobik yuzme hizini ayristirir.',
+  },
+  {
+    question: 'Havuz araliklarinda CSS hedef temposu nasil kullanilir?',
+    answer: 'On tekrar 100 metre gibi esik setlerinde her tekrari hesaplanan CSS temposunda yuzun ve 15-20 saniye dinlenin. Sabit tempo, laktatin erken birikmesini azaltir.',
+  },
 ];
 
 const howToData = [

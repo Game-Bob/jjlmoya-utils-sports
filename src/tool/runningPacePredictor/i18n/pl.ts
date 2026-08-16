@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Zalety Negative Split',
       html: 'Bieg pokonany szybciej w drugiej połowie chroni zapasy glikogenu i zapobiega przedwczesnemu zakwaszeniu.',
     },
+    {
+      type: 'title',
+      text: 'Naukowe wyznaczanie stref treningowych',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Skuteczny trening wytrzymałościowy świadomie rozdziela intensywność między różne strefy fizjologiczne. Spokojne biegi wspierają adaptację mitochondriów, tempo poprawia usuwanie mleczanu, a interwały zwiększają pułap VO2 max. Indywidualne zakresy tempa pomagają uniknąć przetrenowania i utrzymać właściwy bodziec treningowy.',
+    },
   ],
   ui: {
     title: 'Kalkulator Tempa Biegu i Prognoza Czasu Rezultatu',

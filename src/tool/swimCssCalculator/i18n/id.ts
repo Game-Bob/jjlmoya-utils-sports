@@ -16,6 +16,14 @@ const faqData = [
     question: 'Apakah CSS dapat dihitung dalam satuan yard?',
     answer: 'Ya. Rumus matematika kecepatan kritis berlaku sama persis untuk kolam lintasan pendek yard.',
   },
+  {
+    question: 'Mengapa tes 400m dan 200m digunakan untuk menghitung CSS?',
+    answer: 'Tes 400m mengukur daya tahan aerobik berkelanjutan, sedangkan tes 200m menangkap kecepatan anaerobik maksimum. Kemiringan di antara keduanya mengisolasi kecepatan aerobik fungsional.',
+  },
+  {
+    question: 'Bagaimana pace CSS digunakan dalam interval renang?',
+    answer: 'Untuk set ambang seperti sepuluh repetisi 100 meter, pertahankan pace CSS yang dihitung pada setiap repetisi dengan istirahat 15 hingga 20 detik. Pace yang konsisten mencegah penumpukan laktat terlalu dini.',
+  },
 ];
 
 const howToData = [

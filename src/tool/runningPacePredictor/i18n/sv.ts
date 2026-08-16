@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Fördelen med Negative Split',
       html: 'Att springa andra halvan något snabbare sparar glykogen och förhindrar tidig mjölksyra.',
     },
+    {
+      type: 'title',
+      text: 'Strukturera vetenskapliga träningszoner',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Effektiv uthållighetsträning fördelar medvetet intensiteten mellan flera fysiologiska zoner. Lugna pass stödjer mitokondriell anpassning, tempolöpning förbättrar laktatnedbrytningen och intervaller höjer VO2 max-taket. Personliga fartintervall minskar risken för överträning och ger rätt träningsstimulans.',
+    },
   ],
   ui: {
     title: 'Löpartempo Kalkylator och Racetid Prognos',

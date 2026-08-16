@@ -16,6 +16,14 @@ const faqData = [
     question: 'Si puo calcolare il CSS in vasche da yarde?',
     answer: 'Sì. La formula matematica si applica esattamente allo stesso modo in vasche da yarde.',
   },
+  {
+    question: 'Perche si usano test da 400m e 200m per calcolare il CSS?',
+    answer: 'Il test da 400m misura la resistenza aerobica continua, mentre quello da 200m rileva la velocita anaerobica massima. La pendenza tra i due sforzi isola la velocita aerobica funzionale.',
+  },
+  {
+    question: 'Come si applicano i ritmi CSS nelle serie in piscina?',
+    answer: 'In una serie di soglia, ad esempio dieci ripetute da 100 metri, mantieni il ritmo CSS calcolato a ogni ripetuta con 15-20 secondi di recupero. Un ritmo costante limita l accumulo precoce di lattato.',
+  },
 ];
 
 const howToData = [

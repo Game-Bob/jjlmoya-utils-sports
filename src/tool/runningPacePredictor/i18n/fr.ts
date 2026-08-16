@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Efficacité du Negative Split',
       html: 'Courir la seconde moitié légèrement plus vite que la première préserve le glycogène et évite une acidose musculaire précoce.',
     },
+    {
+      type: 'title',
+      text: 'Structurer les zones d\'entraînement scientifique',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Un entraînement d\'endurance efficace répartit volontairement l\'intensité entre plusieurs zones physiologiques. Les sorties faciles favorisent les adaptations mitochondriales, les séances au seuil améliorent l\'élimination du lactate et les intervalles développent le VO2 max. Des allures personnalisées limitent le risque de surcharge tout en ciblant l\'adaptation recherchée.',
+    },
   ],
   ui: {
     title: 'Calculateur d Allure de Course et Prédiction de Temps',

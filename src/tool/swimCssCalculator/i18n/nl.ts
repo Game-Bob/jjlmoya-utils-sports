@@ -16,6 +16,14 @@ const faqData = [
     question: 'Kan CSS ook in yards worden berekend?',
     answer: 'Ja. De wiskundige CSS formule geldt exact hetzelfde voor kortere yard banen.',
   },
+  {
+    question: 'Waarom worden een 400m- en een 200m-test gebruikt voor CSS?',
+    answer: 'De 400m-test meet voortdurende aerobe uithouding, terwijl de 200m-test de maximale anaerobe snelheid vastlegt. De helling tussen beide prestaties geeft de functionele aerobe zwemsnelheid weer.',
+  },
+  {
+    question: 'Hoe gebruik je CSS-doeltempo\'s tijdens zwemintervallen?',
+    answer: 'Houd bij een drempelset, zoals tien herhalingen van 100 meter, elke herhaling zo dicht mogelijk bij het berekende CSS-tempo en neem 15 tot 20 seconden rust. Gelijkmatig tempo voorkomt vroege lactaatophoping.',
+  },
 ];
 
 const howToData = [

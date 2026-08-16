@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Manfaat Negative Split',
       html: 'Berlari lebih cepat pada paruh kedua lomba menghemat cadangan glikogen dan mencegah penumpukan asam laktat prematur.',
     },
+    {
+      type: 'title',
+      text: 'Menyusun Zona Latihan Berbasis Sains',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Latihan daya tahan yang efektif membagi intensitas secara terencana ke dalam beberapa zona fisiologis. Lari ringan mendukung adaptasi mitokondria, lari tempo meningkatkan pembersihan laktat, dan interval intensitas tinggi mengembangkan batas VO2 maks. Rentang pace yang dipersonalisasi membantu mencegah latihan berlebihan sekaligus menjaga stimulus adaptasi.',
+    },
   ],
   ui: {
     title: 'Kalkulator Tempo Lari dan Prediksi Waktu Lomba',

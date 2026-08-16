@@ -16,6 +16,14 @@ const faqData = [
     question: 'Kann CSS auch in Yards statt Metern berechnet werden?',
     answer: 'Ja. Die mathematische CSS Formel gilt auf Kurzbahnen in Yards genau gleich. Schalten Sie den Einheiten Umschalter einfach auf Yards um.',
   },
+  {
+    question: 'Warum wird für die CSS-Berechnung ein 400m- und ein 200m-Test verwendet?',
+    answer: 'Der 400m-Test zeigt die aerobe Ausdauer, während der 200m-Test die maximale anaerobe Geschwindigkeit erfasst. Die Steigung zwischen beiden Leistungen isoliert die funktionelle aerobe Schwimmgeschwindigkeit.',
+  },
+  {
+    question: 'Wie werden CSS-Zielzeiten im Intervalltraining eingesetzt?',
+    answer: 'Schwimmen Sie bei Serien wie zehn Wiederholungen über 100m jede Wiederholung möglichst genau im berechneten CSS-Tempo und machen Sie 15 bis 20 Sekunden Pause. Gleichmäßiges Tempo verhindert frühe Laktatansammlung.',
+  },
 ];
 
 const howToData = [

@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Efficacia del Negative Split',
       html: 'Correre la seconda metà di gara leggermente più velocemente della prima preserva il glicogeno ed evita l acidosi precoce.',
     },
+    {
+      type: 'title',
+      text: 'Strutturare le zone di allenamento scientifiche',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Un allenamento di resistenza efficace distribuisce intenzionalmente l\'intensità tra diverse zone fisiologiche. Le corse facili favoriscono gli adattamenti mitocondriali, i ritmi sostenuti migliorano lo smaltimento del lattato e gli intervalli aumentano il limite del VO2 max. Ritmi personalizzati aiutano a evitare il sovrallenamento e a massimizzare lo stimolo adattivo.',
+    },
   ],
   ui: {
     title: 'Calcolatore Passo Corsa e Previsione Tempi di Gara',

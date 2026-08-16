@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Eficácia do Negative Split',
       html: 'Correr a segunda metade da prova ligeiramente mais rápido preserva as reservas de glicogénio e evita a acidose precoce.',
     },
+    {
+      type: 'title',
+      text: 'Estruturar zonas de treino com base científica',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Um treino de resistência eficaz distribui intencionalmente a intensidade por diferentes zonas fisiológicas. As corridas fáceis promovem adaptações mitocondriais, os treinos de ritmo melhoram a remoção de lactato e os intervalos aumentam o limite de VO2 máximo. Ritmos personalizados ajudam a evitar o excesso de treino e a manter o estímulo adequado.',
+    },
   ],
   ui: {
     title: 'Calculadora de Ritmo de Corrida e Previsão de Provas',

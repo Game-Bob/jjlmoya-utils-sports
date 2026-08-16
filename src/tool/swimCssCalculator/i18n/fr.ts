@@ -16,6 +16,14 @@ const faqData = [
     question: 'Peut on calculer le CSS en yards au lieu des metres?',
     answer: 'Oui. La formule mathematique s applique exactement de la meme maniere dans les bassins en yards.',
   },
+  {
+    question: 'Pourquoi utiliser un test de 400m et un test de 200m pour calculer le CSS?',
+    answer: 'Le test de 400m mesure l endurance aerobie continue, tandis que le test de 200m represente la vitesse anaerobie maximale. La pente entre les deux efforts isole la vitesse aerobie fonctionnelle.',
+  },
+  {
+    question: 'Comment appliquer les allures CSS dans une serie en piscine?',
+    answer: 'Pour une serie au seuil, par exemple dix repetitions de 100 metres, visez l allure CSS calculee a chaque repetition avec 15 a 20 secondes de repos. Une allure reguliere limite l accumulation precoce de lactate.',
+  },
 ];
 
 const howToData = [

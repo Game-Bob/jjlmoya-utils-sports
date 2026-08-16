@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Het Nut van een Negative Split',
       html: 'De tweede helft van een wedstrijd iets sneller lopen dan de eerste helft spaart de glycogeenvoorraad en voorkomt vroege verzuring.',
     },
+    {
+      type: 'title',
+      text: 'Wetenschappelijke trainingszones structureren',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Effectieve duurtraining verdeelt de intensiteit bewust over verschillende fysiologische zones. Rustige duurlopen stimuleren mitochondriale aanpassing, tempolopen verbeteren de lactaatverwerking en intervallen verhogen de VO2max. Persoonlijke tempobereiken helpen overbelasting te voorkomen en leveren tegelijk de juiste trainingsprikkel.',
+    },
   ],
   ui: {
     title: 'Hardloop Tempo Calculator en Racetijd Voorspeller',

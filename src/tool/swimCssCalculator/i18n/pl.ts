@@ -16,6 +16,14 @@ const faqData = [
     question: 'Czy mozna obliczyc CSS dla basenow w jardach?',
     answer: 'Tak. Wzor matematyczny krytycznej predkosci stosuje sie identycznie dla basenow w jardach.',
   },
+  {
+    question: 'Dlaczego do obliczenia CSS wykorzystuje sie testy 400m i 200m?',
+    answer: 'Test 400m mierzy ciagla wytrzymalosc tlenowa, a test 200m pokazuje maksymalna predkosc beztlenowa. Nachylenie pomiedzy tymi wysilkami pozwala wyodrebnic funkcjonalna predkosc tlenowa.',
+  },
+  {
+    question: 'Jak stosowac tempo CSS podczas interwalow plywackich?',
+    answer: 'W serii progowej, na przyklad dziesieciu powtorzeniach po 100 metrow, utrzymuj obliczone tempo CSS w kazdym powtorzeniu i odpoczywaj 15-20 sekund. Rowny rytm ogranicza wczesne nagromadzenie mleczanu.',
+  },
 ];
 
 const howToData = [

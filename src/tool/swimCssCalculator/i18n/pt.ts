@@ -16,6 +16,14 @@ const faqData = [
     question: 'E possivel calcular o CSS em piscinas de yardas?',
     answer: 'Sim. A formula matematica de velocidade critica aplica-se exatamente da mesma forma em piscinas em yardas.',
   },
+  {
+    question: 'Por que sao usados testes de 400m e 200m para calcular o CSS?',
+    answer: 'O teste de 400m mede a resistencia aerobica continua, enquanto o de 200m mostra a velocidade anaerobica maxima. A inclinacao entre os dois esforcos isola a velocidade aerobica funcional.',
+  },
+  {
+    question: 'Como aplicar os ritmos CSS nas series de piscina?',
+    answer: 'Numa serie de limiar, como dez repeticoes de 100 metros, mantenha o ritmo CSS calculado em cada repeticao com 15 a 20 segundos de descanso. Um ritmo constante evita a acumulacao precoce de lactato.',
+  },
 ];
 
 const howToData = [

@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Negative Split Avantajı',
       html: 'Yarışın ikinci yarısını ilk yarısından biraz daha hızlı koşmak glikojen depolarını korur ve erken yorulmayı önler.',
     },
+    {
+      type: 'title',
+      text: 'Bilimsel Antrenman Bölgelerini Yapılandırma',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Etkili dayanıklılık antrenmanı yoğunluğu farklı fizyolojik bölgelere bilinçli olarak dağıtır. Kolay koşular mitokondriyal uyumu destekler, tempo koşuları laktat temizleme kapasitesini geliştirir ve interval çalışmaları VO2 max sınırını yükseltir. Kişiye özel tempo aralıkları aşırı antrenmanı önlerken doğru uyaranı korur.',
+    },
   ],
   ui: {
     title: 'Koşu Temposu Hesaplama ve Yarış Süresi Tahmini',

@@ -165,6 +165,15 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       title: 'Erfolgsfaktor Negative Split',
       html: 'Statistische Analysen von Weltrekorden belegen, dass ein Negative Split (zweite Hälfte leicht schneller als die erste) den Stoffwechsel schont. Ein Anlaufen 2% unter dem Riegel-Zieltempo schützt vor vorzeitiger Übersäuerung.',
     },
+    {
+      type: 'title',
+      text: 'Wissenschaftliche Trainingszonen strukturieren',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Effektives Ausdauertraining verteilt die Intensität bewusst auf verschiedene physiologische Zonen. Lockere Läufe fördern die mitochondriale Anpassung, Tempoläufe verbessern den Laktatabbau und Intervalle steigern die VO2max. Individuelle Tempobereiche helfen, Übertraining zu vermeiden und den Trainingsreiz gezielt zu setzen.',
+    },
   ],
   ui: {
     title: 'Lauftempo Rechner und Wettzeit Prognose',
