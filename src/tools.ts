@@ -19,6 +19,7 @@ import { PENALTY_SHOOTOUT_TOOL } from './tool/penaltyShootout/index';
 import { RUNNING_PACE_PREDICTOR_TOOL } from './tool/runningPacePredictor/index';
 import { SWIM_CSS_CALCULATOR_TOOL } from './tool/swimCssCalculator/index';
 import { VOLLEYBALL_SCOREKEEPER_TOOL } from './tool/volleyballScoreKeeper/index';
+import { VO2_MAX_CALCULATOR_TOOL } from './tool/vo2MaxCalculator/index';
 
 export const ALL_TOOLS = [
   BASKET_SCORE_KEEPER_TOOL,
@@ -41,4 +42,5 @@ export const ALL_TOOLS = [
   RUNNING_PACE_PREDICTOR_TOOL,
   SWIM_CSS_CALCULATOR_TOOL,
   VOLLEYBALL_SCOREKEEPER_TOOL,
+  VO2_MAX_CALCULATOR_TOOL,
 ];

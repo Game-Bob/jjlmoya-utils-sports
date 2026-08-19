@@ -38,6 +38,8 @@ export { swimCssCalculator } from './tool/swimCssCalculator/entry';
 export type { SwimCssCalculatorLocaleContent } from './tool/swimCssCalculator/entry';
 export { volleyballScoreKeeper } from './tool/volleyballScoreKeeper/entry';
 export type { VolleyballScoreKeeperLocaleContent } from './tool/volleyballScoreKeeper/entry';
+export { vo2MaxCalculator } from './tool/vo2MaxCalculator/entry';
+export type { Vo2MaxCalculatorLocaleContent } from './tool/vo2MaxCalculator/entry';
 
 export { sportsCategory } from './category';
 
@@ -61,6 +63,7 @@ import { penaltyShootout } from './tool/penaltyShootout/entry';
 import { runningPacePredictor } from './tool/runningPacePredictor/entry';
 import { swimCssCalculator } from './tool/swimCssCalculator/entry';
 import { volleyballScoreKeeper } from './tool/volleyballScoreKeeper/entry';
+import { vo2MaxCalculator } from './tool/vo2MaxCalculator/entry';
 
 export const ALL_ENTRIES = [
   basketScoreKeeper,
@@ -83,4 +86,5 @@ export const ALL_ENTRIES = [
   runningPacePredictor,
   swimCssCalculator,
   volleyballScoreKeeper,
+  vo2MaxCalculator,
 ];

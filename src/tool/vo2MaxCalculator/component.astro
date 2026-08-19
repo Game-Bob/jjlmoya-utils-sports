@@ -1,0 +1,175 @@
+---
+import type { Vo2MaxCalculatorUI } from './ui';
+import './vo2-max-calculator.css';
+
+interface Props {
+  ui: Vo2MaxCalculatorUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div
+  class="vo2-tool"
+  id="vo2-app"
+  data-note-cooper12={ui.methodNoteCooper12}
+  data-note-cooper15={ui.methodNoteCooper15}
+  data-note-rockport={ui.methodNoteRockport}
+  data-note-shuttle20={ui.methodNoteShuttle}
+  data-band-below10={ui.bandBelow10}
+  data-band-10to25={ui.band10to25}
+  data-band-25to50={ui.band25to50}
+  data-band-50to75={ui.band50to75}
+  data-band-75to90={ui.band75to90}
+  data-band-above90={ui.bandAbove90}
+  data-invalid-notice={ui.invalidNotice}
+>
+  <form class="vo2-card vo2-form" id="vo2-form" novalidate>
+    <section class="vo2-result-card" id="vo2-result-card" aria-live="polite">
+      <div class="vo2-result-copy">
+        <p class="vo2-kicker">{ui.resultTitle}</p>
+        <div class="vo2-number-row">
+          <strong id="vo2-value">--</strong>
+          <span>{ui.estimateUnit}</span>
+        </div>
+        <p class="vo2-method-note" id="vo2-method-note">{ui.methodNoteCooper12}</p>
+        <p class="vo2-percentile" id="vo2-percentile">{ui.referenceDescription}</p>
+      </div>
+      <div class="vo2-constellation" aria-hidden="true">
+        <span class="vo2-orbit vo2-orbit-one"></span>
+        <span class="vo2-orbit vo2-orbit-two"></span>
+        <span class="vo2-orbit vo2-orbit-three"></span>
+        <span class="vo2-star vo2-star-one"></span>
+        <span class="vo2-star vo2-star-two"></span>
+        <span class="vo2-star vo2-star-three"></span>
+        <span class="vo2-star vo2-star-four"></span>
+        <span class="vo2-core"></span>
+      </div>
+    </section>
+
+    <fieldset class="vo2-method-panel" aria-label={ui.methodLabel}>
+      <div class="vo2-method-grid">
+        <button type="button" class="vo2-choice is-active" data-method-option="cooper12">{ui.methodCooper12}</button>
+        <button type="button" class="vo2-choice" data-method-option="cooper15">{ui.methodCooper15}</button>
+        <button type="button" class="vo2-choice" data-method-option="rockport">{ui.methodRockport}</button>
+        <button type="button" class="vo2-choice" data-method-option="shuttle20">{ui.methodShuttle}</button>
+      </div>
+    </fieldset>
+
+    <div class="vo2-input-layout">
+      <fieldset class="vo2-test-panel" aria-label={ui.performanceLegend}>
+        <div class="vo2-field" id="vo2-distance-field">
+          <div class="vo2-field-header">
+            <label for="vo2-performance">{ui.distanceLabel}</label>
+            <div class="vo2-unit-switch" data-unit-switch>
+              <button type="button" class="vo2-unit is-active" data-unit="metric">{ui.metricUnit}</button>
+              <button type="button" class="vo2-unit" data-unit="imperial">{ui.imperialUnit}</button>
+            </div>
+          </div>
+          <div class="vo2-input-with-unit">
+            <input id="vo2-performance" type="number" min="1" step="1" value="2400" inputmode="decimal" />
+            <span class="vo2-unit-label" data-distance-unit>m</span>
+          </div>
+          <small>{ui.distanceHint}</small>
+        </div>
+
+        <div class="vo2-field" id="vo2-time-field" hidden>
+          <label>{ui.timeLabel}</label>
+          <div class="vo2-time-grid">
+            <input id="vo2-minutes" type="number" min="0" max="180" value="12" inputmode="numeric" aria-label={ui.minutesLabel} />
+            <span>:</span>
+            <input id="vo2-seconds" type="number" min="0" max="59" value="0" inputmode="numeric" aria-label={ui.secondsLabel} />
+          </div>
+          <small>{ui.minutesLabel} and {ui.secondsLabel}</small>
+        </div>
+
+        <div class="vo2-field" id="vo2-stage-field" hidden>
+          <label for="vo2-stage">{ui.stageLabel}</label>
+          <input id="vo2-stage" type="number" min="1" max="21" step="1" value="8" inputmode="numeric" />
+          <small>{ui.stageHint}</small>
+        </div>
+
+        <div class="vo2-field" id="vo2-weight-field" hidden>
+          <div class="vo2-field-header">
+            <label for="vo2-weight">{ui.weightLabel}</label>
+            <div class="vo2-unit-switch" data-unit-switch>
+              <button type="button" class="vo2-unit is-active" data-unit="metric">{ui.metricUnit}</button>
+              <button type="button" class="vo2-unit" data-unit="imperial">{ui.imperialUnit}</button>
+            </div>
+          </div>
+          <div class="vo2-input-with-unit">
+            <input id="vo2-weight" type="number" min="20" max="400" step="0.1" value="75" inputmode="decimal" />
+            <span class="vo2-unit-label" data-weight-unit>kg</span>
+          </div>
+        </div>
+
+        <div class="vo2-field" id="vo2-heart-rate-field" hidden>
+          <label for="vo2-heart-rate">{ui.heartRateLabel}</label>
+          <div class="vo2-input-with-unit">
+            <input id="vo2-heart-rate" type="number" min="50" max="230" step="1" value="150" inputmode="numeric" />
+            <span class="vo2-unit-label">bpm</span>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="vo2-context-panel" aria-label={ui.referenceTitle}>
+        <div class="vo2-field">
+          <label for="vo2-age">{ui.ageLabel}</label>
+          <input id="vo2-age" type="number" min="20" max="79" step="1" value="35" inputmode="numeric" />
+        </div>
+        <div class="vo2-field">
+          <span class="vo2-label">{ui.sexLabel}</span>
+          <div class="vo2-sex-grid">
+            <button type="button" class="vo2-choice is-active" data-sex="male">{ui.maleLabel}</button>
+            <button type="button" class="vo2-choice" data-sex="female">{ui.femaleLabel}</button>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="vo2-reference-panel" id="vo2-reference-chart" role="img" aria-label={ui.referenceDescription}>
+      <div class="vo2-reference-scale">
+        <span class="vo2-reference-line"></span>
+        <span class="vo2-reference-marker"></span>
+        <div class="vo2-reference-segments">
+          <span data-reference-band="below10">{ui.bandBelow10}</span>
+          <span data-reference-band="10to25">{ui.band10to25}</span>
+          <span data-reference-band="25to50">{ui.band25to50}</span>
+          <span data-reference-band="50to75">{ui.band50to75}</span>
+          <span data-reference-band="75to90">{ui.band75to90}</span>
+          <span data-reference-band="above90">{ui.bandAbove90}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="vo2-actions">
+      <button type="button" class="vo2-secondary" id="vo2-reset">{ui.resetButton}</button>
+    </div>
+    <p class="vo2-safety">{ui.safetyNotice}</p>
+  </form>
+</div>
+
+<script>
+  import { initVo2Calculator } from './controller';
+
+  const root = document.getElementById('vo2-app');
+  if (root) {
+    initVo2Calculator({
+      methodNote: {
+        cooper12: root.dataset.noteCooper12 ?? '',
+        cooper15: root.dataset.noteCooper15 ?? '',
+        rockport: root.dataset.noteRockport ?? '',
+        shuttle20: root.dataset.noteShuttle20 ?? '',
+      },
+      bandLabels: {
+        below10: root.dataset.bandBelow10 ?? '',
+        '10to25': root.dataset.band10to25 ?? '',
+        '25to50': root.dataset.band25to50 ?? '',
+        '50to75': root.dataset.band50to75 ?? '',
+        '75to90': root.dataset.band75to90 ?? '',
+        above90: root.dataset.bandAbove90 ?? '',
+      },
+      invalidNotice: root.dataset.invalidNotice ?? '',
+    });
+  }
+</script>
