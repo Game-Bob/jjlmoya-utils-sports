@@ -67,6 +67,7 @@ import { swimCssCalculator } from './tool/swimCssCalculator/entry';
 import { volleyballScoreKeeper } from './tool/volleyballScoreKeeper/entry';
 import { vo2MaxCalculator } from './tool/vo2MaxCalculator/entry';
 import { roundRobinLeagueManager } from './tool/roundRobinLeagueManager/entry';
+import { caloriesBurnedCalculator } from './tool/caloriesBurnedCalculator/entry';
 
 export const ALL_ENTRIES = [
   basketScoreKeeper,
@@ -91,4 +92,5 @@ export const ALL_ENTRIES = [
   volleyballScoreKeeper,
   vo2MaxCalculator,
   roundRobinLeagueManager,
+  caloriesBurnedCalculator,
 ];

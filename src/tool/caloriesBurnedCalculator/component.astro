@@ -1,0 +1,139 @@
+---
+import { calculateCalories } from './logic';
+import type { CaloriesBurnedCalculatorUI } from './ui';
+
+interface Props {
+  ui: CaloriesBurnedCalculatorUI;
+}
+
+const { ui } = Astro.props;
+const initialState = {
+  activityId: 'walking',
+  intensity: 'moderate',
+  weightKg: 70,
+  durationMinutes: 30,
+  unit: 'metric',
+};
+const initialResult = calculateCalories(initialState);
+const initialGross = Math.round(initialResult?.grossKcal ?? 0);
+const initialNet = Math.round(initialResult?.netKcal ?? 0);
+const initialPerMinute = initialResult?.grossKcalPerMinute.toFixed(1) ?? '0.0';
+---
+
+<div class="calories-burned-calculator" data-calories-tool>
+  <script is:inline type="application/json" data-calories-config set:html={JSON.stringify({ ui, initialState })}></script>
+
+  <div class="calories-tool-grid">
+    <section class="calories-control-panel" aria-label={ui.activityHint}>
+      <div class="calories-panel-heading">
+        <p class="calories-kicker">{ui.activityHint}</p>
+        <p class="calories-flow">Choose an activity, tune the effort, then make the result yours with body weight and time.</p>
+      </div>
+
+      <div class="calories-field calories-field-wide">
+        <label class="calories-label" for="calories-activity-trigger">{ui.activityLabel}</label>
+        <div class="calories-select" data-activity-menu-wrapper>
+          <button id="calories-activity-trigger" class="calories-select-trigger" type="button" data-activity-trigger aria-haspopup="listbox" aria-expanded="false">
+            <span data-activity-value>{ui.activityWalking}</span>
+            <span class="calories-select-mark" aria-hidden="true"></span>
+          </button>
+          <div class="calories-select-menu" data-activity-menu hidden>
+            <div class="calories-select-options" data-activity-options role="listbox" aria-label={ui.activityMenuLabel}></div>
+          </div>
+        </div>
+      </div>
+
+      <fieldset class="calories-field calories-field-wide">
+        <legend class="calories-label">{ui.intensityLabel}</legend>
+        <div class="calories-intensity-row">
+          <button type="button" class="calories-intensity-button" data-intensity="light" aria-pressed="false">{ui.intensityLight}</button>
+          <button type="button" class="calories-intensity-button is-active" data-intensity="moderate" aria-pressed="true">{ui.intensityModerate}</button>
+          <button type="button" class="calories-intensity-button" data-intensity="vigorous" aria-pressed="false">{ui.intensityVigorous}</button>
+        </div>
+      </fieldset>
+
+      <div class="calories-field">
+        <label class="calories-label" for="calories-weight-number">{ui.weightLabel} <span data-weight-unit>kg</span></label>
+        <div class="calories-number-wrap">
+          <input id="calories-weight-number" class="calories-number" type="number" min="25" max="300" step="0.5" value="70" data-weight-number inputmode="decimal" />
+          <span class="calories-number-unit" data-weight-unit>kg</span>
+        </div>
+        <input class="calories-range" type="range" min="25" max="300" step="0.5" value="70" data-weight-range aria-label={ui.weightLabel} />
+        <p class="calories-hint">{ui.weightHint}</p>
+      </div>
+
+      <div class="calories-field">
+        <label class="calories-label" for="calories-duration-number">{ui.durationLabel}</label>
+        <div class="calories-number-wrap">
+          <input id="calories-duration-number" class="calories-number" type="number" min="1" max="600" step="1" value="30" data-duration-number inputmode="numeric" />
+          <span class="calories-number-unit">min</span>
+        </div>
+        <input class="calories-range" type="range" min="1" max="600" step="1" value="30" data-duration-range aria-label={ui.durationLabel} />
+        <p class="calories-hint">{ui.durationHint}</p>
+      </div>
+
+      <div class="calories-unit-block">
+        <span class="calories-label">{ui.unitsLabel}</span>
+        <div class="calories-unit-toggle" role="group" aria-label={ui.unitsLabel}>
+          <button type="button" data-unit="metric" aria-pressed="true" class="is-active">{ui.metricUnit}</button>
+          <button type="button" data-unit="imperial" aria-pressed="false">{ui.imperialUnit}</button>
+        </div>
+      </div>
+
+      <button class="calories-reset" type="button" data-reset>{ui.resetButton}</button>
+    </section>
+
+    <section class="calories-result-panel" data-result-panel data-intensity="moderate" aria-live="polite">
+      <div class="calories-result-heading">
+        <p class="calories-kicker">{ui.resultEyebrow}</p>
+        <h2>{ui.resultTitle}</h2>
+      </div>
+      <div class="calories-orbit" data-energy-scene role="img" aria-label={ui.energySceneLabel}>
+        <svg viewBox="0 0 240 240" aria-hidden="true">
+          <circle class="calories-orbit-track" cx="120" cy="120" r="100"></circle>
+          <circle class="calories-orbit-arc" data-energy-arc cx="120" cy="120" r="100"></circle>
+          <circle class="calories-orbit-core" cx="120" cy="120" r="58"></circle>
+          <g class="calories-energy-flame" data-energy-flame>
+            <path d="M120 78c14 17 27 29 27 48a27 27 0 0 1-54 0c0-10 5-21 15-31 0 12 4 17 9 21 4-10 5-22 3-38Z"></path>
+          </g>
+          <circle class="calories-orbit-dot" cx="120" cy="20" r="6"></circle>
+          <circle class="calories-orbit-dot calories-orbit-dot-alt" cx="220" cy="120" r="4"></circle>
+        </svg>
+        <div class="calories-orbit-copy">
+          <strong data-output="gross">{initialGross}</strong>
+          <span>kcal</span>
+        </div>
+      </div>
+
+      <div class="calories-result-stats">
+        <div class="calories-stat calories-stat-primary">
+          <span>{ui.grossCaloriesLabel}</span>
+          <strong><span data-output="gross">{initialGross}</span> kcal</strong>
+        </div>
+        <div class="calories-stat">
+          <span>{ui.netCaloriesLabel}</span>
+          <strong><span data-output="net">{initialNet}</span> kcal</strong>
+        </div>
+        <div class="calories-stat">
+          <span>{ui.perMinuteLabel}</span>
+          <strong data-output="per-minute">{initialPerMinute} kcal/min</strong>
+        </div>
+      </div>
+
+      <div class="calories-metric-strip">
+        <div><span>{ui.metLabel}</span><strong data-output="met">3.8 MET</strong></div>
+        <div><span>{ui.intensityBandLabel}</span><strong data-output="band">{ui.intensityModerate}</strong></div>
+        <div><span>{ui.weightLabel}</span><strong data-output="weight">70 kg</strong></div>
+      </div>
+
+      <p class="calories-method-note">{ui.methodNote}</p>
+      <p class="calories-estimate-notice" data-empty-result>{ui.estimateNotice}</p>
+    </section>
+  </div>
+</div>
+
+<script>
+  import { mountCaloriesBurnedCalculator } from './controller';
+
+  mountCaloriesBurnedCalculator();
+</script>

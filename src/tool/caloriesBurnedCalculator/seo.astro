@@ -1,0 +1,14 @@
+---
+import { SEORenderer } from '@jjlmoya/utils-shared';
+import { caloriesBurnedCalculator } from './entry';
+import type { KnownLocale } from '../../types';
+
+interface Props {
+  locale?: KnownLocale;
+}
+
+const { locale = 'en' } = Astro.props;
+const content = await caloriesBurnedCalculator.i18n[locale]?.();
+---
+
+{content && <SEORenderer content={{ locale, sections: content.seo }} />}
