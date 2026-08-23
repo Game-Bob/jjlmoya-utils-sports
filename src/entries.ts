@@ -40,6 +40,8 @@ export { volleyballScoreKeeper } from './tool/volleyballScoreKeeper/entry';
 export type { VolleyballScoreKeeperLocaleContent } from './tool/volleyballScoreKeeper/entry';
 export { vo2MaxCalculator } from './tool/vo2MaxCalculator/entry';
 export type { Vo2MaxCalculatorLocaleContent } from './tool/vo2MaxCalculator/entry';
+export { roundRobinLeagueManager } from './tool/roundRobinLeagueManager/entry';
+export type { RoundRobinLeagueManagerLocaleContent } from './tool/roundRobinLeagueManager/entry';
 
 export { sportsCategory } from './category';
 
@@ -64,6 +66,7 @@ import { runningPacePredictor } from './tool/runningPacePredictor/entry';
 import { swimCssCalculator } from './tool/swimCssCalculator/entry';
 import { volleyballScoreKeeper } from './tool/volleyballScoreKeeper/entry';
 import { vo2MaxCalculator } from './tool/vo2MaxCalculator/entry';
+import { roundRobinLeagueManager } from './tool/roundRobinLeagueManager/entry';
 
 export const ALL_ENTRIES = [
   basketScoreKeeper,
@@ -87,4 +90,5 @@ export const ALL_ENTRIES = [
   swimCssCalculator,
   volleyballScoreKeeper,
   vo2MaxCalculator,
+  roundRobinLeagueManager,
 ];

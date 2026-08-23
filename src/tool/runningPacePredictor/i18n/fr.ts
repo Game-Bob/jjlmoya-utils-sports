@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Le calcul de l allure de course et la prédiction de performances reposent sur la compréhension des filières énergétiques métaboliques. La performance en endurance dépend du VO2 max, du seuil anaérobie et de l économie de course.',
+      html: 'Le calcul de l allure de course et la prédiction de performances reposent sur la compréhension approfondie des filières énergétiques métaboliques. La performance en endurance dépend de trois piliers majeurs: la consommation maximale d oxygène (VO2 max), la capacité à maintenir un pourcentage élevé de ce VO2 max sans accumulation excessive d acide lactique (seuil anaérobie) et l économie de course (rendement énergétique de la foulée).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Formulée par Peter Riegel en 1977, la formule T2 = T1 * (D2 / D1)^1.06 modélise la baisse de vitesse à mesure que la distance augmente. L exposant 1.06 reflète l érosion aérobie moyenne chez les athlètes entraînés.',
+      html: 'Formulée par Peter Riegel en 1977 et publiée dans le journal américain Runner s World, la formule T2 = T1 * (D2 / D1)^1.06 modélise mathématiquement la baisse progressive de vitesse à mesure que la distance de compétition augmente. L exposant standard de 1.06 reflète la vitesse d érosion aérobie moyenne chez les athlètes bien entraînés disposant d un volume hebdomadaire suffisant.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'Système Métrique (min/km)',
-          description: 'Unité internationale standard. Permet un contrôle précis des temps de passage tous les 1000 mètres.',
+          description: 'Unité internationale standardisée. Permet un contrôle très précis des temps de passage tous les 1000 mètres et s adapte parfaitement aux parcours mesurés en kilomètres.',
         },
         {
           title: 'Système Impérial (min/mile)',
-          description: 'Unité standard aux États-Unis et au Royaume-Uni. Un mile équivaut à 1,609344 kilomètre.',
+          description: 'Unité standard anglo-saxonne principalement utilisée aux États-Unis et au Royaume-Uni. Un mile équivaut à 1,609344 kilomètre exacts.',
         },
       ],
     },
@@ -150,9 +150,9 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       headers: ['Épreuve', 'Distance Métrique (km)', 'Distance Impériale (mi)', 'Filière Énergétique'],
       rows: [
         ['5K Route', '5.00 km', '3.11 mi', '90% Aérobie / 10% Anaérobie Glycolytique'],
-        ['10K Route', '10.00 km', '6.21 mi', '95% Aérobie / 5% Anaérobie Glycolytic'],
-        ['Semi-Marathon', '21.0975 km', '13.11 mi', '99% Aérobie (Dominante Seuil)'],
-        ['Marathon', '42.195 km', '26.22 mi', '100% Aérobie (Limité par Glycogène)'],
+        ['10K Route', '10.00 km', '6.21 mi', '95% Aérobie / 5% Anaérobie Glycolytique'],
+        ['Semi-Marathon', '21.0975 km', '13.11 mi', '99% Aérobie (Dominante Seuil Anaérobie)'],
+        ['Marathon', '42.195 km', '26.22 mi', '100% Aérobie (Limité par le Glycogène Musculaire)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Efficacité du Negative Split',
-      html: 'Courir la seconde moitié légèrement plus vite que la première préserve le glycogène et évite une acidose musculaire précoce.',
+      html: 'Courir la seconde moitié de la course légèrement plus vite que la première (negative split) préserve les réserves de glycogène hépatique et musculaire tout en évitant une acidose précoce.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Un entraînement d\'endurance efficace répartit volontairement l\'intensité entre plusieurs zones physiologiques. Les sorties faciles favorisent les adaptations mitochondriales, les séances au seuil améliorent l\'élimination du lactate et les intervalles développent le VO2 max. Des allures personnalisées limitent le risque de surcharge tout en ciblant l\'adaptation recherchée.',
+      html: 'Un entraînement d endurance efficace et équilibré répartit volontairement l intensité entre plusieurs zones physiologiques distinctes. Les sorties faciles en endurance fondamentale favorisent les adaptations mitochondriales et la capillarisation, les séances au seuil améliorent le recyclage et la clairance du lactate, tandis que les séances d intervalles courts et longs développent le VO2 max et la vitesse maximale aérobie (VMA). Des allures cibles personnalisées limitent grandement le risque de surentraînement tout en optimisant chaque séance.',
     },
   ],
   ui: {

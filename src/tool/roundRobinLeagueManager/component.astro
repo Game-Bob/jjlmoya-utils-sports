@@ -1,0 +1,195 @@
+---
+import './round-robin-league-manager.css';
+import type { RoundRobinLeagueManagerUI } from './ui';
+
+interface Props {
+  ui: RoundRobinLeagueManagerUI;
+}
+
+const { ui } = Astro.props;
+const uiJson = JSON.stringify(ui).replace(/</g, '\\u003c');
+---
+
+<div class="rlm-tool" data-round-robin-league-manager data-active-tab="matches">
+  <script is:inline type="application/json" data-role="ui-json" set:html={uiJson}></script>
+
+  <section class="rlm-library" data-view="library">
+    <header class="rlm-library-header">
+      <div>
+        <span class="rlm-eyebrow">{ui.libraryEyebrow}</span>
+        <div class="rlm-title-line">
+          <h2>{ui.myLeagues}</h2>
+          <span class="rlm-count" data-role="league-count">0</span>
+        </div>
+        <p>{ui.libraryIntro}</p>
+      </div>
+      <label class="rlm-import-button">
+        {ui.importLeague}
+        <input type="file" accept="application/json" data-role="import-file" />
+      </label>
+    </header>
+
+    <p class="rlm-notice" data-role="notice" aria-live="polite"></p>
+
+    <div class="rlm-library-grid">
+      <div class="rlm-league-stack">
+        <div class="rlm-empty-library" data-role="library-empty">
+          <strong>{ui.noLeagues}</strong>
+          <span>{ui.noLeaguesHint}</span>
+        </div>
+        <div class="rlm-league-list" data-role="league-list"></div>
+      </div>
+
+      <form class="rlm-create-card" data-role="create-form">
+        <div class="rlm-card-heading">
+          <span class="rlm-card-number">+</span>
+          <div>
+            <h3>{ui.newLeague}</h3>
+            <button type="button" class="rlm-example" data-action="load-example">{ui.loadExample}</button>
+          </div>
+        </div>
+
+        <label class="rlm-field">
+          <span>{ui.leagueNameLabel}</span>
+          <input type="text" maxlength="60" placeholder={ui.leagueNamePlaceholder} data-role="league-name" />
+        </label>
+
+        <label class="rlm-field">
+          <span>{ui.teamsLabel}</span>
+          <small>{ui.teamsHint}</small>
+          <textarea rows="7" maxlength="1024" placeholder={ui.teamsPlaceholder} data-role="teams"></textarea>
+        </label>
+
+        <fieldset class="rlm-fieldset">
+          <legend>{ui.formatLabel}</legend>
+          <div class="rlm-choice-row">
+            <button type="button" data-format="single" aria-pressed="true">
+              <strong>{ui.singleLeg}</strong>
+              <span>{ui.singleLegHint}</span>
+            </button>
+            <button type="button" data-format="double" aria-pressed="false">
+              <strong>{ui.doubleLeg}</strong>
+              <span>{ui.doubleLegHint}</span>
+            </button>
+          </div>
+        </fieldset>
+
+        <fieldset class="rlm-fieldset">
+          <legend>{ui.scoringLabel}</legend>
+          <div class="rlm-points-row">
+            <label><span>{ui.winPoints}</span><input type="number" min="0" max="20" value="3" data-role="draft-win" /></label>
+            <label><span>{ui.drawPoints}</span><input type="number" min="0" max="20" value="1" data-role="draft-draw" /></label>
+            <label><span>{ui.lossPoints}</span><input type="number" min="0" max="20" value="0" data-role="draft-loss" /></label>
+          </div>
+        </fieldset>
+
+        <p class="rlm-draft-status" data-role="draft-status" aria-live="polite"></p>
+        <button type="submit" class="rlm-primary" data-role="create-league" disabled>{ui.createLeague}</button>
+        <p class="rlm-import-hint">{ui.importHint}</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="rlm-manager" data-view="manager" hidden>
+    <header class="rlm-manager-header">
+      <div class="rlm-manager-nav">
+        <button type="button" class="rlm-back" data-action="show-library">{ui.backToLeagues}</button>
+        <button type="button" class="rlm-back" data-action="new-league">+ {ui.newLeagueAction}</button>
+      </div>
+      <div class="rlm-league-identity">
+        <div class="rlm-league-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div>
+          <h2 data-role="active-name"></h2>
+          <p data-role="active-meta"></p>
+        </div>
+      </div>
+      <div class="rlm-manager-actions">
+        <span class="rlm-saved">{ui.allChangesSaved}</span>
+        <button type="button" data-action="download-active">{ui.downloadLeague}</button>
+        <button type="button" class="rlm-share" data-action="share-active">{ui.shareLeague}</button>
+      </div>
+    </header>
+
+    <div class="rlm-progress-strip">
+      <span>{ui.progressLabel}</span>
+      <div><i data-role="progress-bar"></i></div>
+      <strong data-role="progress-text"></strong>
+    </div>
+
+    <nav class="rlm-tabs" aria-label={ui.myLeagues}>
+      <button type="button" data-action="set-tab" data-tab="matches" aria-pressed="true">{ui.matchesTab}</button>
+      <button type="button" data-action="set-tab" data-tab="standings" aria-pressed="false">{ui.standingsTab}</button>
+      <button type="button" data-action="set-tab" data-tab="settings" aria-pressed="false">{ui.settingsTab}</button>
+    </nav>
+
+    <div class="rlm-panel rlm-overview" data-panel="matches">
+      <section class="rlm-fixture-panel">
+        <header class="rlm-panel-heading">
+          <div>
+            <span>{ui.fixtures}</span>
+            <h3 data-role="round-title"></h3>
+          </div>
+          <div class="rlm-round-arrows">
+            <button type="button" data-action="previous-round" aria-label={ui.previousRound}></button>
+            <button type="button" data-action="next-round" aria-label={ui.nextRound}></button>
+          </div>
+        </header>
+        <nav class="rlm-round-list" data-role="round-list" aria-label={ui.matchday}></nav>
+        <div class="rlm-match-list" data-role="match-list"></div>
+        <p class="rlm-bye" data-role="bye" hidden></p>
+      </section>
+
+      <aside class="rlm-standing-panel">
+        <header class="rlm-panel-heading">
+          <div>
+            <span>{ui.standings}</span>
+            <h3>{ui.standingsTab}</h3>
+          </div>
+          <button type="button" class="rlm-text-action" data-action="set-tab" data-tab="standings">{ui.standingsTab}</button>
+        </header>
+        <div class="rlm-table-scroll is-compact" data-role="standings-table"></div>
+      </aside>
+    </div>
+
+    <section class="rlm-panel rlm-full-table" data-panel="standings" hidden>
+      <header class="rlm-section-header">
+        <div><span>{ui.standings}</span><h3>{ui.standingsTab}</h3></div>
+        <p>{ui.standingsHint}</p>
+      </header>
+      <div class="rlm-table-scroll" data-role="standings-table"></div>
+    </section>
+
+    <section class="rlm-panel rlm-settings" data-panel="settings" hidden>
+      <header class="rlm-section-header">
+        <div><span>{ui.settingsTab}</span><h3>{ui.leagueSettings}</h3></div>
+        <p>{ui.settingsHint}</p>
+      </header>
+      <div class="rlm-settings-grid">
+        <label class="rlm-field"><span>{ui.leagueNameLabel}</span><input type="text" maxlength="60" data-role="settings-name" /></label>
+        <fieldset class="rlm-fieldset">
+          <legend>{ui.scoringLabel}</legend>
+          <div class="rlm-points-row">
+            <label><span>{ui.winPoints}</span><input type="number" min="0" max="20" data-role="settings-win" /></label>
+            <label><span>{ui.drawPoints}</span><input type="number" min="0" max="20" data-role="settings-draw" /></label>
+            <label><span>{ui.lossPoints}</span><input type="number" min="0" max="20" data-role="settings-loss" /></label>
+          </div>
+        </fieldset>
+      </div>
+      <button type="button" class="rlm-primary is-small" data-action="save-settings">{ui.saveSettings}</button>
+      <div class="rlm-danger-zone">
+        <div><strong>{ui.dangerZone}</strong><span>{ui.confirmDelete}</span></div>
+        <button type="button" data-action="delete-active">{ui.deleteLeague}</button>
+      </div>
+    </section>
+
+    <p class="rlm-notice" data-role="notice" aria-live="polite"></p>
+  </section>
+</div>
+
+<script>
+  import { initRoundRobinLeagueManager } from './controller';
+
+  document.querySelectorAll<HTMLElement>('[data-round-robin-league-manager]').forEach((root) => {
+    initRoundRobinLeagueManager(root);
+  });
+</script>

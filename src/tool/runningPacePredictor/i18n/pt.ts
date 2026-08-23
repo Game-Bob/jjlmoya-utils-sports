@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'O cálculo de pace e a previsão de marcas requerem o entendimento dos sistemas energéticos metabólicos. O desempenho em corridas de longa distância depende do VO2 máx, do limiar de lactato e da economia de corrida.',
+      html: 'O cálculo rigoroso do ritmo e a previsão de marcas em provas requerem o entendimento aprofundado dos sistemas energéticos metabólicos do corpo humano. O desempenho em corridas de longa distância depende diretamente de três pilares fisiológicos fundamentais: o consumo máximo de oxigénio (VO2 máx), o limiar de lactato (capacidade de manter ritmo elevado sem acúmulo excessivo de ácido láctico) e a economia de corrida (eficiência biomecânica do movimento).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Criada pelo engenheiro Peter Riegel em 1977, a fórmula T2 = T1 * (D2 / D1)^1.06 modela a perda de velocidade com o aumento da distância. O expoente 1,06 reflete a queda aeróbica média em atletas treinados.',
+      html: 'Criada pelo engenheiro Peter Riegel em 1977 e publicada na revista norte-americana Runner s World, a fórmula T2 = T1 * (D2 / D1)^1.06 modela matematicamente a perda progressiva de velocidade à medida que a distância da prova aumenta. O expoente padrão de 1,06 reflete a taxa de queda aeróbica média em atletas bem treinados com um volume semanal adequado de treinos.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'Sistema Métrico (min/km)',
-          description: 'Padrão internacional. Permite um controlo preciso dos parciais a cada 1000 metros.',
+          description: 'Padrão internacional prioritário em provas de atletismo e corridas de estrada. Permite um controlo preciso dos parciais a cada 1000 metros.',
         },
         {
           title: 'Sistema Imperial (min/milha)',
-          description: 'Padrão nos EUA e Reino Unido. Uma milha equivale a 1,609344 quilómetros.',
+          description: 'Padrão amplamente utilizado nos EUA e no Reino Unido. Uma milha terrestre equivale exatamente a 1,609344 quilómetros.',
         },
       ],
     },
@@ -149,10 +149,10 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       type: 'table',
       headers: ['Prova', 'Distância Métrica (km)', 'Distância Imperial (mi)', 'Via Energética Principal'],
       rows: [
-        ['5K Estrada', '5.00 km', '3.11 mi', '90% Aeróbica / 10% Anaeróbica'],
-        ['10K Estrada', '10.00 km', '6.21 mi', '95% Aeróbica / 5% Anaeróbica'],
-        ['Meia Maratona', '21.0975 km', '13.11 mi', '99% Aeróbica (Limiar de Lactato)'],
-        ['Maratona', '42.195 km', '26.22 mi', '100% Aeróbica (Limitado por Glicogénio)'],
+        ['5K Estrada', '5.00 km', '3.11 mi', '90% Aeróbica / 10% Anaeróbica Glicolítica'],
+        ['10K Estrada', '10.00 km', '6.21 mi', '95% Aeróbica / 5% Anaeróbica Glicolítica'],
+        ['Meia Maratona', '21.0975 km', '13.11 mi', '99% Aeróbica (Dominante Limiar de Lactato)'],
+        ['Maratona', '42.195 km', '26.22 mi', '100% Aeróbica (Limitado por Glicogénio Muscular)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Eficácia do Negative Split',
-      html: 'Correr a segunda metade da prova ligeiramente mais rápido preserva as reservas de glicogénio e evita a acidose precoce.',
+      html: 'Correr a segunda metade da prova ligeiramente mais rápido (negative split) preserva as reservas vitais de glicogénio no fígado e nos músculos e evita a acidose precoce.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Um treino de resistência eficaz distribui intencionalmente a intensidade por diferentes zonas fisiológicas. As corridas fáceis promovem adaptações mitocondriais, os treinos de ritmo melhoram a remoção de lactato e os intervalos aumentam o limite de VO2 máximo. Ritmos personalizados ajudam a evitar o excesso de treino e a manter o estímulo adequado.',
+      html: 'Um treino de resistência eficaz e equilibrado distribui intencionalmente a intensidade por diferentes zonas fisiológicas distintas. As corridas fáceis promovem adaptações mitocondriais e capilarização, os treinos de ritmo melhoram a remoção do lactato e os intervalos de tiros aumentam o limite de VO2 máximo e a velocidade máxima aeróbica (VMA). Ritmos personalizados ajudam a evitar o excesso de treino e mantêm o estímulo adequado.',
     },
   ],
   ui: {

@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Kritik Yuzme Hizi, yuzulen mesafe ile zaman arasindaki dogrusal ilskinin egimini ifade eder. 400m suresinden 200m suresi cikarilarak anaerobik katkı elenebilir.',
+      html: 'Kritik Yüzme Hızı (Critical Swim Speed, CSS), yüzülen mesafe ile geçen zaman arasındaki doğrusal ilişkinin eğimini ifade eder. Wakayoshi ve arkadaşları tarafından bilimsel olarak geliştirilen bu yöntem, 400m test süresinden 200m test süresini çıkararak anaerobik enerji katkısını eler ve fonksiyonel aerobik kapasiteyi net olarak izole eder.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Dogrudan CSS Temposu',
-          description: 'Donusler ve su alti kayma dahil gercek ilerleme hizini olcer.',
+          description: 'Dönüşler, duvardan itiş ve hidrodinamik kayma pozisyonu dahil olmak üzere suda ilerleme hızını yüksek hassasiyetle doğrudan ölçer.',
         },
         {
           title: 'Su Ici Nabiz Sensorleri',
-          description: 'Gecikmeli veri sunar ve su sicakligindan etkilenebilir.',
+          description: 'Kardiyak sürüklenme, soğuk su dalış refleksi ve güçlü kulaçlarda sensör kayması nedeniyle gecikmeli veya tutarsız veri sunabilir.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Bolge Adi', 'CSSye Gore Tempo', 'Temel Antrenman Amaci', 'Onerilen Dinlenme'],
       rows: [
-        ['Aerobik Dayaniklilik', 'CSS suresinin %104u', 'Temel aerobik kapasite', '10 ila 15 saniye'],
-        ['CSS Esigi', 'CSS suresinin %100u', 'Laktat toleransi ve yaris temposu', '15 ila 20 saniye'],
-        ['VO2 Max Hizi', 'CSS suresinin %96si', 'Maksimum oksijen alimi', '30 ila 45 saniye'],
+        ['Aerobik Dayaniklilik', 'CSS suresinin %104u', 'Temel aerobik kapasite, yağ yakımı ve kulaç ekonomisi', '10 ila 15 saniye'],
+        ['CSS Esigi', 'CSS suresinin %100u', 'Laktat toleransı, temizleme kapasitesi ve yarış temposu', '15 ila 20 saniye'],
+        ['VO2 Max Hizi', 'CSS suresinin %96si', 'Maksimum oksijen alımı ve yüksek kulaç frekansı', '30 ila 45 saniye'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Hedef Tempo Koruma Tavsiyesi',
-      html: 'Her 50 metredeki gecis surenize kesinlikle uyun. Ilk 50mye 2 saniye hizli baslamak sonlarda ciddi hiz kaybina yol acar.',
+      html: 'Her 50 metredeki geçiş sürenize kesinlikle uyun. İlk 25 metreye 2 saniye hızlı başlamak kas glikojenini erken tüketir ve hedeflenen aerobik uyarını bozar.',
     },
   ],
   ui,

@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Koşu temposunun hesaplanması ve yarış sürelerinin tahmini, metabolik enerji sistemlerinin anlaşılmasını gerektirir. Dayanıklılık performansı VO2 max, laktat eşiği ve koşu ekonomisi tarafından belirlenir.',
+      html: 'Koşu temposunun hassas biçimde hesaplanması ve yarış derecelerinin güvenilir şekilde tahmini, insan vücudunun metabolik enerji sistemlerinin derinlemesine anlaşılmasını gerektirir. Uzun mesafe koşularında dayanıklılık performansı doğrudan üç ana fizyolojik temele dayanır: maksimum oksijen tüketimi (VO2 max), laktat eşiği (aşırı laktik asit birikimi olmadan yüksek hızı koruma yeteneği) ve koşu ekonomisi (hareket verimliliği).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Mühendis Peter Riegel tarafından 1977 de geliştirilen T2 = T1 * (D2 / D1)^1.06 formülü, mesafe arttıkça hızdaki düşüşü modeller. 1.06 yorgunluk katsayısı antrenmanlı atletlerin ortalamasını temsil eder.',
+      html: 'Amerikalı mühendis Peter Riegel tarafından 1977 yılında geliştirilen ve Runner s World dergisinde yayınlanan T2 = T1 * (D2 / D1)^1.06 formülü, yarış mesafesi arttıkça hızdaki doğal düşüşü matematiksel olarak modeller. Standart 1.06 yorgunluk katsayısı, yeterli haftalık koşu hacmine sahip iyi antrenmanlı atletlerin ortalama aerobik düşüşünü temsil eder.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'Metrik Sistem (min/km)',
-          description: 'Uluslararası standart. Her 1000 metrede bir tur süresi takibi sağlar.',
+          description: 'Atletizm ve yol yarışlarında uluslararası birincil standart. Her 1000 metrede bir tur süresinin ve tempo grafiklerinin son derece hassas takibini sağlar.',
         },
         {
           title: 'Imparatorluk Sistemi (min/mil)',
-          description: 'ABD ve İngiltere deki standart. Bir mil 1,609344 kilometreye eşittir.',
+          description: 'ABD ve İngiltere de yaygın olarak kullanılan standart birim. Bir kara mili tam olarak 1,609344 kilometreye eşittir.',
         },
       ],
     },
@@ -149,10 +149,10 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       type: 'table',
       headers: ['Yarış', 'Metrik Mesafe (km)', 'İmparatorluk Mesafesi (mi)', 'Ana Enerji Sistemi'],
       rows: [
-        ['5K Yol Yarışı', '5.00 km', '3.11 mi', '%90 Aerobik / %10 Anaerobik'],
-        ['10K Yol Yarışı', '10.00 km', '6.21 mi', '%95 Aerobik / %5 Anaerobik'],
+        ['5K Yol Yarışı', '5.00 km', '3.11 mi', '%90 Aerobik / %10 Anaerobik Glikolitik'],
+        ['10K Yol Yarışı', '10.00 km', '6.21 mi', '%95 Aerobik / %5 Anaerobik Glikolitik'],
         ['Yarı Maraton', '21.0975 km', '13.11 mi', '%99 Aerobik (Laktat Eşiği Baskın)'],
-        ['Maraton', '42.195 km', '26.22 mi', '%100 Aerobik (Glikojen Sınırlı)'],
+        ['Maraton', '42.195 km', '26.22 mi', '%100 Aerobik (Kas Glikojeni Sınırlı)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Negative Split Avantajı',
-      html: 'Yarışın ikinci yarısını ilk yarısından biraz daha hızlı koşmak glikojen depolarını korur ve erken yorulmayı önler.',
+      html: 'Yarışın ikinci yarısını ilk yarısından biraz daha hızlı koşmak (negative split) karaciğer ve kaslardaki değerli glikojen depolarını korur ve erken asidoz birikimini önler.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Etkili dayanıklılık antrenmanı yoğunluğu farklı fizyolojik bölgelere bilinçli olarak dağıtır. Kolay koşular mitokondriyal uyumu destekler, tempo koşuları laktat temizleme kapasitesini geliştirir ve interval çalışmaları VO2 max sınırını yükseltir. Kişiye özel tempo aralıkları aşırı antrenmanı önlerken doğru uyaranı korur.',
+      html: 'Etkili ve dengeli bir dayanıklılık antrenmanı yoğunluğu farklı fizyolojik bölgelere bilinçli olarak dağıtır. Kolay toparlanma koşuları mitokondriyal Uyum ve kılcallanmayı destekler, tempo koşuları laktat temizleme kapasitesini geliştirir ve interval çalışmaları VO2 max sınırını ve maksimal aerobik hızı (vVO2max) yükseltir. Kişiye özel tempo aralıkları aşırı antrenmanı önler.',
     },
   ],
   ui: {

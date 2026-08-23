@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Kritisk simhastighet definierar lutningen i sambandet mellan distans och tid. Genom att dra av 200m tiden fran 400m tiden isoleras den aeroba kapaciteten.',
+      html: 'Kritisk simhastighet (Critical Swim Speed, CSS) definierar den exakta lutningen i det linjära sambandet mellan simmad distans och tid. Metoden utvecklades vetenskapligt av Wakayoshi et al. och isolerar den funktionella aeroba kapaciteten genom att dra av den anaeroba energikomponenten från ett 200-meterstest från ett 400-meterstest.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Direkt CSS Tempo',
-          description: 'Mater den reella farten i vattnet inklusive vandningar och glid.',
+          description: 'Mäter med hög precision den reella effektiva farten i vattnet inklusive kvaliteten på vändningar, frånskjut och glidposition.',
         },
         {
           title: 'Pulssensorer i Vatten',
-          description: 'Visar ofta fordrojning och paverkas av vattentemperatur.',
+          description: 'Visar ofta fördröjning på grund av pulsdrift, dykreflexer i kallt vatten samt eventuella kopplingstapp hos sensorer vid kraftiga armtag.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Zonnamn', 'Tempo Relativt CSS', 'Huvudsakligt Traningsmal', 'Rekommenderad Vila'],
       rows: [
-        ['Aerob Uthallighet', '104% av CSS tid', 'Grundlaggande aerob uthallighet', '10 till 15 sekunder'],
-        ['CSS Troskel', '100% av CSS tid', 'Laktathantering och tavlingsfart', '15 till 20 sekunder'],
-        ['VO2 Max Hastighet', '96% av CSS tid', 'Maximal syreupptagningsformaga', '30 till 45 sekunder'],
+        ['Aerob Uthallighet', '104% av CSS tid', 'Grundläggande aerob uthållighet, fettförbränning och rörelseekonomi', '10 till 15 sekunder'],
+        ['CSS Troskel', '100% av CSS tid', 'Laktathantering, tröskelkapacitet och tävlingsfart', '15 till 20 sekunder'],
+        ['VO2 Max Hastighet', '96% av CSS tid', 'Maximal syreupptagningsförmåga och armfrekvens', '30 till 45 sekunder'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Råd for Tempojamnhet',
-      html: 'Hall mellantiden pa varje 50 meter strikt. Att oppna 2 sekunder for snabbt leder till kraftigt fartsankning mot slutet.',
+      html: 'Håll mellantiden på varje 50 meter i serien strikt. Att öppna 2 sekunder för snabbt på de första 25m tömmer muskelglykogen i förtid och förstör den avsedda aeroba träningsstimulansen.',
     },
   ],
   ui,

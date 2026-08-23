@@ -37,3 +37,6 @@ export type { PenaltyShootoutUI, PenaltyShootoutLocaleContent } from './tool/pen
 
 export { VOLLEYBALL_SCOREKEEPER_TOOL, volleyballScoreKeeper } from './tool/volleyballScoreKeeper/index';
 export type { VolleyballScoreKeeperUI, VolleyballScoreKeeperLocaleContent } from './tool/volleyballScoreKeeper/index';
+
+export { ROUND_ROBIN_LEAGUE_MANAGER_TOOL, roundRobinLeagueManager } from './tool/roundRobinLeagueManager/index';
+export type { RoundRobinLeagueManagerUI, RoundRobinLeagueManagerLocaleContent } from './tool/roundRobinLeagueManager/index';

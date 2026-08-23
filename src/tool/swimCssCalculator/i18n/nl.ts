@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'De kritische zwemsnelheid isoleert de aerobe capaciteit door de 200m tijd af te trekken van de 400m tijd. Dit schakelt de anaerobe energie-inbreng uit.',
+      html: 'De kritische zwemsnelheid (Critical Swim Speed, CSS) definieert de exacte helling van de lineaire relatie tussen de gezwommen afstand en de benodigde tijd. Ontwikkeld door wetenschapper Wakayoshi et al., isoleert deze methode de functionele aerobe capaciteit door de anaerobe energie-inbreng van de 200m test af te trekken van de 400m test.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Direct CSS Tempo',
-          description: 'Meet de werkelijke snelheid in het water inclusief keerpunten en stroomlijnen.',
+          description: 'Meet nauwkeurig de werkelijke effectieve stroomsnelheid in het water inclusief de kwaliteit van keerpunten, afzet en stroomlijnhouding.',
         },
         {
           title: 'Hartslagsensoren in het Water',
-          description: 'Vertoont vertraging en kan beïnvloed worden door watertemperatuur.',
+          description: 'Vertoont vertraging door cardiale drift, duikreflexen in koud water en mogelijke koppelingsproblemen van sensoren tijdens het zwemmen.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Zonenaam', 'Tempo Relatief tot CSS', 'Hoofddoel Training', 'Aanbevolen Rust'],
       rows: [
-        ['Aerobe Conditie', '104% van CSS tijd', 'Aerobe basisconditie', '10 tot 15 seconden'],
-        ['CSS Drempel', '100% van CSS tijd', 'Lactaatverwerking en wedstrijdtempo', '15 tot 20 seconden'],
-        ['VO2 Max Snelheid', '96% van CSS tijd', 'Maximale zuurstofopname', '30 tot 45 seconden'],
+        ['Aerobe Conditie', '104% van CSS tijd', 'Aerobe basisconditie, vetverbranding en bewegingseconomie', '10 tot 15 seconden'],
+        ['CSS Drempel', '100% van CSS tijd', 'Lactaatverwerking, drempelvermogen en wedstrijdtempo', '15 tot 20 seconden'],
+        ['VO2 Max Snelheid', '96% van CSS tijd', 'Maximale zuurstofopname en spierfrequentie van de armen', '30 tot 45 seconden'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Advies voor Tempobewaking',
-      html: 'Houd de tussentijd op elke 50 meter strikt aan. 2 seconden te snel starten leidt tot grote snelheidsafname op het einde.',
+      html: 'Houd de tussentijd op elke 50 meter van de serie strikt aan. 2 seconden te snel starten op de eerste 25m uitput spierglycogeen voortijdig en verstoort de beoogde aerobe trainingsprikkel.',
     },
   ],
   ui,

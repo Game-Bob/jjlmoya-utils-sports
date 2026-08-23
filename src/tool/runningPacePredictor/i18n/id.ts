@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Menghitung tempo lari dan memprediksi waktu lomba memerlukan pemahaman tentang sistem energi metabolik. Performa lari jarak jauh ditentukan oleh VO2 max, ambang laktat, dan efisiensi lari.',
+      html: 'Menghitung tempo lari dan memprediksi waktu lomba secara akurat memerlukan pemahaman mendalam tentang sistem energi metabolik manusia. Performa lari jarak jauh ditentukan secara langsung oleh tiga pilar utama: konsumsi oksigen maksimal (VO2 max), ambang laktat (kapasitas mempertahankan intensitas tinggi tanpa akumulasi asam laktat berlebih), serta efisiensi lari (ekonomi gerak tubuh).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Dirumuskan oleh Peter Riegel pada tahun 1977, rumus T2 = T1 * (D2 / D1)^1.06 memodelkan penurunan kecepatan seiring bertambahnya jarak. Eksponen kelelahan 1.06 adalah rata-rata pada pelari yang terlatih.',
+      html: 'Dirumuskan oleh Peter Riegel pada tahun 1977 dan dipublikasikan dalam majalah majalah Runner s World, rumus T2 = T1 * (D2 / D1)^1.06 memodelkan secara matematis penurunan kecepatan bertahap seiring bertambahnya jarak lintasan lomba. Eksponen kelelahan standar 1.06 mencerminkan tingkat penurunan kapasitas aerobik rata-rata pada pelari jarak jauh yang terlatih dengan volume latihan mingguan yang memadai.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'Sistem Metrik (min/km)',
-          description: 'Standar internasional dalam olahraga atletik. Memudahkan kontrol split per 1000 meter.',
+          description: 'Standar internasional utama dalam olahraga atletik dan lari jalan raya. Memudahkan pemantauan split waktu yang presisi setiap 1000 meter.',
         },
         {
           title: 'Sistem Imperial (min/mile)',
-          description: 'Standar di AS dan Inggris. Satu mil setara dengan 1,609344 kilometer.',
+          description: 'Standar populer di Amerika Serikat dan Britania Raya. Satu mil darat setara secara tepat dengan 1,609344 kilometer.',
         },
       ],
     },
@@ -149,10 +149,10 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       type: 'table',
       headers: ['Nama Lomba', 'Jarak Metrik (km)', 'Jarak Imperial (mi)', 'Sistem Energi Utama'],
       rows: [
-        ['Lari 5K', '5.00 km', '3.11 mi', '90% Aerobik / 10% Anaerobik'],
-        ['Lari 10K', '10.00 km', '6.21 mi', '95% Aerobik / 5% Anaerobik'],
+        ['Lari 5K', '5.00 km', '3.11 mi', '90% Aerobik / 10% Anaerobik Glikolisis'],
+        ['Lari 10K', '10.00 km', '6.21 mi', '95% Aerobik / 5% Anaerobik Glikolisis'],
         ['Half Marathon', '21.0975 km', '13.11 mi', '99% Aerobik (Dominan Ambang Laktat)'],
-        ['Full Marathon', '42.195 km', '26.22 mi', '100% Aerobik (Batas Glikogen)'],
+        ['Full Marathon', '42.195 km', '26.22 mi', '100% Aerobik (Terbatas Glikogen Otot)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Manfaat Negative Split',
-      html: 'Berlari lebih cepat pada paruh kedua lomba menghemat cadangan glikogen dan mencegah penumpukan asam laktat prematur.',
+      html: 'Berlari sedikit lebih cepat pada paruh kedua lomba (negative split) secara terukur membantu menghemat cadangan glikogen hati dan otot serta mencegah penumpukan asam laktat prematur.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Latihan daya tahan yang efektif membagi intensitas secara terencana ke dalam beberapa zona fisiologis. Lari ringan mendukung adaptasi mitokondria, lari tempo meningkatkan pembersihan laktat, dan interval intensitas tinggi mengembangkan batas VO2 maks. Rentang pace yang dipersonalisasi membantu mencegah latihan berlebihan sekaligus menjaga stimulus adaptasi.',
+      html: 'Latihan daya tahan yang efektif dan seimbang membagi intensitas secara terencana ke dalam beberapa zona fisiologis yang jelas. Lari ringan santai mendukung adaptasi mitokondria dan kapiler darah, lari tempo meningkatkan pembersihan laktat, dan latihan interval intensitas tinggi mengembangkan batas VO2 maks serta kecepatan aerobik maksimal (VMA). Rentang pace yang dipersonalisasi membantu mencegah latihan berlebihan sekaligus menjaga stimulus adaptasi tubuh.',
     },
   ],
   ui: {

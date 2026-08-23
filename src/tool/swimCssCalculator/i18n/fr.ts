@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'La vitesse critique de natation definit la pente de la relation entre la distance et le temps. Elle permet d isoler le seuil aerobique de la capacite anaerobie initiale.',
+      html: 'La vitesse critique de natation (Critical Swim Speed, CSS) définit la pente exacte de la relation linéaire entre la distance parcourue et le temps nécessaire à sa réalisation. Développée par Wakayoshi et ses collaborateurs, cette métrique scientifique permet d isoler la capacité aérobie fonctionnelle en déduisant l effort anaérobie d une épreuve de 200 mètres à celle de 400 mètres.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Allure CSS Mesuree',
-          description: 'Reflete la vitesse reelle dans l eau en prenant en compte les virages et la coulée.',
+          description: 'Reflète avec précision la vitesse réelle d avancement dans l eau en prenant directement en compte la qualité des virages, de la coulée et de l hydrodynamisme.',
         },
         {
           title: 'Fréquence Cardiaque en Eau',
-          description: 'Présente des retards d affichage et des problemes de stabilite de capteurs.',
+          description: 'Présente des retards de dérive cardiaque, des interférences liées au réflexe d immersion et des problèmes de stabilité des capteurs sous l eau.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Nom de la Zone', 'Allure Relative', 'Objectif Principal', 'Repos Recommande'],
       rows: [
-        ['Endurance Aerobique', '104% du temps CSS', 'Developpement de la capacite aerobique', '10 a 15 secondes'],
-        ['Seuil CSS', '100% du temps CSS', 'Clairance du lactate et allure de course', '15 a 20 secondes'],
-        ['Vitesse VO2 Max', '96% du temps CSS', 'Puissance aerobique maximale', '30 a 45 secondes'],
+        ['Endurance Aerobique', '104% du temps CSS', 'Développement de la capacité aérobie de base et économie de nage', '10 a 15 secondes'],
+        ['Seuil CSS', '100% du temps CSS', 'Clairance du lactate, tolérance à l effort et allure de course', '15 a 20 secondes'],
+        ['Vitesse VO2 Max', '96% du temps CSS', 'Puissance aérobie maximale et fréquence musculaire de bras', '30 a 45 secondes'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Conseil pour Respecter l Allure Cible',
-      html: 'Maintenez scrupuleusement le temps de passage sur chaque 50m. Partir trop vite entraine une baisse de vitesse brutale en fin de serie.',
+      html: 'Maintenez scrupuleusement le temps de passage cible sur chaque 50m. Partir 2 secondes trop vite sur le premier 25m épuise prématurément le glycogène musculaire et annule les bénéfices de la séance.',
     },
   ],
   ui,

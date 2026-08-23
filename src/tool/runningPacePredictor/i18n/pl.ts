@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Wyliczanie tempa i prognozowanie wyników wymaga zrozumienia procesów metabolicznych. Wydolność w biegach długich zależy od VO2 max, progu mleczanowego i ekonomii biegu.',
+      html: 'Precyzyjne wyliczanie tempa biegu i niezawodne prognozowanie wyników na zawodach wymaga głębokiego zrozumienia ludzkich procesów metabolicznych. Wydolność w biegach długich zależy bezpośrednio od trzech głównych filarów fysiologicznych: maksymalnego poboru tlenu (VO2 max), progu mleczanowego (zdolności do utrzymania wysokiej intensywności bez nadmiernej akumulacji kwasu mlekowego) oraz ekonomii biegu (efektywności ruchu).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Opracowany przez Petera Riegela wzór T2 = T1 * (D2 / D1)^1.06 opisuje spadek prędkości wraz ze wzrostem dystansu. Wskaźnik 1.06 odpowiada przeciętnemu spadkowi formy u trenujących biegaczy.',
+      html: 'Opracowany przez inżyniera Petera Riegela w 1977 roku i opublikowany w amerykańskim czasopiśmie Runner s World wzór T2 = T1 * (D2 / D1)^1.06 opisuje matematycznie stopniowy spadek prędkości wraz ze wzrostem dystansu. Wskaźnik zmęczenia 1.06 odpowiada przeciętnemu spadkowi formy tlenowej u dobrze wytrenowanych biegaczy z odpowiednią objętością treningu tygodniowego.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'System Metryczny (min/km)',
-          description: 'Standard w biegach w Europie. Pozwala na precyzyjną kontrolę międzyczasów co 1000 metrów.',
+          description: 'Międzynarodowy standard w biegach w Europie i na świecie. Pozwala na wyjątkowo precyzyjną kontrolę międzyczasów co 1000 metrów.',
         },
         {
           title: 'System Imperialny (min/mile)',
-          description: 'Standard w USA i Wielkiej Brytanii. Jedna mila to 1.609344 km.',
+          description: 'Standard w USA i Wielkiej Brytanii. Jedna mila lądowa to dokładnie 1.609344 kilometra.',
         },
       ],
     },
@@ -149,10 +149,10 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       type: 'table',
       headers: ['Bieg', 'Dystans Metryczny (km)', 'Dystans Imperialny (mi)', 'Główny System Energetyczny'],
       rows: [
-        ['Bieg 5K', '5.00 km', '3.11 mi', '90% Tlenowy / 10% Beztlenowy'],
-        ['Bieg 10K', '10.00 km', '6.21 mi', '95% Tlenowy / 5% Beztlenowy'],
-        ['Półmaraton', '21.0975 km', '13.11 mi', '99% Tlenowy (Próg Mleczanowy)'],
-        ['Maraton', '42.195 km', '26.22 mi', '100% Tlenowy (Limit Glikogenu)'],
+        ['Bieg 5K', '5.00 km', '3.11 mi', '90% Tlenowy / 10% Beztlenowy Glikolityczny'],
+        ['Bieg 10K', '10.00 km', '6.21 mi', '95% Tlenowy / 5% Beztlenowy Glikolityczny'],
+        ['Półmaraton', '21.0975 km', '13.11 mi', '99% Tlenowy (Dominacja Progu Mleczanowego)'],
+        ['Maraton', '42.195 km', '26.22 mi', '100% Tlenowy (Limit Zapasów Glikogenu)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Zalety Negative Split',
-      html: 'Bieg pokonany szybciej w drugiej połowie chroni zapasy glikogenu i zapobiega przedwczesnemu zakwaszeniu.',
+      html: 'Bieg pokonany nieco szybciej w drugiej połowie (negative split) chroni cenne zapasy glikogenu w wątrobie i mięśniach oraz zapobiega przedwczesnemu zakwaszeniu organizmu.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Skuteczny trening wytrzymałościowy świadomie rozdziela intensywność między różne strefy fizjologiczne. Spokojne biegi wspierają adaptację mitochondriów, tempo poprawia usuwanie mleczanu, a interwały zwiększają pułap VO2 max. Indywidualne zakresy tempa pomagają uniknąć przetrenowania i utrzymać właściwy bodziec treningowy.',
+      html: 'Skuteczny i zrównoważony trening wytrzymałościowy świadomie rozdziela intensywność między różne strefy fizjologiczne. Spokojne wybiegania wspierają adaptację mitochondriów i kapilaryzację, biegi progowe poprawiają usuwanie mleczanu, a interwały zwiększają pułap VO2 max i maksymalną prędkość tlenową (vVO2max). Indywidualne zakresy tempa pomagają uniknąć przetrenowania i utrzymać właściwy bodziec adaptacyjny.',
     },
   ],
   ui: {

@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Il calcolo del passo di corsa e la previsione dei tempi di gara richiedono la comprensione dei sistemi energetici metabolici. La prestazione di resistenza dipende dal VO2 max, dalla soglia anaerobica e dall economia di corsa.',
+      html: 'Il calcolo preciso del passo di corsa e la previsione affidabile dei tempi di gara richiedono una comprensione approfondita dei sistemi energetici metabolici umani. La prestazione di resistenza dipende direttamente da tre pilastri fondamentali: il massimo consumo di ossigeno (VO2 max), la soglia anaerobica (capacità di mantenere un alta intensità senza accumulo eccessivo di acido lattico) e l economia di corsa (efficienza biomeccanica del gesto).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Formulata dall ingegnere Peter Riegel nel 1977, la formula T2 = T1 * (D2 / D1)^1.06 modella il decadimento della velocità all aumentare della distanza. L esponente di fatica di 1.06 rispecchia il calo medio negli atleti allenati.',
+      html: 'Formulata dall ingegnere Peter Riegel nel 1977 e pubblicata sulla rivista statunitense Runner s World, la formula T2 = T1 * (D2 / D1)^1.06 modella matematicamente il progressivo decadimento della velocità all aumentare della distanza di gara. L esponente di fatica di 1.06 rispecchia il calo medio della capacità aerobica negli atleti ben allenati con un adeguato volume di chilometri settimanali.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'Sistema Metrico (min/km)',
-          description: 'Standard internazionale. Consente un controllo preciso degli intertempi ogni 1000 metri.',
+          description: 'Standard internazionale primario nelle gare di atletica e su strada. Consente un controllo preciso e rigoroso degli intertempi ogni 1000 metri.',
         },
         {
           title: 'Sistema Imperiale (min/miglio)',
-          description: 'Standard negli USA e nel Regno Unito. Un miglio equivale a 1,609344 chilometri.',
+          description: 'Standard diffuso negli Stati Uniti e nel Regno Unito. Un miglio terrestre equivale esattamente a 1,609344 chilometri.',
         },
       ],
     },
@@ -149,10 +149,10 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       type: 'table',
       headers: ['Gara', 'Distanza Metrica (km)', 'Distanza Imperiale (mi)', 'Sistema Energetico Principale'],
       rows: [
-        ['5K Corsa su Strada', '5.00 km', '3.11 mi', '90% Aerobico / 10% Anaerobico'],
-        ['10K Corsa su Strada', '10.00 km', '6.21 mi', '95% Aerobico / 5% Anaerobico'],
-        ['Mezza Maratona', '21.0975 km', '13.11 mi', '99% Aerobico (Soglia Anaerobica)'],
-        ['Maratona', '42.195 km', '26.22 mi', '100% Aerobico (Limitato da Glicogeno)'],
+        ['5K Corsa su Strada', '5.00 km', '3.11 mi', '90% Aerobico / 10% Anaerobico Glicolitico'],
+        ['10K Corsa su Strada', '10.00 km', '6.21 mi', '95% Aerobico / 5% Anaerobico Glicolitico'],
+        ['Mezza Maratona', '21.0975 km', '13.11 mi', '99% Aerobico (Dominante Soglia Anaerobica)'],
+        ['Maratona', '42.195 km', '26.22 mi', '100% Aerobico (Limitato dal Glicogeno Muscolare)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Efficacia del Negative Split',
-      html: 'Correre la seconda metà di gara leggermente più velocemente della prima preserva il glicogeno ed evita l acidosi precoce.',
+      html: 'Correre la seconda metà di gara leggermente più velocemente della prima (negative split) preserva le riserve di glicogeno epatico e muscolare ed evita un acidosi precoce.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Un allenamento di resistenza efficace distribuisce intenzionalmente l\'intensità tra diverse zone fisiologiche. Le corse facili favoriscono gli adattamenti mitocondriali, i ritmi sostenuti migliorano lo smaltimento del lattato e gli intervalli aumentano il limite del VO2 max. Ritmi personalizzati aiutano a evitare il sovrallenamento e a massimizzare lo stimolo adattivo.',
+      html: 'Un allenamento di resistenza efficace e bilanciato distribuisce intenzionalmente l intensità tra diverse zone fisiologiche ben definite. Le corse facili rigeneranti favoriscono gli adattamenti mitocondriali e la capillarizzazione, i ritmi sostenuti in soglia migliorano il riciclo e lo smaltimento del lattato, mentre gli intervalli veloci aumentano il limite del VO2 max e della velocità massima aerobica (VMA). Ritmi personalizzati aiutano ad evitare il sovrallenamento e massimizzano lo stimolo adattivo.',
     },
   ],
   ui: {

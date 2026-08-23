@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Kecepatan renang kritis mengukur hubungan linier antara jarak renang dan waktu. Metode ini memisahkan kapasitas aerobik murni dari kontribusi anaerobik awal.',
+      html: 'Kecepatan Renang Kritis (Critical Swim Speed, CSS) menentukan kemiringan linier presisi antara jarak renang yang ditempuh dan waktu yang dibutuhkan. Dikembangkan secara ilmiah oleh Wakayoshi et al., metode ini memisahkan kapasitas aerobik fungsional murni dari kontribusi energi anaerobik awal dengan mengurangkan usaha 200 meter dari tes 400 meter.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Waktu CSS Terukur',
-          description: 'Mengukur dorongan nyata di air termasuk efisiensi pembalikan dinding kolam.',
+          description: 'Mengukur dorongan nyata dan kecepatan efektif di air secara langsung termasuk hidrodinamika tubuh serta efisiensi teknik pembalikan dinding kolam.',
         },
         {
           title: 'Sensor Detak Jantung',
-          description: 'Mengalami keterlambatan respon bacaan saat berada di dalam air.',
+          description: 'Sering mengalami keterlambatan respon bacaan (cardiac drift), reflek inmersi air dingin, serta gangguan koneksi transmisi sensor saat berada di dalam air.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Nama Zona', 'Waktu Relatif CSS', 'Tujuan Utama', 'Istirahat Disarankan'],
       rows: [
-        ['Daya Tahan Aerobik', '104% dari waktu CSS', 'Efisiensi aerobik dasar', '10 hingga 15 detik'],
-        ['Ambang Batas CSS', '100% dari waktu CSS', 'Toleransi laktat dan waktu lomba', '15 hingga 20 detik'],
-        ['Kecepatan VO2 Max', '96% dari waktu CSS', 'Daya aerobik maksimal', '30 hingga 45 detik'],
+        ['Daya Tahan Aerobik', '104% dari waktu CSS', 'Pengembangan efisiensi aerobik dasar dan ekonomi renang', '10 hingga 15 detik'],
+        ['Ambang Batas CSS', '100% dari waktu CSS', 'Toleransi dan pembersihan laktat serta simulasi waktu lomba', '15 hingga 20 detik'],
+        ['Kecepatan VO2 Max', '96% dari waktu CSS', 'Peningkatan daya aerobik maksimal dan irama kayu tangan', '30 hingga 45 detik'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Tips Menjaga Target Kecepatan',
-      html: 'Patuhi target waktu pada setiap 50 meter secara ketat. Memulai 2 detik lebih cepat akan menyebabkan penurunan kecepatan dramatis.',
+      html: 'Patuhi target waktu pada setiap 50 meter secara ketat selama set latihan. Memulai 2 detik terlalu cepat pada 25 meter pertama akan menguras cadangan glikogen dan merusak target adaptasi aerobik.',
     },
   ],
   ui,

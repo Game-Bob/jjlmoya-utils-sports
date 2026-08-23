@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: '临界游泳速度 CSS 代表游泳距离与时间线性关系的斜率。通过从400米成绩中减去200米成绩，可以剔除无氧能力的干扰。',
+      html: '临界游泳速度（Critical Swim Speed, CSS）代表游泳距离与所需时间之间线性关系的精准斜率。该科学方法由Wakayoshi等人创立，通过从400米全力测试成绩中扣除200米全力测试成绩中的无氧能量储备成分，从而精确分离出有氧代谢能力。',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'CSS 实测配速',
-          description: '测量水中实际滑行速度，包含转身蹬壁效能。',
+          description: '高精度测量水中实际有效滑行推进速度，直接涵盖转身蹬壁效能、流线型姿态与划水效率。',
         },
         {
           title: '水下心率传感器',
-          description: '受水温与心率漂移影响，数据响应通常存在滞后。',
+          description: '受到心率漂移、冷水潜水反射以及强力划水时传感器佩戴稳固性的影响，数据响应通常存在明显滞后。',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['区间名称', '相对CSS配速比例', '主要训练目的', '推荐休息时间'],
       rows: [
-        ['有氧耐力', 'CSS时间的104%', '基础有氧能力', '10秒至15秒'],
-        ['CSS 阈值', '100% (与CSS时间相同)', '乳酸耐受与比赛配速', '15秒至20秒'],
-        ['VO2 Max 速度', 'CSS时间的96%', '最大摄氧功率', '30秒至45秒'],
+        ['有氧耐力', 'CSS时间的104%', '基础有氧能力发展、脂肪氧化与划水经济性', '10秒至15秒'],
+        ['CSS 阈值', '100% (与CSS时间相同)', '乳酸清除能力、门槛耐力与比赛专项配速', '15秒至20秒'],
+        ['VO2 Max 速度', 'CSS时间的96%', '最大摄氧功率与高划频划水能力', '30秒至45秒'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: '保持目标配速的技巧',
-      html: '严格遵守前50米的分段计时点。如果前50米快了2秒，后半程速度将会出现断崖式下降。',
+      html: '在组段练习中严格遵守每50米的分段计时点。如果前25米盲目冲刺快了2秒，会过早耗尽肌肉糖原并破坏预期的有氧训练刺激效果。',
     },
   ],
   ui,

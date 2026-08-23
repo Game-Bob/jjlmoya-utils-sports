@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Krytyczna prędkość pływania określa nachylenie prostej zależności dystansu od czasu. Odejmując czas z 200m od czasu z 400m eliminuje się udział energii beztlenowej.',
+      html: 'Krytyczna Prędkość Pływania (Critical Swim Speed, CSS) określa dokładne nachylenie prostej liniowej zależności pokonanego dystansu od czasu. Opracowana naukowo przez Wakayoshi et al., metoda ta precyzyjnie izoluje funkcjonalną wydolność tlenową poprzez odjęcie beztlenowej składowej z testu 200m od wyniku 400m.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Tempo Rzeczywiste CSS',
-          description: 'Mierzy realną prędkość płynięcia z uwzględnieniem nawrotów i poślizgu pod wodą.',
+          description: 'Mierzy z wysoką dokładnością realną prędkość płynięcia w wodzie z bezpośrednim uwzględnieniem jakości nawrotów, odbicia i pozycji opływowej.',
         },
         {
           title: 'Czujniki Tetna w Wodzie',
-          description: 'Często pokazują opóźnione odczyty i mają problemy ze szczelnością.',
+          description: 'Często pokazują opóźnione odczyty wywołane dryfem tętna, odruchem nurkowania w chłodnej wodzie oraz niestabilnością połączenia sensorów.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Nazwa Strefy', 'Tempo Wzgledem CSS', 'Glowny Cel Treningowy', 'Zalecana Przerwa'],
       rows: [
-        ['Wytrzymalosc Tlenowa', '104% czasu CSS', 'Podstawowa wydolność tlenowa', '10 do 15 sekund'],
-        ['Prog CSS', '100% czasu CSS', 'Tolerancja mleczanowa i tempo startowe', '15 do 20 sekund'],
-        ['Predkosc VO2 Max', '96% czasu CSS', 'Maksymalny pobór tlenu', '30 do 45 sekund'],
+        ['Wytrzymalosc Tlenowa', '104% czasu CSS', 'Podstawowa wydolność tlenowa, spalanie tłuszczów i ekonomia ruchu', '10 do 15 sekund'],
+        ['Prog CSS', '100% czasu CSS', 'Tolerancja i usuwanie mleczanu oraz tempo startowe', '15 do 20 sekund'],
+        ['Predkosc VO2 Max', '96% czasu CSS', 'Maksymalny pobór tlenu i praca z wysoką częstotliwością ramion', '30 do 45 sekund'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Wskazowka Utrzymania Tempa',
-      html: 'Rygorystycznie pilnuj międzyczasu na każdym 50-metrowym odcinku. Zbytnie przyspieszenie na początku skutkuje załamaniem tempa.',
+      html: 'Rygorystycznie pilnuj miedzyczasu na kazdym 50-metrowym odcinku serii. Zbytnie przyspieszenie o 2 sekundy na pierwszych 25m wyczerpuje glikogen i niszczy docelowy bodziec tlenowy.',
     },
   ],
   ui,

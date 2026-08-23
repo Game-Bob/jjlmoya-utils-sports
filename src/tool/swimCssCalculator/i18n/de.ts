@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Die kritische Schwimmgeschwindigkeit definiert den Übergang zwischen rein aerober Energiebereitstellung und kumulativer Laktatakkumulation im Muskelgewebe.',
+      html: 'Die kritische Schwimmgeschwindigkeit (Critical Swim Speed, CSS) definiert die theoretische maximale Schwimmgeschwindigkeit, die ohne stetige Akkumulation von Laktat im Muskelgewebe über längere Distanzen aufrechterhalten werden kann. Sie markiert die funktionelle Schwimmschwelle zwischen rein aerober Energiebereitstellung und zunehmend anaerober Stoffwechsellage.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Vortriebsorientiertes CSS Tempo',
-          description: 'Erfasst die reale Wassergeschwindigkeit inklusive Wenden und Gleitphasen ohne Messverzögerung.',
+          description: 'Erfasst die reale effektive Wassergeschwindigkeit inklusive Wenden und Gleitphasen präzise ohne Messverzögerung oder äußere Störfaktoren.',
         },
         {
           title: 'Sensorbasierte Herzfrequenzmessung',
-          description: 'Unterliegt im Wasser oft Messfehlern und reagiert träge auf Geschwindigkeitsänderungen.',
+          description: 'Unterliegt im kühlen Wasser oft optischen Messfehlern, reagiert zeitversetzt auf Intervallstarts und berücksichtigt Verschlechterungen der Wasserlage nicht.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Zonenbezeichnung', 'Relativtempo zu CSS', 'Physiologisches Hauptziel', 'Empfohlene Serienpause'],
       rows: [
-        ['Aerobe Ausdauer', '104% der CSS Zeit', 'Grundlagenausdauer und Fettverbrennung', '10 bis 15 Sekunden'],
-        ['CSS Schwelle', '100% der CSS Zeit', 'Laktatkompensation und Schwellenleistung', '15 bis 20 Sekunden'],
-        ['VO2 Max Geschwindigkeit', '96% der CSS Zeit', 'Maximale Sauerstoffaufnahme und Schnelligkeit', '30 bis 45 Sekunden'],
+        ['Aerobe Ausdauer', '104% der CSS Zeit', 'Grundlagenausdauer, Fettverbrennung und Ökonomisierung', '10 bis 15 Sekunden'],
+        ['CSS Schwelle', '100% der CSS Zeit', 'Laktatkompensation, Schwellenleistung und Wettkampftempo', '15 bis 20 Sekunden'],
+        ['VO2 Max Geschwindigkeit', '96% der CSS Zeit', 'Maximale Sauerstoffaufnahme, Kurbelfrequenz und Schnelligkeit', '30 bis 45 Sekunden'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Tipp zur Durchführung von Schwellenserien',
-      html: 'Halten Sie die berechnete Zielzeit auf jedem 50m Durchgang exakt ein. Ein Überpace auf den ersten Metern zerstört den aeroben Trainingsreiz.',
+      html: 'Halten Sie die berechnete Zielzeit auf jedem einzelnen 50m Durchgang möglichst exakt ein. Ein Überpace auf den ersten 25 Metern zerstört den angestrebten aeroben Schwellenreiz und führt zu vorzeitiger Übersäuerung.',
     },
   ],
   ui,

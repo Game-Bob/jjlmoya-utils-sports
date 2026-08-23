@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Att beräkna löpartempo och förutsäga lopptider kräver förståelse för metabola energisystem. Uthållighet styrs av VO2-max, laktattröskel och löpekonomi.',
+      html: 'Att noggrant beräkna löpartempo och tillförlitligt förutsäga lopptider kräver en djupgående förståelse för kroppens metabola energisystem. Uthållighet och prestation vid långdistanslöpning styrs direkt av tre huvudsakliga fysiologiska pelare: maximal syreupptagningsförmåga (VO2-max), laktattröskel (förmågan att hålla hög fart utan betydande mjölksyreansamling) och löpekonomi (rörelseeffektivitet).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Formeln T2 = T1 * (D2 / D1)^1.06 av Peter Riegel (1977) modellerar farttappet när distansen ökar. Exponenten 1,06 motsvarar genomsnittligt farttapp hos vältränade löpare.',
+      html: 'Formeln T2 = T1 * (D2 / D1)^1.06 utvecklades av den amerikanske ingenjören Peter Riegel 1977 och publicerades i tidskriften Runner s World. Den modellerar matematiskt det naturliga farttappet när distansen ökar. Den standardiserade utmattningsexponenten 1,06 motsvarar det genomsnittliga farttappet hos vältränade löpare med tillräcklig veckovolym.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'Metriskt System (min/km)',
-          description: 'Standard i Europa. Ger exakt kontroll över kilometertider.',
+          description: 'Internationell standard i friidrott och gatulopp i Europa. Ger mycket exakt kontroll över kilometertider och mellantider per 1000 meter.',
         },
         {
           title: 'Imperialt System (min/mile)',
-          description: 'Standard i USA och Storbritannien. En mile motsvarar 1,609344 km.',
+          description: 'Standard i USA och Storbritannien. En landmile motsvarar exakt 1,609344 kilometer.',
         },
       ],
     },
@@ -149,10 +149,10 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       type: 'table',
       headers: ['Lopp', 'Metrisk Distans (km)', 'Imperial Distans (mi)', 'Huvudsakligt Energisystem'],
       rows: [
-        ['5K Gatu-lopp', '5.00 km', '3.11 mi', '90% Aerobt / 10% Anaerobt'],
-        ['10K Gatu-lopp', '10.00 km', '6.21 mi', '95% Aerobt / 5% Anaerobt'],
-        ['Halvmaraton', '21.0975 km', '13.11 mi', '99% Aerobt (Laktattröskel)'],
-        ['Maraton', '42.195 km', '26.22 mi', '100% Aerobt (Glykogenbegränsat)'],
+        ['5K Gatu-lopp', '5.00 km', '3.11 mi', '90% Aerobt / 10% Anaerobt Glykolytiskt'],
+        ['10K Gatu-lopp', '10.00 km', '6.21 mi', '95% Aerobt / 5% Anaerobt Glykolytiskt'],
+        ['Halvmaraton', '21.0975 km', '13.11 mi', '99% Aerobt (Laktattröskel Dominant)'],
+        ['Maraton', '42.195 km', '26.22 mi', '100% Aerobt (Glykogenlager Begränsat)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Fördelen med Negative Split',
-      html: 'Att springa andra halvan något snabbare sparar glykogen och förhindrar tidig mjölksyra.',
+      html: 'Att springa den andra halvan av loppet något snabbare (negative split) sparar värdefulla glykogenlager i lever och muskler samt förhindrar tidig mjölksyreansamling.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Effektiv uthållighetsträning fördelar medvetet intensiteten mellan flera fysiologiska zoner. Lugna pass stödjer mitokondriell anpassning, tempolöpning förbättrar laktatnedbrytningen och intervaller höjer VO2 max-taket. Personliga fartintervall minskar risken för överträning och ger rätt träningsstimulans.',
+      html: 'Effektiv och balanserad uthållighetsträning fördelar medvetet intensiteten mellan flera fysiologiska zoner. Lugna distanspass stödjer mitokondriell anpassning och kapillarisering, tempolöpning förbättrar laktatnedbrytningen och intervaller höjer VO2 max-taket och den maximala aeroba farten (vVO2max). Personliga fartintervall minskar risken för överträning och ger rätt träningsstimulans.',
     },
   ],
   ui: {

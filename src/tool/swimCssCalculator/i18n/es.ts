@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'La Velocidad Critica de Natacion representa la pendiente de la relación lineal entre la distancia nadada y el tiempo empleado. Desarrollada por Wakayoshi, esta métrica aísla la capacidad aeróbica restando el esfuerzo de 200 metros al de 400 metros.',
+      html: 'La Velocidad Crítica de Natación (Critical Swim Speed, CSS) representa la pendiente exacta de la relación lineal entre la distancia nadada y el tiempo empleado en su ejecución. Desarrollada originalmente por Wakayoshi et al., esta métrica matemática aísla con alta precisión la capacidad aeróbica funcional restando el esfuerzo anaeróbico de 200 metros al de 400 metros.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Ritmo Directo en Agua CSS',
-          description: 'Mide la velocidad real de desplazamiento incluyendo la eficacia de virajes y la hidrodinámica.',
+          description: 'Mide la velocidad real y efectiva de desplazamiento hidráulico incluyendo la eficacia biomecánica de los virajes, volteos y posición hidrodinámica.',
         },
         {
           title: 'Monitorizacion Cardiaca en Agua',
-          description: 'Sufre retardo por derivada cardiaca y problemas de estanqueidad en los sensores.',
+          description: 'Sufre retardo fisiológico por deriva cardiaca, reflejo de inmersión y fluctuaciones en la transmisión de los sensores en medio acuático.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Zona de Nado', 'Ritmo Relativo a CSS', 'Objetivo Principal', 'Descanso Sugerido'],
       rows: [
-        ['Resistencia Aeróbica', '104% del tiempo CSS', 'Eficiencia metabólica aeróbica', '10 a 15 segundos'],
-        ['Umbral CSS', '100% del tiempo CSS', 'Aclarado de lactato y ritmo de prueba', '15 a 20 segundos'],
-        ['Velocidad VO2 Max', '96% del tiempo CSS', 'Potencia aeróbica máxima', '30 a 45 segundos'],
+        ['Resistencia Aeróbica', '104% del tiempo CSS', 'Eficiencia metabólica aeróbica y volumen de nado', '10 a 15 segundos'],
+        ['Umbral CSS', '100% del tiempo CSS', 'Aclarado de lactato y sostenimiento del ritmo de prueba', '15 a 20 segundos'],
+        ['Velocidad VO2 Max', '96% del tiempo CSS', 'Potencia aeróbica máxima y capacidad neuromuscular', '30 a 45 segundos'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Consejo para Mantener el Ritmo Objetivo',
-      html: 'Mantén de forma estricta el tiempo de paso en cada 50 metros. Salir 2 segundos más rápido al inicio agota los depósitos glucogénicos prematuramente.',
+      html: 'Mantén de forma estricta el tiempo de paso en cada 50 metros de la serie. Salir 2 segundos más rápido al inicio agota los depósitos glucogénicos prematuramente y altera la adaptación aeróbica buscada.',
     },
   ],
   ui,

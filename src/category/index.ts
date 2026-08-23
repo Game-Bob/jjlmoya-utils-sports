@@ -12,6 +12,7 @@ import { baseballScoreKeeper } from '../tool/baseballScoreKeeper/entry';
 import { penaltyShootout } from '../tool/penaltyShootout/entry';
 import { swimCssCalculator } from '../tool/swimCssCalculator/entry';
 import { vo2MaxCalculator } from '../tool/vo2MaxCalculator/entry';
+import { roundRobinLeagueManager } from '../tool/roundRobinLeagueManager/entry';
 
 export const sportsCategory: SportsCategoryEntry = {
   icon: 'mdi:soccer',
@@ -29,6 +30,7 @@ export const sportsCategory: SportsCategoryEntry = {
     penaltyShootout,
     swimCssCalculator,
     vo2MaxCalculator,
+    roundRobinLeagueManager,
   ] as unknown as SportsToolEntry<Record<string, string>>[],
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),

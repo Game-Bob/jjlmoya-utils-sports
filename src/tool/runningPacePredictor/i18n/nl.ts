@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Het berekenen van hardlooptempo en het voorspellen van racetijden vereist inzicht in metabole energiesystemen. Duurprestaties worden bepaald door de maximale zuurstofopname (VO2 max), anaërobe drempel en loop-efficiëntie.',
+      html: 'Het nauwkeurig berekenen van hardlooptempo en het betrouwbaar voorspellen van racetijden vereist diepgaand inzicht in metabole energiesystemen. Duurprestaties worden direct bepaald door drie fysiologische pijlers: de maximale zuurstofopname (VO2 max), de anaërobe drempel (het vermogen om een hoge intensiteit vol te houden zonder overmatige melkzuurophoping) en de loopefficiëntie (bewegingseconomie).',
     },
     {
       type: 'stats',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'De in 1977 door ingenieur Peter Riegel ontwikkelde formule T2 = T1 * (D2 / D1)^1.06 beschrijft de snelheidsafname naarmate de afstand toeneemt. De exponent 1,06 staat voor de gemiddelde aerobe vermoeidheid bij getrainde lopers.',
+      html: 'De in 1977 door ingenieur Peter Riegel ontwikkelde en in Runner s World gepubliceerde formule T2 = T1 * (D2 / D1)^1.06 beschrijft wiskundig de geleidelijke snelheidsafname naarmate de af te leggen afstand toeneemt. De standaard vermoeidheidsexponent van 1,06 staat voor het gemiddelde verlies aan aerobe capaciteit bij goed getrainde lopers met voldoende wekelijks kwaliteitsvolume.',
     },
     {
       type: 'title',
@@ -132,11 +132,11 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
       items: [
         {
           title: 'Metriek Systeem (min/km)',
-          description: 'De standaard in Europese wegwedstrijden. Zorgt voor nauwkeurige tussentijden per 1000 meter.',
+          description: 'De internationale standaard in atletiek en wegwedstrijden. Zorgt voor uiterst nauwkeurige controle van tussentijden per 1000 meter.',
         },
         {
           title: 'Imperiaal Systeem (min/mijl)',
-          description: 'De standaard in de VS en het VK. Één mijl is gelijk aan 1,609344 kilometer.',
+          description: 'De gebruikelijke standaard in de VS en het VK. Één landmijl is exact gelijk aan 1,609344 kilometer.',
         },
       ],
     },
@@ -152,7 +152,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
         ['5K Wegwedstrijd', '5.00 km', '3.11 mi', '90% Aëroob / 10% Anaëroob Glycolytisch'],
         ['10K Wegwedstrijd', '10.00 km', '6.21 mi', '95% Aëroob / 5% Anaëroob Glycolytisch'],
         ['Halve Marathon', '21.0975 km', '13.11 mi', '99% Aëroob (Lactaatdrempel Dominant)'],
-        ['Hele Marathon', '42.195 km', '26.22 mi', '100% Aëroob (Beperkt door Glycogeen)'],
+        ['Hele Marathon', '42.195 km', '26.22 mi', '100% Aëroob (Beperkt door Glycogeenvoorraad)'],
       ],
     },
     {
@@ -163,7 +163,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     {
       type: 'tip',
       title: 'Het Nut van een Negative Split',
-      html: 'De tweede helft van een wedstrijd iets sneller lopen dan de eerste helft spaart de glycogeenvoorraad en voorkomt vroege verzuring.',
+      html: 'De tweede helft van een wedstrijd iets sneller lopen dan de eerste helft (negative split) spaart waardevolle glycogeenvoorraden in spieren en lever en voorkomt vroege spierverzuring.',
     },
     {
       type: 'title',
@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<RunningPacePredictorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Effectieve duurtraining verdeelt de intensiteit bewust over verschillende fysiologische zones. Rustige duurlopen stimuleren mitochondriale aanpassing, tempolopen verbeteren de lactaatverwerking en intervallen verhogen de VO2max. Persoonlijke tempobereiken helpen overbelasting te voorkomen en leveren tegelijk de juiste trainingsprikkel.',
+      html: 'Effectieve en gebalanceerde duurtraining verdeelt de intensiteit bewust over verschillende fysiologische zones. Rustige herstelduurlopen stimuleren mitochondriale aanpassing en capillarisatie, tempolopen op de drempel verbeteren de lactaatverwerking, en kortere of langere intervallen verhogen de VO2max en de maximale aerobe snelheid (MAS). Gepersonaliseerde tempobereiken helpen overbelasting te voorkomen en leveren de optimale trainingsprikkel.',
     },
   ],
   ui: {

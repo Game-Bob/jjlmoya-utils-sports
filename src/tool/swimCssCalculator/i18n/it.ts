@@ -181,7 +181,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'La Velocità Critica di Nuoto definisce la pendenza della relazione tra distanza e tempo. Consente di isolare la soglia aerobica sottraendo lo sforzo dei 200m a quello dei 400m.',
+      html: 'La Velocità Critica di Nuoto (Critical Swim Speed, CSS) definisce la pendenza esatta della relazione lineare tra la distanza percorsa e il tempo impiegato. Sviluppata scientificamente da Wakayoshi e collaboratori, questa metrica isola la capacità aerobica funzionale sottraendo la quota di energia anaerobica di un test su 200 metri a quella su 400 metri.',
     },
     {
       type: 'stats',
@@ -204,11 +204,11 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       items: [
         {
           title: 'Passo CSS in Acqua',
-          description: 'Misura la velocità reale di scivolamento tenendo conto dell efficienza di virata.',
+          description: 'Misura con alta precisione la velocità reale di scivolamento idrodinamico tenendo conto dell efficienza della bracciata e delle virate a parete.',
         },
         {
           title: 'Sensori Frequenza Cardiaca',
-          description: 'Mostrano ritardi nella lettura e problemi di tenuta durante le virate veloci.',
+          description: 'Mostrano ritardi nella lettura legati alla deriva cardiaca, al riflesso d immersione in acqua e a problemi di stabilità dei sensori.',
         },
       ],
     },
@@ -221,9 +221,9 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
       type: 'table',
       headers: ['Nome Zona', 'Passo Relativo a CSS', 'Obiettivo Principale', 'Pausa Consigliata'],
       rows: [
-        ['Resistenza Aerobica', '104% del tempo CSS', 'Efficienza metabolica aerobica', '10 - 15 secondi'],
-        ['Soglia CSS', '100% del tempo CSS', 'Capacita di smaltimento lattato', '15 - 20 secondi'],
-        ['Velocita VO2 Max', '96% del tempo CSS', 'Potenza aerobica massima', '30 - 45 secondi'],
+        ['Resistenza Aerobica', '104% del tempo CSS', 'Efficienza metabolica aerobica di base ed economia di bracciata', '10 - 15 secondi'],
+        ['Soglia CSS', '100% del tempo CSS', 'Capacità di smaltimento del lattato e ritmo di gara', '15 - 20 secondi'],
+        ['Velocita VO2 Max', '96% del tempo CSS', 'Potenza aerobica massima e frequenza muscolare', '30 - 45 secondi'],
       ],
     },
     {
@@ -234,7 +234,7 @@ export const content: ToolLocaleContent<SwimCssCalculatorUI> = {
     {
       type: 'tip',
       title: 'Consiglio per Mantenere il Passo Target',
-      html: 'Rispetta in modo rigoroso il tempo di passaggio ai 50 metri. Partire troppo velocemente compromette l efficacia della serie.',
+      html: 'Rispetta in modo rigoroso il tempo di passaggio target ai 50 metri. Partire 2 secondi troppo velocemente nei primi 25m consuma prematuramente il glicogeno e compromette l efficacia della serie.',
     },
   ],
   ui,
