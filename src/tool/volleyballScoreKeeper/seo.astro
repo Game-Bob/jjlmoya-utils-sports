@@ -1,14 +1,15 @@
 ---
+import { SEORenderer } from '@jjlmoya/utils-shared';
+import { volleyballScoreKeeper } from './entry';
+import type { KnownLocale } from '../../types';
+
+interface Props {
+  locale?: KnownLocale;
+}
+
+const { locale = 'es' } = Astro.props;
+const loader = volleyballScoreKeeper.i18n[locale as KnownLocale] ?? volleyballScoreKeeper.i18n.es ?? volleyballScoreKeeper.i18n.en;
+const content = loader ? await loader() : null;
 ---
 
-<div class="volleyball-seo-content">
-  <p>
-    An interactive official FIVB indoor volleyball scoreboard and tactical rotation tracker designed for players, coaches, referees, and scorekeepers. Track rally scoring, set points, side-outs, clockwise player rotations, timeouts, and substitutions with precision and real-time visual feedback.
-  </p>
-  <h3>FIVB Volleyball Scoring and Rotation Rules</h3>
-  <ul>
-    <li><strong>Rally Point System:</strong> Standard sets are played to 25 points with a mandatory 2-point advantage. If the match goes to a deciding 5th set (or 3rd set in best-of-3 format), it is played to 15 points with a 2-point advantage.</li>
-    <li><strong>Side-Out and Rotation:</strong> When the receiving team wins a rally, they gain the serve and their six court players must rotate one position clockwise (Position 2 moves to Position 1 to serve).</li>
-    <li><strong>Team Match Limits:</strong> Each team is permitted a maximum of two 30-second timeouts and six player substitutions per set.</li>
-  </ul>
-</div>
+{content?.seo && content.seo.length > 0 && <SEORenderer content={{ locale, sections: content.seo }} />}

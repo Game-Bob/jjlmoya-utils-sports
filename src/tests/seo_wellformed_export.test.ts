@@ -30,18 +30,26 @@ describe('SEO Component Wellformed Export', () => {
   seoFiles.forEach((file) => {
     const relativePath = relative(process.cwd(), file);
 
-    it(`${relativePath} should dynamically load SEO sections if props.sections is missing`, () => {
+    it(`${relativePath} should dynamically load SEO sections and use SEORenderer`, () => {
       const content = readFileSync(file, 'utf-8');
+
+      const usesSeoRenderer =
+        content.includes('@jjlmoya/utils-shared') &&
+        (content.includes('SEORenderer') || content.includes('SEOArticle'));
 
       const acquiresDynamicContent =
         content.includes('.i18n') ||
-        content.includes('loader(') ||
+        content.includes('loader') ||
         content.includes('await loader') ||
-        content.includes('.seo') ||
-        content.includes('content');
+        content.includes('.seo');
 
       const isBrokenPattern =
         /sections\s*=\s*\[\s*\]/.test(content) && !acquiresDynamicContent;
+
+      expect(
+        usesSeoRenderer,
+        `File "${relativePath}" does not import or use SEORenderer from @jjlmoya/utils-shared.`,
+      ).toBe(true);
 
       expect(
         isBrokenPattern,

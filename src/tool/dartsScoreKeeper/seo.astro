@@ -1,4 +1,15 @@
 ---
+import { SEORenderer } from '@jjlmoya/utils-shared';
+import { dartsScoreKeeper } from './entry';
+import type { KnownLocale } from '../../types';
+
+interface Props {
+  locale?: KnownLocale;
+}
+
+const { locale = 'es' } = Astro.props;
+const loader = dartsScoreKeeper.i18n[locale as KnownLocale] ?? dartsScoreKeeper.i18n.es ?? dartsScoreKeeper.i18n.en;
+const content = loader ? await loader() : null;
 ---
 
-<meta name="robots" content="index, follow" />
+{content?.seo && content.seo.length > 0 && <SEORenderer content={{ locale, sections: content.seo }} />}
