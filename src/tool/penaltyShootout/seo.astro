@@ -1,5 +1,15 @@
 ---
+import { SEORenderer } from '@jjlmoya/utils-shared';
+import { penaltyShootout } from './entry';
+import type { KnownLocale } from '../../types';
+
+interface Props {
+  locale?: KnownLocale;
+}
+
+const { locale = 'es' } = Astro.props;
+const loader = penaltyShootout.i18n[locale as KnownLocale] ?? penaltyShootout.i18n.es ?? penaltyShootout.i18n.en;
+const content = loader ? await loader() : null;
 ---
 
-<div class="ps-seo-container">
-</div>
+{content?.seo && content.seo.length > 0 && <SEORenderer content={{ locale, sections: content.seo }} />}
