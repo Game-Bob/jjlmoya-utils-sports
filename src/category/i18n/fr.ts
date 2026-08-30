@@ -74,6 +74,19 @@ export const content: CategoryLocaleContent = {
       html: 'Votre cœur est l\'indicateur le plus précis de l\'effort. La fréquence cardiaque maximale (FCM) varie selon l\'âge, la génétique et la capacité cardiovasculaire. La calculer correctement permet de s\'entraîner dans des zones spécifiques: zone aérobie (60-70% FCM) pour l\'endurance de base, zone anaérobie (80-90% FCM) pour l\'explosivité, zone VO2 max (95-100%) pour la capacité cardio-respiratoire.',
     },
     {
+      type: 'paragraph',
+      html: 'Une erreur fréquente consiste à s\'entraîner trop intensément trop souvent. La plupart des séances peuvent rester à faible intensité pour construire une base solide; les séances rapides doivent avoir un objectif clair et laisser du temps à la récupération.',
+    },
+    {
+      type: 'title',
+      text: 'Périodisation: planifier les cycles d\'entraînement',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Un entraînement structuré répartit les périodes de préparation, de compétition et de récupération. Les outils de suivi aident à visualiser la charge et les objectifs, mais ne remplacent pas l\'avis d\'un professionnel lorsque la santé ou la performance est en jeu.',
+    },
+    {
       type: 'title',
       text: 'Le Futur du Sport Connecté en 2026',
       level: 2,

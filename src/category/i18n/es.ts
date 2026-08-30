@@ -26,7 +26,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Organizar una competición, ya sea un torneo de pádel local o un evento de eSports, requiere una estructura clara. Nuestro <strong>organizador de torneos</strong> automatiza la creación de cuadros de enfrentamientos, eliminando errores manuales y garantizando una gestión justa de las eliminatorias.',
+      html: 'Organizar una competición, ya sea un torneo de pádel local o un evento de eSports, requiere una estructura clara. Nuestro <strong>organizador de torneos</strong> automatiza la creación de cuadros de enfrentamientos, reduce errores manuales y facilita una gestión clara de las eliminatorias.',
     },
     {
       type: 'paragraph',
