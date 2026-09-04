@@ -1,0 +1,1446 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-04T06:44:15.510Z",
+  "pages": {
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/baseball-spielstand/": {
+      "hash": "781592a56d9e8246969984e442415a247235ba12b3f4d9997dcf23d74acdc7e2",
+      "route": "/de/werkzeuge/kategorien/sport/baseball-spielstand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/basketball-anzeigetafel/": {
+      "hash": "26234b9f04fd20bf61a97204570556f84736c9a11fe574ca992ee485af387a85",
+      "route": "/de/werkzeuge/kategorien/sport/basketball-anzeigetafel/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/beachvolleyball-spielstand/": {
+      "hash": "83814c3f40b68fad4845f7a14cb42253edf63eccc0aba6b85e5081f6d50c1fd0",
+      "route": "/de/werkzeuge/kategorien/sport/beachvolleyball-spielstand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/css-schwimmrechner/": {
+      "hash": "40cea094cec91b388e10815253562b4a1d3c8543c2dd9bc9bf17d944fc68bf1a",
+      "route": "/de/werkzeuge/kategorien/sport/css-schwimmrechner/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/darts-punktestand/": {
+      "hash": "29755040e40ce70f0402586ffa8cd77c80f2131e5588ff782aaf57162f301b4b",
+      "route": "/de/werkzeuge/kategorien/sport/darts-punktestand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/elfmeterschiessen-rechner/": {
+      "hash": "0f19d854ca54c58eaea01b957d8186b59daa7c6436c648c71703d47e01548b1b",
+      "route": "/de/werkzeuge/kategorien/sport/elfmeterschiessen-rechner/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/elo-rechner/": {
+      "hash": "d38520fa37a29c858394f83a57272250381a690d0d5d5dfd75f45d972fab578d",
+      "route": "/de/werkzeuge/kategorien/sport/elo-rechner/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/fitness-tracker-online/": {
+      "hash": "bbf787ae9c4f7dc863ff54859a5bd18746be72ee1b75d3f723c911eb31998abf",
+      "route": "/de/werkzeuge/kategorien/sport/fitness-tracker-online/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/fussball-spielstand/": {
+      "hash": "802e331af4de13b0a1018664ad90378a4ec8506e3f6de4506ea48d7158242718",
+      "route": "/de/werkzeuge/kategorien/sport/fussball-spielstand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/": {
+      "hash": "baba5dea836a80c948aa977d170bc7a56cf9158bb3459cc6e6740230a3d9a1a9",
+      "route": "/de/werkzeuge/kategorien/sport/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/jeder-gegen-jeden-liga-manager/": {
+      "hash": "662e739e9e8e9496c02d8327dbbe14463a6da5a1509a55705586cf33f79ca6e8",
+      "route": "/de/werkzeuge/kategorien/sport/jeder-gegen-jeden-liga-manager/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/kalorienverbrauch-sport-rechner/": {
+      "hash": "367ed36a6ded95f5b0c5993f49d7d799d09d326a6aabddf56ee04052d093fe51",
+      "route": "/de/werkzeuge/kategorien/sport/kalorienverbrauch-sport-rechner/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/lauf-tempo-rechner/": {
+      "hash": "b7a0e53b4de813943f7b408aed703b5cf352599c185692575ab401bb117b9dad",
+      "route": "/de/werkzeuge/kategorien/sport/lauf-tempo-rechner/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/padel-spielstand/": {
+      "hash": "d67314e590056f75c0d079b69a82d4bf1aac616fac000896c10aacbe8c43d719",
+      "route": "/de/werkzeuge/kategorien/sport/padel-spielstand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/reaktionstest/": {
+      "hash": "10568fd34005a891b7e5b6265634497b9f9422a07536f4d3c5f7971e3787096e",
+      "route": "/de/werkzeuge/kategorien/sport/reaktionstest/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/rugby-punktetafel/": {
+      "hash": "7d358679612c56f7088275e6433194291a044b3471ae2faf8d5f32d9f7361360",
+      "route": "/de/werkzeuge/kategorien/sport/rugby-punktetafel/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/snooker-frame-tracker-break-rechner/": {
+      "hash": "bfb12fbe544f80034a0c366f36305b660018698e759fda47f3d53d2076a7e7a2",
+      "route": "/de/werkzeuge/kategorien/sport/snooker-frame-tracker-break-rechner/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/sport-punktestand/": {
+      "hash": "f8d663a80a1132523c7721df9ca9fc5d6ed1d7f424a3da68d72dd4eaff9097c8",
+      "route": "/de/werkzeuge/kategorien/sport/sport-punktestand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/streetball-3x3-spielstand/": {
+      "hash": "a9d4ed648928faada396bc66964b2e7cd35f1d5043f052d3f6e54d9d8bebc4f3",
+      "route": "/de/werkzeuge/kategorien/sport/streetball-3x3-spielstand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/tennis-spielstand/": {
+      "hash": "bc5638670e5b14fc906d1f13491a7a3ec79553fdcb0054d16df250f12a1c2286",
+      "route": "/de/werkzeuge/kategorien/sport/tennis-spielstand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/tischtennis-punktestand/": {
+      "hash": "0c2b99557a8dfa792e105b1b283220f391535e6b1bb203346b8851c387b53613",
+      "route": "/de/werkzeuge/kategorien/sport/tischtennis-punktestand/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/turnier-planer/": {
+      "hash": "fee8e753d44b6013a97a0b9cc8ded60b8f4aae3b81c7dc3e3fbcb09a665d0000",
+      "route": "/de/werkzeuge/kategorien/sport/turnier-planer/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/vo2-max-rechner/": {
+      "hash": "5337dfa936f1089d4b537007a9c454bb3db753a819b2c4183d75fa5361e0678a",
+      "route": "/de/werkzeuge/kategorien/sport/vo2-max-rechner/"
+    },
+    "https://www.gamebob.dev/de/werkzeuge/kategorien/sport/volleyball-spielstand/": {
+      "hash": "8830b5bba79507acfa38db841f8fdb23db3fc4510220c9ed66f56379b7133c1c",
+      "route": "/de/werkzeuge/kategorien/sport/volleyball-spielstand/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/baseball-scorekeeper/": {
+      "hash": "0a1049d891c632645d6827e3e83f4bd0befe1f7c64f43232c8b5bb0ee80a4e4f",
+      "route": "/en/utilities/categories/sports/baseball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/basketball-scoreboard/": {
+      "hash": "ce99e83f6c7cc38cea490c77ba58929d46f9d46fef3eef7a272fa1810c9bcc8d",
+      "route": "/en/utilities/categories/sports/basketball-scoreboard/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/beach-volleyball-scorekeeper/": {
+      "hash": "d37b55a18c9c894231acae93819ca262417b3599cd30940e1ca834d2691344e3",
+      "route": "/en/utilities/categories/sports/beach-volleyball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/calories-burned-by-exercise-calculator/": {
+      "hash": "60c1736a20e88f582d35741f507d2818e8e8a4606611e8e2a0a96bd08b3eaa4f",
+      "route": "/en/utilities/categories/sports/calories-burned-by-exercise-calculator/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/css-swim-calculator/": {
+      "hash": "729430b148ac27e588698e4a81abf10a192110e77f378e2a8cd75a72e144a166",
+      "route": "/en/utilities/categories/sports/css-swim-calculator/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/darts-scorekeeper/": {
+      "hash": "09a417da6c7b0c903071773979ca6e898cbda4422e1c9ae17a147b0257b6a869",
+      "route": "/en/utilities/categories/sports/darts-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/elo-rating-calculator/": {
+      "hash": "8653f67e4ef6153dbceb78b284fc9f19291475bd78b83e8272c009c74747a785",
+      "route": "/en/utilities/categories/sports/elo-rating-calculator/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/football-scorekeeper/": {
+      "hash": "bc17736b4ab60b3c8398f3d8e82689798f9c28392ee026fb5c54591287d10c7c",
+      "route": "/en/utilities/categories/sports/football-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/gym-workout-tracker/": {
+      "hash": "58a34f89b2a8bbf70640d5cc2cf74d5f6e4c2c359aaab18fe36d138fbc5d4585",
+      "route": "/en/utilities/categories/sports/gym-workout-tracker/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/": {
+      "hash": "e1c41916de9860f564c98a07d986a9cdef18a75a2a3be9caa9562ef5bfbfe355",
+      "route": "/en/utilities/categories/sports/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/padel-scorekeeper/": {
+      "hash": "c4c47af98d13b27157d1c9e816c7a471213d5e30d0157e02c350806aa13ba8f6",
+      "route": "/en/utilities/categories/sports/padel-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/penalty-shootout-calculator/": {
+      "hash": "01477c06493ea3f678daab51f5e933e0ceb8afd2f04053c3ebeffd1d367c2329",
+      "route": "/en/utilities/categories/sports/penalty-shootout-calculator/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/ping-pong-scorekeeper/": {
+      "hash": "5ce172334738f4e51fb17bdb87bcd727e4e18504dee0dc10c0df7803594cdd19",
+      "route": "/en/utilities/categories/sports/ping-pong-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/reaction-test/": {
+      "hash": "51490b825ea5cf610cdf340706d9fc6baa2bb19ed3dfc4355bed0e97e2e4c906",
+      "route": "/en/utilities/categories/sports/reaction-test/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/round-robin-league-manager/": {
+      "hash": "ee1f859bdc0a0a4b307ac97232b380e18c5c6d1d341cea6b514c309494f0dbf4",
+      "route": "/en/utilities/categories/sports/round-robin-league-manager/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/rugby-scorekeeper/": {
+      "hash": "1e867ccab475328adff04a760841278641db84755a931ce2b8855ce4c7b1ee6e",
+      "route": "/en/utilities/categories/sports/rugby-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/running-pace-predictor/": {
+      "hash": "d09525aea5f552a05c53647767f2a2987aa31bbb966688e015a4d20b1e7990e3",
+      "route": "/en/utilities/categories/sports/running-pace-predictor/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/snooker-frame-tracker-break-calculator/": {
+      "hash": "1834a982cd143b2af2f2e5cd3c06a3d18f2973f618de59bf62d810e32fe77851",
+      "route": "/en/utilities/categories/sports/snooker-frame-tracker-break-calculator/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/sports-scoreboard/": {
+      "hash": "2ccdadc577d16bb05a1a0afd44054473a479acc463b95b7e9bd84fb19c7a2bd2",
+      "route": "/en/utilities/categories/sports/sports-scoreboard/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/": {
+      "hash": "ae9736f5e7e74f7c1baac3a391408e60ce39a45e06307217caaa095b718695c7",
+      "route": "/en/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/tennis-scorekeeper/": {
+      "hash": "f1b1e06d9b5314110335868298a57a4a36e8a719513e304b757051ef03e5655b",
+      "route": "/en/utilities/categories/sports/tennis-scorekeeper/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/tournament/": {
+      "hash": "b54500c4b69a24c7b7cdc14cbbbfab02a19fe1f936d79cdbe210b745d095c709",
+      "route": "/en/utilities/categories/sports/tournament/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/vo2-max-calculator/": {
+      "hash": "ebbdb6f3ff53220550e6e5f8c808aebb24614003881e06e2c91598ad440969d8",
+      "route": "/en/utilities/categories/sports/vo2-max-calculator/"
+    },
+    "https://www.gamebob.dev/en/utilities/categories/sports/volleyball-scorekeeper/": {
+      "hash": "2d5c89ecf4d49876289db4efd00379e331299246cd9802cdde273a87f8ba1fac",
+      "route": "/en/utilities/categories/sports/volleyball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/calculateur-allure-course-a-pied/": {
+      "hash": "39f150c0301bcb90b1c00aca253bdd02bde150030241c0f4ad727328e682fc0c",
+      "route": "/fr/utilitaires/categories/sport/calculateur-allure-course-a-pied/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/calculateur-calories-brulees-exercice/": {
+      "hash": "cd54ac9ae3b4c3b46bf3b7abf9d562cacbacb62ce1c8f32bcc425f9d7e6d24cd",
+      "route": "/fr/utilitaires/categories/sport/calculateur-calories-brulees-exercice/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/calculateur-css-natation/": {
+      "hash": "1b7051995b899f544910877afd34e37c1a72db90ae929e0b5c23a06870cfa392",
+      "route": "/fr/utilitaires/categories/sport/calculateur-css-natation/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/calculateur-elo/": {
+      "hash": "80d39c0a8e21466886f558c3f56b1ce76ff3e6acce9deb6f4a6386b7a973b160",
+      "route": "/fr/utilitaires/categories/sport/calculateur-elo/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/calculateur-tirs-au-but/": {
+      "hash": "0cf56e081a1a6f741e392d14bb640fccacd0346a6fca80414be4c1cc2b20fbf0",
+      "route": "/fr/utilitaires/categories/sport/calculateur-tirs-au-but/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/calculateur-vo2-max/": {
+      "hash": "2ed54f47080d63f393d5b4896c9dd8762fb0167ea1927ec7842a280f0a959f3e",
+      "route": "/fr/utilitaires/categories/sport/calculateur-vo2-max/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/gestionnaire-ligue-tous-contre-tous/": {
+      "hash": "a847c9a3d9bf5b33c09d447a85abc5868fba4651c6f7f0a5a3aa5245a717db7f",
+      "route": "/fr/utilitaires/categories/sport/gestionnaire-ligue-tous-contre-tous/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/": {
+      "hash": "ee9d6c3ac269c04cc47dc2337586d59f6af67d17bf1c4eb4af0b68b6459e8b38",
+      "route": "/fr/utilitaires/categories/sport/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/marqueur-baseball/": {
+      "hash": "053d1f600fbc0635b8b1cf02ff8aceff81944aeb7ea755ba8e0d1ea6332d2296",
+      "route": "/fr/utilitaires/categories/sport/marqueur-baseball/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/marqueur-de-snooker-calculateur-de-break/": {
+      "hash": "c063b7d3cc70c389487a926a63023a9b865dbc39b37be7fc1fe933d0e1fd8728",
+      "route": "/fr/utilitaires/categories/sport/marqueur-de-snooker-calculateur-de-break/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/marqueur-volleyball/": {
+      "hash": "0c848fe751a43cc66cf9bee1ada26cf15a7248a8e7ddbad3ec7c8ca960cb60b7",
+      "route": "/fr/utilitaires/categories/sport/marqueur-volleyball/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/score-football/": {
+      "hash": "6873a46ad59e02c0f68d1c418edd3ac5ead7adb9bc3408386609b5925a498a39",
+      "route": "/fr/utilitaires/categories/sport/score-football/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/scoreur-de-dards/": {
+      "hash": "67374c9e850bcc478c61ce1d9461ac07b79975b3d4ac3df86595eb258c9593be",
+      "route": "/fr/utilitaires/categories/sport/scoreur-de-dards/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/scoreur-de-padel/": {
+      "hash": "c54a1e1d5c26f6b47f6ce6f585c69aced4c6c847962708fa48607d3ceb473adf",
+      "route": "/fr/utilitaires/categories/sport/scoreur-de-padel/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/scoreur-de-ping-pong/": {
+      "hash": "036d93f4dea9b5ee741643d4d40af587f2785f7dbb6be13238ae83cdb1f2b651",
+      "route": "/fr/utilitaires/categories/sport/scoreur-de-ping-pong/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/scoreur-de-tennis/": {
+      "hash": "6a255212da8525ab6565263dbbcf3d66ca8de39cc588334770c9580646c4b887",
+      "route": "/fr/utilitaires/categories/sport/scoreur-de-tennis/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/scoreur-streetball-3x3/": {
+      "hash": "8a0a43f089aca6037999ed3bcd1486f9f42fde66477618067ff9c092c585c8c2",
+      "route": "/fr/utilitaires/categories/sport/scoreur-streetball-3x3/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/scoreur-volleyball-plage/": {
+      "hash": "ba0e3f2877f06c85b78a5b3847ba64f6f36e2213dfbe6540a5cacacdab7d6cf9",
+      "route": "/fr/utilitaires/categories/sport/scoreur-volleyball-plage/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/suivi-entrainement-gym/": {
+      "hash": "0a799d043d59c2c65aeb3f366f42d1ec6f042ed7483843865eb7711c80bf73cd",
+      "route": "/fr/utilitaires/categories/sport/suivi-entrainement-gym/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/tableau-de-basket/": {
+      "hash": "b069b353689a1e3b2bec62cb8823e99c1ebb9d3237596f6f0ec616af5b9ad22d",
+      "route": "/fr/utilitaires/categories/sport/tableau-de-basket/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/tableau-de-score-rugby/": {
+      "hash": "b7e68f2ba64d6a28461c6cdc73145906b15d8e7b849335cdb8508fc5f20ae8dc",
+      "route": "/fr/utilitaires/categories/sport/tableau-de-score-rugby/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/tableau-de-score-sportif/": {
+      "hash": "97b66bad94decb5459a1397f7137b395edbfb106886169b094b4d782d0d52152",
+      "route": "/fr/utilitaires/categories/sport/tableau-de-score-sportif/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/test-reflexes/": {
+      "hash": "b87f840ab4c6f835b62c882aa9a377d1701ed31d18cd76f19e30882945a7b6b6",
+      "route": "/fr/utilitaires/categories/sport/test-reflexes/"
+    },
+    "https://www.gamebob.dev/fr/utilitaires/categories/sport/tournoi/": {
+      "hash": "04391f6293841ff593e64a625f7f729bddefdf08835b41fb59b470e3f27520b0",
+      "route": "/fr/utilitaires/categories/sport/tournoi/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/bagan-turnamen/": {
+      "hash": "27c65b3cef191390410a28b32ef579efc875dba842bf6f16342b75f259f59995",
+      "route": "/id/utilitas/kategori/olahraga/bagan-turnamen/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/": {
+      "hash": "4676c20e5683bb4431d4123316cb157dc9ce135f5c501efdb3a58ec019104ee4",
+      "route": "/id/utilitas/kategori/olahraga/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/kalkulator-adu-penalti/": {
+      "hash": "85234d9fa27be1fa8f9f66cea8b59028ce7b15f1986b7eddea3aec1e16a724c2",
+      "route": "/id/utilitas/kategori/olahraga/kalkulator-adu-penalti/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/kalkulator-css-renang/": {
+      "hash": "1e993432fffd2ae761d0920ac3cf0ec9ebcbc52b3b0b0e417827640e6ebe2c01",
+      "route": "/id/utilitas/kategori/olahraga/kalkulator-css-renang/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/kalkulator-kalori-terbakar-olahraga/": {
+      "hash": "57b179502e5bafe00241f687ff0cb1541165b82eef70c7ff038d6542ccdfc7bb",
+      "route": "/id/utilitas/kategori/olahraga/kalkulator-kalori-terbakar-olahraga/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/kalkulator-peringkat-elo/": {
+      "hash": "7cf8da086157f950ab5d7b404538ac5d6ed4e0569325154d1ca25d7f0a7df38b",
+      "route": "/id/utilitas/kategori/olahraga/kalkulator-peringkat-elo/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/kalkulator-vo2-max/": {
+      "hash": "e446295631da667ae1dcb482514a999b9588f2fabf9b1582adea910e0413bb5e",
+      "route": "/id/utilitas/kategori/olahraga/kalkulator-vo2-max/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/kalkulator-waktu-lari/": {
+      "hash": "6cddafc18717d16afa39c9ac8edeabede8141d212d9213f0a3d3029b3ed8815e",
+      "route": "/id/utilitas/kategori/olahraga/kalkulator-waktu-lari/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/manajer-liga-round-robin/": {
+      "hash": "f879589626610e5f67affee35437ba84365826c79b2ec5f1e52e398e3f17d546",
+      "route": "/id/utilitas/kategori/olahraga/manajer-liga-round-robin/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/papan-skor-basket/": {
+      "hash": "8e053575f2f12e2f377229ba5286bedcad7d1fb7603771f4a686a61ffdc15d5f",
+      "route": "/id/utilitas/kategori/olahraga/papan-skor-basket/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/papan-skor-olahraga/": {
+      "hash": "298e565bdc7ec2d8d51a856ff7089bbbbba076feda315b0630cccfcf7d70637e",
+      "route": "/id/utilitas/kategori/olahraga/papan-skor-olahraga/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/papan-skor-padel/": {
+      "hash": "330c901e112271002952662bde5f0342ba8dee8a93058a9f9d55d31a20cea419",
+      "route": "/id/utilitas/kategori/olahraga/papan-skor-padel/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/papan-skor-rugbi/": {
+      "hash": "092ed02bbb1f222097695f9fcd58e52e2c8695b24de233beef9a2d04c86c6807",
+      "route": "/id/utilitas/kategori/olahraga/papan-skor-rugbi/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/papan-skor-streetball-3x3/": {
+      "hash": "6e555b121ad36b9357bcb2457b9f702ab1d0614f29e82323b38856394c883c2f",
+      "route": "/id/utilitas/kategori/olahraga/papan-skor-streetball-3x3/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/papan-skor-voli-online/": {
+      "hash": "03918ac4d5030eb5188b3637b166195c4be2926151d27db9abf5b5861d6a8949",
+      "route": "/id/utilitas/kategori/olahraga/papan-skor-voli-online/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/papan-skor-voli-pantai/": {
+      "hash": "d2ba687aed3352ef85d743621384c41156d712fd2543796415b6a122afc1d070",
+      "route": "/id/utilitas/kategori/olahraga/papan-skor-voli-pantai/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/pelacak-latihan-gym/": {
+      "hash": "9cd5daa263cfaa35199d0484ff3c2c1ef02b025ab348dba3682d7018518c8218",
+      "route": "/id/utilitas/kategori/olahraga/pelacak-latihan-gym/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/pencatat-skor-baseball/": {
+      "hash": "51ebd7d983630b3a6f1415a1c5a6caac17b3a68010d292e78e4b4001f859e0f1",
+      "route": "/id/utilitas/kategori/olahraga/pencatat-skor-baseball/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/pencatat-skor-dart/": {
+      "hash": "fd5faa5b2e75b9ff1d19ea47ecd0987d0a32f58fc7fc3faa61ae4aa9201bbe6a",
+      "route": "/id/utilitas/kategori/olahraga/pencatat-skor-dart/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/pencatat-skor-ping-pong/": {
+      "hash": "f7c0f53949305f119d0e9f8811e8e83d2a8c0d6ae2245e7962922942eed50fb1",
+      "route": "/id/utilitas/kategori/olahraga/pencatat-skor-ping-pong/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/pencatat-skor-sepakbola/": {
+      "hash": "429f9ea9500bd945171576b61be25916dcd00813ceec739dc46b6e838d63f6be",
+      "route": "/id/utilitas/kategori/olahraga/pencatat-skor-sepakbola/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/pencatat-skor-tenis/": {
+      "hash": "70cbd484cc1da7f279d18f414c528d864cdb8dc9fcfd9a63e92b59f290056094",
+      "route": "/id/utilitas/kategori/olahraga/pencatat-skor-tenis/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/penghitung-break-dan-pelacak-frame-snooker/": {
+      "hash": "57dc949a969f4df3499d94261c10501ae2d18371e01e8a2ec260dc01429faffd",
+      "route": "/id/utilitas/kategori/olahraga/penghitung-break-dan-pelacak-frame-snooker/"
+    },
+    "https://www.gamebob.dev/id/utilitas/kategori/olahraga/tes-reaksi/": {
+      "hash": "e8e502fe46388efd42a33a8789702115ace5b58e24138372528cc9b15ec87d10",
+      "route": "/id/utilitas/kategori/olahraga/tes-reaksi/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/arbitro-rugby-punteggio/": {
+      "hash": "e634b2302b24677196db9e7aef58b50df47c2e647481e6257257b0f6fd8aa778",
+      "route": "/it/utilita/categorie/sport/arbitro-rugby-punteggio/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/calcolatore-calci-di-rigore/": {
+      "hash": "4bdf23b6c939f8c87f692a2445f569c735d8cafaf793e82a47b687a63b085daf",
+      "route": "/it/utilita/categorie/sport/calcolatore-calci-di-rigore/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/calcolatore-calorie-bruciate-esercizio/": {
+      "hash": "c9bbe229347bd4913815878bbabe8678492f68add07d02c7b50afc684326fbc9",
+      "route": "/it/utilita/categorie/sport/calcolatore-calorie-bruciate-esercizio/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/calcolatore-css-nuoto/": {
+      "hash": "f7f7f0ac8e720d0e5b3a70db1a9eafa79ab32f52b85185250f3eb975d70ffca0",
+      "route": "/it/utilita/categorie/sport/calcolatore-css-nuoto/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/calcolatore-elo/": {
+      "hash": "296a6ab37068b00e27f337c11cbf40aa4652e8c47bb20b778f0738bdb4fe2e0c",
+      "route": "/it/utilita/categorie/sport/calcolatore-elo/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/calcolatore-passo-corsa/": {
+      "hash": "9066bf0253848028dc97584cd4791edde632d7ca10b26a71b786bdc9be2d5005",
+      "route": "/it/utilita/categorie/sport/calcolatore-passo-corsa/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/calcolatore-vo2-max/": {
+      "hash": "3b2757856ec345cf59a19981abb8b4ec5b8c2606d79ce19f95862406afc99e58",
+      "route": "/it/utilita/categorie/sport/calcolatore-vo2-max/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/gestore-campionato-girone-italiano/": {
+      "hash": "3b5165c13420600b9adeadd212b87fae95c562b33789425b5361260e88f9cc77",
+      "route": "/it/utilita/categorie/sport/gestore-campionato-girone-italiano/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/": {
+      "hash": "73a4cbd6a40c8db613acd57b58e130a365cfd8f500bd08bd470f5afc86bcf4f2",
+      "route": "/it/utilita/categorie/sport/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/punteggio-basket/": {
+      "hash": "8ec5d15ad2be6b362bea8993641fe1cb4f75799b49628eb6e6af7507983c2c74",
+      "route": "/it/utilita/categorie/sport/punteggio-basket/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-baseball-softball/": {
+      "hash": "55b09e56d50598cd46415ce615c114978ad8a58a608e30195ac91b78c6525698",
+      "route": "/it/utilita/categorie/sport/segnapunti-baseball-softball/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-beach-volley/": {
+      "hash": "01b5af31a124742d891330e5aa329cf25ea8c1bef69b049df9c6af9cc518339d",
+      "route": "/it/utilita/categorie/sport/segnapunti-beach-volley/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-calcio/": {
+      "hash": "6f4e2a189c9360fd53a3b5192faee68cbe8272d80c72437a697e7aa49e4a6981",
+      "route": "/it/utilita/categorie/sport/segnapunti-calcio/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-freccette/": {
+      "hash": "bde62e66ce8d26ac82a1ca856f768423adf24ea90f90904fa8c3ca0e0768c798",
+      "route": "/it/utilita/categorie/sport/segnapunti-freccette/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-padel/": {
+      "hash": "8ac6bdd0fb41708484ff094af912c29d7cee659a374122d324470348630899ef",
+      "route": "/it/utilita/categorie/sport/segnapunti-padel/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-pallavolo/": {
+      "hash": "91a6fdceee0b1a37d0327ccf4cef4eadfeb3743c0b597266b6d297fa73fe6c2e",
+      "route": "/it/utilita/categorie/sport/segnapunti-pallavolo/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-ping-pong/": {
+      "hash": "ca113e9edd46122328e6c48c7245fc76e73e07db2dab71c8fa17166d50125d7f",
+      "route": "/it/utilita/categorie/sport/segnapunti-ping-pong/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-streetball-3x3/": {
+      "hash": "16fb938d26e788e5e61d724479f6819d004b4f69ebbcb56dfb3366521eb77776",
+      "route": "/it/utilita/categorie/sport/segnapunti-streetball-3x3/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/segnapunti-tennis/": {
+      "hash": "99c52e3362893d792bbf828174f730ae771a5ac4a5b85f649d504cae50b2aff5",
+      "route": "/it/utilita/categorie/sport/segnapunti-tennis/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/tabellone-punti-sportivo/": {
+      "hash": "1e21cf640b8ad5380c64b5fb647e4d8022e1e14c6244aad80796a5fc6746fcac",
+      "route": "/it/utilita/categorie/sport/tabellone-punti-sportivo/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/test-di-reazione/": {
+      "hash": "4bbe0b7dcdaf80c575524206440906657affb26f7eb5d941a2330f76e7298a58",
+      "route": "/it/utilita/categorie/sport/test-di-reazione/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/torneo-online/": {
+      "hash": "511ecce15de9eb07078605edbc9840144086580734e170589643438b66ab871e",
+      "route": "/it/utilita/categorie/sport/torneo-online/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/tracciatore-allenamento-palestra/": {
+      "hash": "3f62832aa18b9f360e1a8460a8fbb9cc386327f9ef5f51c1c8d0fe83c772126a",
+      "route": "/it/utilita/categorie/sport/tracciatore-allenamento-palestra/"
+    },
+    "https://www.gamebob.dev/it/utilita/categorie/sport/tracciatore-di-frame-e-calcolatore-di-break-per-il-snooker/": {
+      "hash": "b601aa4ba0ce8afdf891f5db55d3085499d90e88d813f3f36a10727dfd815625",
+      "route": "/it/utilita/categorie/sport/tracciatore-di-frame-e-calcolatore-di-break-per-il-snooker/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/baseball-scorekeeper/": {
+      "hash": "ccf30113e6f550268813b2e0c84ac387cb8f07c57115a46507ef52ecf0f782a6",
+      "route": "/ja/utilities/categories/sports/baseball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/basketball-scoreboard/": {
+      "hash": "6ed4cb6c07974bf73f0c7d42321efbaf34446e838e5e87e895657ca5da23b087",
+      "route": "/ja/utilities/categories/sports/basketball-scoreboard/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/beach-volleyball-scorekeeper/": {
+      "hash": "ed2adde23b0d278b43739f95a4fe877eef656d62084bcba195657dabbcc554b4",
+      "route": "/ja/utilities/categories/sports/beach-volleyball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/calories-burned-by-exercise-calculator/": {
+      "hash": "733cbe0c37c81dcb6b3e546188b12818d22c1a6fb14f3e2bab982383157e1c7e",
+      "route": "/ja/utilities/categories/sports/calories-burned-by-exercise-calculator/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/css-swim-calculator/": {
+      "hash": "1d25e237ee6df3fa7107c448e3128ce6cf7ef8adb829a19d83325ebe33ef32c1",
+      "route": "/ja/utilities/categories/sports/css-swim-calculator/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/darts-scorekeeper/": {
+      "hash": "f93ee14fd730118c4f97cfd497f808c0788df43e754c1e0aec2fb2b8e67d986c",
+      "route": "/ja/utilities/categories/sports/darts-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/elo-rating-calculator/": {
+      "hash": "4f7cd1ceae05dcc30d9274bc08951ef65b1ff3e2bd715b4a1aa41e8c66985796",
+      "route": "/ja/utilities/categories/sports/elo-rating-calculator/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/football-scorekeeper/": {
+      "hash": "d5ee4cbd8cb46203f9bce196d37fb066630ea7ac584709ff2b45d38e6de1b5b8",
+      "route": "/ja/utilities/categories/sports/football-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/gym-workout-tracker/": {
+      "hash": "6189ec8d8e98913503c7577b8cc1cd3bc12968f2d8b41bd7a9436a2af90aa64f",
+      "route": "/ja/utilities/categories/sports/gym-workout-tracker/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/": {
+      "hash": "dd7ae0cc2fbe6cd2d80987227171c6efec7303f3749467cb7df41ff05ab134c0",
+      "route": "/ja/utilities/categories/sports/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/padel-scorekeeper/": {
+      "hash": "a56fa68a0bbb412231e873865720ab7d37d2c61bdeb7e0f195cf1e8aa7cfbe36",
+      "route": "/ja/utilities/categories/sports/padel-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/penalty-shootout-calculator/": {
+      "hash": "09a34dbd7bc4e896d30437b81bfc8f3b1e2147ebc4d0a80596dd05e5d51e7a4b",
+      "route": "/ja/utilities/categories/sports/penalty-shootout-calculator/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/ping-pong-scorekeeper/": {
+      "hash": "a22c3973bb7e8687c98f050396a6208c78438489869f85b8cacf0688608e5e8d",
+      "route": "/ja/utilities/categories/sports/ping-pong-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/reaction-test/": {
+      "hash": "49f1792135d1c14638a00a899f1898ec0e9c70cb7a2a9702a7f90b5d417f31e0",
+      "route": "/ja/utilities/categories/sports/reaction-test/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/round-robin-league-manager/": {
+      "hash": "0e4d95669979d36b0ec286071ed4a0046e53d9368c497fada3a6b60572641983",
+      "route": "/ja/utilities/categories/sports/round-robin-league-manager/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/rugby-scorekeeper/": {
+      "hash": "caa5f77a54fba61c27c468704a6755c22cd7c066677778935cc132076695a9f8",
+      "route": "/ja/utilities/categories/sports/rugby-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/running-pace-predictor/": {
+      "hash": "50b0573e1ad053c0f26462bbfa6cd58e5fa69384add7ff315392857a12792b96",
+      "route": "/ja/utilities/categories/sports/running-pace-predictor/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/snooker-frame-tracker-break-calculator/": {
+      "hash": "50194aaeebe182f8c186c474c46e6207ca00cd27b878b2a08364a5c1d7efee58",
+      "route": "/ja/utilities/categories/sports/snooker-frame-tracker-break-calculator/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/sports-scoreboard/": {
+      "hash": "b71d606898a3b1dc99483e7a3274cafb44b3309a10b0f9f8375692baa7040de5",
+      "route": "/ja/utilities/categories/sports/sports-scoreboard/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/": {
+      "hash": "3aaae6d21367c6cd911b64177b16a5bb661f66ec7b48da6875f6c0af11a4a917",
+      "route": "/ja/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/tennis-scorekeeper/": {
+      "hash": "58ea35a22322273c3b230fe585a79c465591522209d9e4d8c8db05c24a721f1f",
+      "route": "/ja/utilities/categories/sports/tennis-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/tournament/": {
+      "hash": "94fe7d03b471f5b883e81c1716224c332bb36a258c52b70cc70470199411a13b",
+      "route": "/ja/utilities/categories/sports/tournament/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/vo2-max-calculator/": {
+      "hash": "e1a64f92b40feb93b78910d8da9d5a9cfd95bfe03768246eafb9098ad29687bd",
+      "route": "/ja/utilities/categories/sports/vo2-max-calculator/"
+    },
+    "https://www.gamebob.dev/ja/utilities/categories/sports/volleyball-scorekeeper/": {
+      "hash": "e4fa50ec213442c0cb42aa92bc926c8143a54ecdec508dcb818f852e9bd0ab28",
+      "route": "/ja/utilities/categories/sports/volleyball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/baseball-scorekeeper/": {
+      "hash": "044f47f35bb5e79f3f10ca91a63e9ad34f4d4c03144276800b26b24a8994f185",
+      "route": "/ko/utilities/categories/sports/baseball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/basketball-scoreboard/": {
+      "hash": "6b608681c86e4611ff6ccf3a74b268e8d6cf7f0fde5dc365fedfa06ba8d34e2b",
+      "route": "/ko/utilities/categories/sports/basketball-scoreboard/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/beach-volleyball-scorekeeper/": {
+      "hash": "7a8f9b61c10a103b923dcd406d5380f6185d3c6940ea4a593c3f22f3b654c0be",
+      "route": "/ko/utilities/categories/sports/beach-volleyball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/calories-burned-by-exercise-calculator/": {
+      "hash": "abd5961009931c7c4831265e9c15bac89d545ae669c748738b25e5efd6a40ca4",
+      "route": "/ko/utilities/categories/sports/calories-burned-by-exercise-calculator/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/css-swim-calculator/": {
+      "hash": "5130db740bbb96dc6a75d90152edb21e2e078bcad96899dc5090c58195674973",
+      "route": "/ko/utilities/categories/sports/css-swim-calculator/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/darts-scorekeeper/": {
+      "hash": "840e3c4287afffce9e91a7116e1545cd0f8067db0784ce556b29f2c43e65ed9c",
+      "route": "/ko/utilities/categories/sports/darts-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/elo-rating-calculator/": {
+      "hash": "7329eb6fd77ae25c1622d561464c76acc84bc244e0c5fe4ac281902f5d3a55b4",
+      "route": "/ko/utilities/categories/sports/elo-rating-calculator/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/football-scorekeeper/": {
+      "hash": "2638b155265a7e5c0cb729a35e9daab87e93930fb8cfd198a5980250d2672f04",
+      "route": "/ko/utilities/categories/sports/football-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/gym-workout-tracker/": {
+      "hash": "37c4e759d3950a3417bda70d37e61ebcb0213461bbe12fba67fb9198d0ed4e9e",
+      "route": "/ko/utilities/categories/sports/gym-workout-tracker/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/": {
+      "hash": "c0410f26e13e1dec18ca99b7a7ee28f51d8d8fc0c86e395f1a390bb8e7f9dbb6",
+      "route": "/ko/utilities/categories/sports/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/padel-scorekeeper/": {
+      "hash": "f3634b2d825fbdc6d4a2021d1f7dda797b7eb6db068bfb9669399f1ece3d1377",
+      "route": "/ko/utilities/categories/sports/padel-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/penalty-shootout-calculator/": {
+      "hash": "218823ba7a58fbd57ba96fc50fc9e13bfe5a8a46acf7326fd01bbc636dc66c72",
+      "route": "/ko/utilities/categories/sports/penalty-shootout-calculator/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/ping-pong-scorekeeper/": {
+      "hash": "01c268ee87f93ea8bac9adbb58d11990ffa958f0036f9826a1dce493f5ea0e49",
+      "route": "/ko/utilities/categories/sports/ping-pong-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/reaction-test/": {
+      "hash": "7b6c950345300cce47094338f471f3015770a31570b617a674f7543883020004",
+      "route": "/ko/utilities/categories/sports/reaction-test/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/round-robin-league-manager/": {
+      "hash": "40456fdb777266547c736016092900e464aaeb872f6eb263a464e29c5a95778d",
+      "route": "/ko/utilities/categories/sports/round-robin-league-manager/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/rugby-scorekeeper/": {
+      "hash": "812e0416e1c0be601792006da05174777c9e214439698fd4e4bed80933418af5",
+      "route": "/ko/utilities/categories/sports/rugby-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/running-pace-predictor/": {
+      "hash": "638d115239711037384df8e2aa3aa4913fb30ae02c0487f048f3b2b720712dce",
+      "route": "/ko/utilities/categories/sports/running-pace-predictor/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/snooker-frame-tracker-break-calculator/": {
+      "hash": "543f38cc78167928f96b0f6ab196eba459f5f1cdb8e6da9a014302ca05c30eab",
+      "route": "/ko/utilities/categories/sports/snooker-frame-tracker-break-calculator/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/sports-scoreboard/": {
+      "hash": "e431be7ea1550e9136cb28e45c066e59107249b555c0dc802d1ecf5ed9449ca4",
+      "route": "/ko/utilities/categories/sports/sports-scoreboard/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/": {
+      "hash": "e62d9504997400ed7bdf102d938c92302e60dd5d3b6442f0126c3d0e6cc73164",
+      "route": "/ko/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/tennis-scorekeeper/": {
+      "hash": "7cc24c214ab9d293f5b3c391d52ee005af1b1ff3a578e30524bc0670df27a983",
+      "route": "/ko/utilities/categories/sports/tennis-scorekeeper/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/tournament/": {
+      "hash": "83933c154fc320b5a1bd08bfe54ef793ebe4a4a6b8a32a0954e3b6f4a4bc4914",
+      "route": "/ko/utilities/categories/sports/tournament/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/vo2-max-calculator/": {
+      "hash": "fd8d08f14a09b7057b91b5006d4273b7551b44287361b483aa4ff5ce1067a8bb",
+      "route": "/ko/utilities/categories/sports/vo2-max-calculator/"
+    },
+    "https://www.gamebob.dev/ko/utilities/categories/sports/volleyball-scorekeeper/": {
+      "hash": "eecf38640aebd390a5f1ff7f8eb5f64502468a8025aadc88ab7d67ad29cbd306",
+      "route": "/ko/utilities/categories/sports/volleyball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/basketbal-scorebord/": {
+      "hash": "0008b2a6fe488608c16a1df97c65455fdf990913016657ae4af1902396951504",
+      "route": "/nl/hulpmiddelen/categorieen/sport/basketbal-scorebord/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/beachvolleybal-scorehouder/": {
+      "hash": "2c3dd706c553d2a5472703647fd5a394f5f21f3b96e99f5c4b9025b795a3b1ac",
+      "route": "/nl/hulpmiddelen/categorieen/sport/beachvolleybal-scorehouder/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/css-zwemcalculator/": {
+      "hash": "5801a7b715351f846e20e5f6f37102ba1d343ba7553ec87d29ead56915b70e4e",
+      "route": "/nl/hulpmiddelen/categorieen/sport/css-zwemcalculator/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/darts-scorebord/": {
+      "hash": "9f788d26b1e9c7d6c6e18c5a806d85d882fdd54f70928e3f9aa27ae4e3b2881e",
+      "route": "/nl/hulpmiddelen/categorieen/sport/darts-scorebord/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/elo-calculator/": {
+      "hash": "375a42b1b8c02147637817ac1d093681d9a796ff0a7c3d843dd9d18986ccfe86",
+      "route": "/nl/hulpmiddelen/categorieen/sport/elo-calculator/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/fitness-tracker-voortgang/": {
+      "hash": "3d1739ddab424825c3d4ad88f53622113cae5a8b61ade4e20e7d9bfffb1e53f7",
+      "route": "/nl/hulpmiddelen/categorieen/sport/fitness-tracker-voortgang/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/hardloop-tempo-calculator/": {
+      "hash": "015e9949ceaa12b5fdac353c4fefcaeb28c816e7a7242d89d0bf373489780039",
+      "route": "/nl/hulpmiddelen/categorieen/sport/hardloop-tempo-calculator/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/honkbalscorebord/": {
+      "hash": "29d7711d2a9aeb668a0b8b6def10903d9f06fd10546a68fa0451b38c0969b287",
+      "route": "/nl/hulpmiddelen/categorieen/sport/honkbalscorebord/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/": {
+      "hash": "4fabcc894114301aebd40dea15c97381bbf9d8dbfe6fb928c62746aea43241e0",
+      "route": "/nl/hulpmiddelen/categorieen/sport/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/padel-scorehouder/": {
+      "hash": "2d48a7488575e4b377a847b469fc595a740902a70393aa335c00344e827644ac",
+      "route": "/nl/hulpmiddelen/categorieen/sport/padel-scorehouder/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/pingpong-scorebord/": {
+      "hash": "87d5b4e168a5e550ca02cec570fcfddff38ce828a05f6d563757a7f2c66bfb4e",
+      "route": "/nl/hulpmiddelen/categorieen/sport/pingpong-scorebord/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/reactietest/": {
+      "hash": "3ca2fd96cd81266134dfbae95f67e2c71e9d8e6e19a256ef6c3d4209c5741e6d",
+      "route": "/nl/hulpmiddelen/categorieen/sport/reactietest/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/round-robin-competitie-manager/": {
+      "hash": "ffe0f6c5a8caf7fa3dc27edf764c99a39d3d4c65a0afe5075ffa6fdf03db247b",
+      "route": "/nl/hulpmiddelen/categorieen/sport/round-robin-competitie-manager/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/rugby-scorebord-timer/": {
+      "hash": "1b0c95784672d65deb4011750ef02c7358a96b0b5914f84bd736df904827da93",
+      "route": "/nl/hulpmiddelen/categorieen/sport/rugby-scorebord-timer/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/snooker-frame-tracker-en-break-calculator/": {
+      "hash": "3040fba15bc7f15c5e036a8e5f97e7f13d7029b1b3107ff40f2fbcf9e9bfea7e",
+      "route": "/nl/hulpmiddelen/categorieen/sport/snooker-frame-tracker-en-break-calculator/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/sport-scorebord/": {
+      "hash": "52c1f336f27b6561790565bee0b63c1aa2bfabe53a79eb36a078a3ca7fe4f213",
+      "route": "/nl/hulpmiddelen/categorieen/sport/sport-scorebord/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/strafschoppen-calculator/": {
+      "hash": "3a2e0a556135d07c205c3c26ff8014ef509778b4815b19709eed2f0ffaefa2d0",
+      "route": "/nl/hulpmiddelen/categorieen/sport/strafschoppen-calculator/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/streetball-3x3-scorehouder/": {
+      "hash": "73f36b309f80b24eeb95f3f88157433a23e56351ca4fbf31f7c0452a9978410b",
+      "route": "/nl/hulpmiddelen/categorieen/sport/streetball-3x3-scorehouder/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/tennis-scorebord/": {
+      "hash": "11dd4cf8d88d36a397af7b6cdd1a53e6ceef361fd079f9bee3fd6add606e8a71",
+      "route": "/nl/hulpmiddelen/categorieen/sport/tennis-scorebord/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/toernooi-schema/": {
+      "hash": "6c4584e8c67188bf789e802d90bdefc097224aa5750f170ba8bed7857ca4e458",
+      "route": "/nl/hulpmiddelen/categorieen/sport/toernooi-schema/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/verbrande-calorieen-sport-calculator/": {
+      "hash": "93d3c9139bc65e1fe4ca10dba67d0be4a3ae287a2898018062e18d902732fffd",
+      "route": "/nl/hulpmiddelen/categorieen/sport/verbrande-calorieen-sport-calculator/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/vo2-max-berekenaar/": {
+      "hash": "d9af4dd6442cb6705ab1af6024de15e16dde8a7e5fc143b737a7d60ea71e1ebd",
+      "route": "/nl/hulpmiddelen/categorieen/sport/vo2-max-berekenaar/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/voetbal-score/": {
+      "hash": "1401d737ebc5b9e062863525175bf77a365ab906442fba5cb0c79d2048d00fc5",
+      "route": "/nl/hulpmiddelen/categorieen/sport/voetbal-score/"
+    },
+    "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/sport/volleybal-scorebord/": {
+      "hash": "2f54d3037cd97489de7c9d2d4b06cad5348953b690f345b644d1915b65d3d4ea",
+      "route": "/nl/hulpmiddelen/categorieen/sport/volleybal-scorebord/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/dziennik-treningowy-gym/": {
+      "hash": "a688c0466748ef0957f56ff29258982abab159fa56a4a6b582ea848a2fc7fd25",
+      "route": "/pl/narzedzia/kategorie/sport/dziennik-treningowy-gym/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/generator-turniejowy/": {
+      "hash": "58988f9c8e1e5e5aca2cc887aec6d65ef00b60aa78171e336e459e3a213ac60d",
+      "route": "/pl/narzedzia/kategorie/sport/generator-turniejowy/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/": {
+      "hash": "4079692d54552a999665fc5f596f3f63247511119fbecafb52e746047b5a005d",
+      "route": "/pl/narzedzia/kategorie/sport/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/kalkulator-css-plywanie/": {
+      "hash": "f22a754b9c060726647a222173b73174541ac996261db4092bf00289f44df9b7",
+      "route": "/pl/narzedzia/kategorie/sport/kalkulator-css-plywanie/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/kalkulator-elo/": {
+      "hash": "84443dc0cba215e8add61721ee2fb1b3b04bc2134d3ae8eacac34a7b579a6cd3",
+      "route": "/pl/narzedzia/kategorie/sport/kalkulator-elo/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/kalkulator-rzutow-karnych/": {
+      "hash": "1bebc0a6bb018dbf8cdb728e313e1a764a3a6436610dbea845124c0af2df9d53",
+      "route": "/pl/narzedzia/kategorie/sport/kalkulator-rzutow-karnych/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/kalkulator-spalonych-kalorii-cwiczenia/": {
+      "hash": "c907bc510cea2d07dd6f9940dc130123d0b32ccf4d294c6a21c537cd0d13c2f4",
+      "route": "/pl/narzedzia/kategorie/sport/kalkulator-spalonych-kalorii-cwiczenia/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/kalkulator-tempa-biegu/": {
+      "hash": "bc6b3857c631137ade9365788096a073c3bbcabbe52bd353f9116f6c9eda976f",
+      "route": "/pl/narzedzia/kategorie/sport/kalkulator-tempa-biegu/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/kalkulator-wydolnosci-vo2-max/": {
+      "hash": "1c933d18456d5a289e719345049a66d726477b82c05446d00a37fc92501ccf41",
+      "route": "/pl/narzedzia/kategorie/sport/kalkulator-wydolnosci-vo2-max/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-bramek/": {
+      "hash": "d86b3b47015ecb34ccd89add4ea49e2ddd36fb082d48ce4cb666689dab55ad21",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-bramek/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-darta/": {
+      "hash": "e18ca87730776296dc2f76f56f1ca898477604e4be5b7070fdd4976d674cdb1b",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-darta/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-ping-ponga/": {
+      "hash": "71ea7886745cc775a44a5dbf8b322a22802caad3dd2d407a4c302d81ea2162ef",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-ping-ponga/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-punktow-baseball/": {
+      "hash": "dd795b526bd317b11a747390efbf9d6aae6043f397f5492efae6e63c411d7501",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-punktow-baseball/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-punktow-padla/": {
+      "hash": "a5a0694d8a6ed1b7a4c3c33e8043c54ea3b9c9e5ef2feb61b27f21647c10f2c5",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-punktow-padla/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-punktow-rugby/": {
+      "hash": "1290e1cbadd7a5c150a8c8aa215544d54ce7bd22bca7159fa92a4169205cd50a",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-punktow-rugby/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-punktow-siatkowka/": {
+      "hash": "bb96eabea0904ad98ceed69d86d23563c636b1e7d7c7acd382e8e41e33c33001",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-punktow-siatkowka/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-punktow-siatkowki-plazowej/": {
+      "hash": "b07adfe78d52488fb1193ae4faf184fdb1b4fca0461bc1c75fb8a8ebeae8da19",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-punktow-siatkowki-plazowej/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-punktow-streetball-3x3/": {
+      "hash": "c92d0139f02fa11a465d586ea59361a0e88554ff829e7fbc98e6406bbd78ab68",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-punktow-streetball-3x3/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/licznik-tenisa/": {
+      "hash": "2099db87fc88b77fbd552954b7c64b008af837a3e6d7c91dc9ead1826dabed3f",
+      "route": "/pl/narzedzia/kategorie/sport/licznik-tenisa/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/menedzer-ligij-kazdy-z-kazdym/": {
+      "hash": "643b39a2491380dd4f95c630f950bae17e144401d29dc9ce7a8a4a160638b112",
+      "route": "/pl/narzedzia/kategorie/sport/menedzer-ligij-kazdy-z-kazdym/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/sledzenie-frameow-i-kalkulator-breaka-w-snookerze/": {
+      "hash": "53e6f253c92a6bc84fe9aba89a27bc4577cac9cb686154924c3139abaee0155a",
+      "route": "/pl/narzedzia/kategorie/sport/sledzenie-frameow-i-kalkulator-breaka-w-snookerze/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/tablica-wynikow-koszykowka/": {
+      "hash": "f6465bfc3c11df4fd87ef09440138581c68ad798eed62ede773f4e6ac3fba9a1",
+      "route": "/pl/narzedzia/kategorie/sport/tablica-wynikow-koszykowka/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/tablica-wynikow-sportowych/": {
+      "hash": "5c639042a30f7f88fdf07c7da5d43516a45608f2be5e692b798def96b6333311",
+      "route": "/pl/narzedzia/kategorie/sport/tablica-wynikow-sportowych/"
+    },
+    "https://www.gamebob.dev/pl/narzedzia/kategorie/sport/test-reakcji/": {
+      "hash": "32d89c96aa2bd3b633e05a082d085a9b42abb0c0b1c00d8ef76df472d8f17200",
+      "route": "/pl/narzedzia/kategorie/sport/test-reakcji/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/calculadora-aptidao-vo2-max/": {
+      "hash": "1c4526fc94e983a6e8e73824439e84998a6a7fb195ed8abf6622bc2e60f98c27",
+      "route": "/pt/utilidades/categorias/desporto/calculadora-aptidao-vo2-max/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/calculadora-calorias-queimadas-exercicio/": {
+      "hash": "8117df4d9903723b86c8feabb58797d3bf4988d6fcf2a992aa784e7e3bf92e80",
+      "route": "/pt/utilidades/categorias/desporto/calculadora-calorias-queimadas-exercicio/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/calculadora-css-natacao/": {
+      "hash": "eeb62798158b42083f6c70ee7dfcdeabbc72798ddbd99f32986e4928b447ed59",
+      "route": "/pt/utilidades/categorias/desporto/calculadora-css-natacao/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/calculadora-desempate-penalti/": {
+      "hash": "4349628b13603e55f13267845f278cdcf8958c5c4e953a4c5434375337433cf8",
+      "route": "/pt/utilidades/categorias/desporto/calculadora-desempate-penalti/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/calculadora-rating-elo/": {
+      "hash": "87e4f4f89e29bf2f4c3a4955dc6e3271e23c8c69dd1914e23bca6ef59211477c",
+      "route": "/pt/utilidades/categorias/desporto/calculadora-rating-elo/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/calculadora-ritmo-corrida/": {
+      "hash": "04028a570dee0b056697e6b911333c96fa023b973b67cf01c78d65d2037cc4e2",
+      "route": "/pt/utilidades/categorias/desporto/calculadora-ritmo-corrida/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/gestor-liga-pontos-corridos/": {
+      "hash": "d789a850e7369b2a0d3e5b6dd32d372443a0ac95050a86b2b5d9da46984b2e10",
+      "route": "/pt/utilidades/categorias/desporto/gestor-liga-pontos-corridos/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/": {
+      "hash": "538c3d69af2ee1663bacbbfea5f6697875d5b130d295d212daa5d88c5cb3f6d9",
+      "route": "/pt/utilidades/categorias/desporto/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/marcador-de-pingue-pongue/": {
+      "hash": "6ec2f4e0f4cbeabb19fe6f091ad7a4ac15a03ec64c09c757793cb22cd69fb32e",
+      "route": "/pt/utilidades/categorias/desporto/marcador-de-pingue-pongue/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/marcador-futebol/": {
+      "hash": "cbdafdee35cbedd76b15f42726adc25196ff75a6443ede9de4723cc0ad6f3035",
+      "route": "/pt/utilidades/categorias/desporto/marcador-futebol/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/marcador-pontos-padel/": {
+      "hash": "bfb86b794e4ac596f7f033f7b8c0148ce9dcd7c4ab623c333f32b8f26a43898c",
+      "route": "/pt/utilidades/categorias/desporto/marcador-pontos-padel/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/marcador-volei/": {
+      "hash": "c397432fa395c0d5489035da5336c69e7241ce3502485ecdc6647ce39673b327",
+      "route": "/pt/utilidades/categorias/desporto/marcador-volei/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/marcador-volei-praia/": {
+      "hash": "eef9a57a12c00700841cc7f2a1230e44d99675a6ac39cd4d9a070218d414993c",
+      "route": "/pt/utilidades/categorias/desporto/marcador-volei-praia/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/placar-baseball-softball/": {
+      "hash": "4558c1091654e525e035ee08c988023a5f46ca7b46384a8ddd2e51b7e420ac38",
+      "route": "/pt/utilidades/categorias/desporto/placar-baseball-softball/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/placar-de-basquete/": {
+      "hash": "cbb6b683f59b59c131188a1d94788849055915e5421a2b7e82794c87b9732279",
+      "route": "/pt/utilidades/categorias/desporto/placar-de-basquete/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/placar-esportivo-online/": {
+      "hash": "468762bb9a0cbc0ac330b1a880e2b245900365103711c5609f7f62c1ce89b309",
+      "route": "/pt/utilidades/categorias/desporto/placar-esportivo-online/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/placar-rugby-cronometro/": {
+      "hash": "b8526cae6f4228531c06ebe1f399754e4ac31b3d1fbadc61ba0fd7aa694ee669",
+      "route": "/pt/utilidades/categorias/desporto/placar-rugby-cronometro/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/placar-streetball-3x3/": {
+      "hash": "d2f140c30b52b4ae41bc52adeecd36dfe445ca1d69b2ff446565e34b04026e4a",
+      "route": "/pt/utilidades/categorias/desporto/placar-streetball-3x3/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/pontuacao-de-dardos/": {
+      "hash": "5a3d4df6ed6199fa62f793ba512e8c103cbde500b6783740e79ff86b539e7fe8",
+      "route": "/pt/utilidades/categorias/desporto/pontuacao-de-dardos/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/pontuacao-de-tenis/": {
+      "hash": "8b41dda2b4719a72e9c39f117c046be00d69efc274be4cf9749c70ea425295c1",
+      "route": "/pt/utilidades/categorias/desporto/pontuacao-de-tenis/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/rastreador-de-frames-e-calculadora-de-break-para-snooker/": {
+      "hash": "a5de79985a76216ebb567569f7c304cd7c2caf0bab4407a2de297dc45876e73e",
+      "route": "/pt/utilidades/categorias/desporto/rastreador-de-frames-e-calculadora-de-break-para-snooker/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/rastreador-de-treino-academia/": {
+      "hash": "a8b8d8f6c4377da75184f4ec9ae9999676afc4c5d50be2c0ea9d691b09b67aea",
+      "route": "/pt/utilidades/categorias/desporto/rastreador-de-treino-academia/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/teste-de-reacao/": {
+      "hash": "7e7cdcb3a680462ea3083c5884ac73c989088955c32fec1cd84569cf5c8ecce6",
+      "route": "/pt/utilidades/categorias/desporto/teste-de-reacao/"
+    },
+    "https://www.gamebob.dev/pt/utilidades/categorias/desporto/torneio/": {
+      "hash": "3d2cb0ad4b000c7d0401a82a38a865f8c644a1dd5c0a8ff7f598debbdb0156c8",
+      "route": "/pt/utilidades/categorias/desporto/torneio/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/beisbolnyy-schyotchik/": {
+      "hash": "7985ce91cca7674457f32ab7c7a855f7f182157645c5530ee6c02676beb53c6a",
+      "route": "/ru/instrumenty/kategorii/sports/beisbolnyy-schyotchik/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/elo-kalkulyator/": {
+      "hash": "c7c486fae14e835558d112b77e8bf2e3b4b598e7356e7944fe32fa552100acf2",
+      "route": "/ru/instrumenty/kategorii/sports/elo-kalkulyator/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/": {
+      "hash": "c2137cef59074128c245d2c0caba6b3bd164cb7c6c61c0c20bc23cb1d6c4b5f7",
+      "route": "/ru/instrumenty/kategorii/sports/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/kalkulator-tempa-bega/": {
+      "hash": "2174ae027f5d992c914f17529fea3b3abd09780f8ef69224ff5548fccda9390e",
+      "route": "/ru/instrumenty/kategorii/sports/kalkulator-tempa-bega/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/kalkulyator-css-plavaniya/": {
+      "hash": "ff5a9c6bfd5461fea4e2306f8d3af0670585e0d9a8a11b0ccc2aee6bde37c191",
+      "route": "/ru/instrumenty/kategorii/sports/kalkulyator-css-plavaniya/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/kalkulyator-serii-penalti/": {
+      "hash": "f4da774459e658eaf13bacae2c32f60af37ab79d15df96868a44dcf4a602f1a1",
+      "route": "/ru/instrumenty/kategorii/sports/kalkulyator-serii-penalti/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/kalkulyator-sozhzhennyh-kalorij-pri-uprazhneniyah/": {
+      "hash": "06adaa483dddbe75fabe7cff3c0537b959aaa1280fbde53949733638b4903c13",
+      "route": "/ru/instrumenty/kategorii/sports/kalkulyator-sozhzhennyh-kalorij-pri-uprazhneniyah/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/kalkulyator-vo2-max/": {
+      "hash": "2eed4deea71898e99237c45c0f9a9f1cf77f328d3d9b1b9026fb98d6424bc2a4",
+      "route": "/ru/instrumenty/kategorii/sports/kalkulyator-vo2-max/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/menezher-lig-kazhdyj-s-kazhdym/": {
+      "hash": "5c87e82d2c2604a793a1881ad1d267dcde938c4f04dfdea2492d9028c934de35",
+      "route": "/ru/instrumenty/kategorii/sports/menezher-lig-kazhdyj-s-kazhdym/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/regbi-schyotchik-ochkov/": {
+      "hash": "399d7e961215047b979ecb12ad0f040659ee42d492d14f78246f39d67ce57776",
+      "route": "/ru/instrumenty/kategorii/sports/regbi-schyotchik-ochkov/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/schetchik-dartsa/": {
+      "hash": "622285afbd2fc0f8a6f4b836653fd8d09dbb809d1d76075c2fb85a11ef44e1a5",
+      "route": "/ru/instrumenty/kategorii/sports/schetchik-dartsa/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/schetchik-nastolnogo-tennisa/": {
+      "hash": "ddb858695403ed0653b18263ccec868f1d8d366f9d5322e9fcd17c959648891e",
+      "route": "/ru/instrumenty/kategorii/sports/schetchik-nastolnogo-tennisa/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/schetchik-ochkov-padel/": {
+      "hash": "9b9902350cbfa96c90f6768e7af4c80a0705c52d029006b2ae331c6b85ce5431",
+      "route": "/ru/instrumenty/kategorii/sports/schetchik-ochkov-padel/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/schetchik-ochkov-pliazhnyi-voleibol/": {
+      "hash": "a8012be38748d67ca09a5b7d049a631d699f285200b4027af67f192c93ae9d1a",
+      "route": "/ru/instrumenty/kategorii/sports/schetchik-ochkov-pliazhnyi-voleibol/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/schetchik-ochkov-streetball-3x3/": {
+      "hash": "ef98f51eeb411c37998ffa2e5dc1819b32bdb1ad506880f74d0405963bc6a810",
+      "route": "/ru/instrumenty/kategorii/sports/schetchik-ochkov-streetball-3x3/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/schetchik-tennisa/": {
+      "hash": "4acb88b89a6ce5d094fec45c306047a9264e081e265407bf85db5691187fcf5e",
+      "route": "/ru/instrumenty/kategorii/sports/schetchik-tennisa/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/snuker-treker-freimov-kalkulyator-breikov/": {
+      "hash": "5895c5747f2c8eb56d808bfbf57fb047b543b142a35c2fa92087f6004ff54e25",
+      "route": "/ru/instrumenty/kategorii/sports/snuker-treker-freimov-kalkulyator-breikov/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/sportivnoe-tablo-onlayn/": {
+      "hash": "4851e3fe99edc52a8f8a2600904272251f0d74006b97c3df8f77117ea7b385c2",
+      "route": "/ru/instrumenty/kategorii/sports/sportivnoe-tablo-onlayn/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/tablo-basketbol/": {
+      "hash": "8eb89f647c39069667deaba74cb0cf50c928441c057b553b953a96ef6b02bc3c",
+      "route": "/ru/instrumenty/kategorii/sports/tablo-basketbol/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/tablo-futbol/": {
+      "hash": "607d1ac789d1ad32bc29697019c1a7604d954aa89f3e56420b536b455fd4f0a6",
+      "route": "/ru/instrumenty/kategorii/sports/tablo-futbol/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/test-reakcii/": {
+      "hash": "2006717f7231c3e8a3889df93615efd4457cc1e911c5d2a0204fcf8746ea426f",
+      "route": "/ru/instrumenty/kategorii/sports/test-reakcii/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/tracker-trenirovok/": {
+      "hash": "eb172d8e211922723440034baf2af42049c4838bf9cd9eab677521f48cd07255",
+      "route": "/ru/instrumenty/kategorii/sports/tracker-trenirovok/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/turnir-onlayn/": {
+      "hash": "1a2be0cf41ee1acef480f75de333f1ee233952b9e21c4d30fa95c355b09c843c",
+      "route": "/ru/instrumenty/kategorii/sports/turnir-onlayn/"
+    },
+    "https://www.gamebob.dev/ru/instrumenty/kategorii/sports/voleibol-tablo/": {
+      "hash": "e1840bdcc96a364c81569fad863dbcdf4b478ef3cbfd84fe09bcd1dcc4bafe39",
+      "route": "/ru/instrumenty/kategorii/sports/voleibol-tablo/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/baseball-poangraknare/": {
+      "hash": "989aff864edb620cb8a8ddb8dfe37d6c7fdefd7a97d7a681c34125c83810dc73",
+      "route": "/sv/verktyg/kategorier/sport/baseball-poangraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/basketball-resultattavla/": {
+      "hash": "88454a611c23a74b2ca45d866482c8bb2fb214d8b487cd800dbd3e82757db80b",
+      "route": "/sv/verktyg/kategorier/sport/basketball-resultattavla/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/beachvolleyboll-resultatraknare/": {
+      "hash": "9f0e2f6a74a467637d52927fb0d9cf8c8c7d17bc6e40c912aeb95c2951e1661f",
+      "route": "/sv/verktyg/kategorier/sport/beachvolleyboll-resultatraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/css-simkalkylator/": {
+      "hash": "c816719106fd3b9ddf2f7a032ee01854e2b09702aae0c7dc5fb384c1ed7ee4f3",
+      "route": "/sv/verktyg/kategorier/sport/css-simkalkylator/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/darts-poangraknare/": {
+      "hash": "9cbf53c646cb7c1332fb748de77ba8d8f69947d576b384fc7ac040b0c6ae92bc",
+      "route": "/sv/verktyg/kategorier/sport/darts-poangraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/elo-kalkylator/": {
+      "hash": "9bc7bc4a914f13cd68048c11f0288b7f0dda1b6b15461a577d21fc4eba24f5f6",
+      "route": "/sv/verktyg/kategorier/sport/elo-kalkylator/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/fotboll-malrakning/": {
+      "hash": "c92da585005dcfda66408f7e9898f103688e91a069551f2f4de7cb7f68f83304",
+      "route": "/sv/verktyg/kategorier/sport/fotboll-malrakning/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/": {
+      "hash": "21a1dfd7923cae986737e05b7d7d050b19a413789b43168089cc4e28308af2fc",
+      "route": "/sv/verktyg/kategorier/sport/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/kalkylator-branda-kalorier-traning/": {
+      "hash": "65ed0d345871d35a41a715041983b13a24ea45a26654fc07c5194460e581c38c",
+      "route": "/sv/verktyg/kategorier/sport/kalkylator-branda-kalorier-traning/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/lopaptempo-kalkylator/": {
+      "hash": "69b2c7aa59377429e5eeb8c2e4eb47ee817fa2eaad3385e959fba3976d4c4fa0",
+      "route": "/sv/verktyg/kategorier/sport/lopaptempo-kalkylator/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/padel-resultatraknare/": {
+      "hash": "18c410f35d1b88711ce126c4831cf5e25f73fafa7afdf863e3ea0453081f8a76",
+      "route": "/sv/verktyg/kategorier/sport/padel-resultatraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/pingis-poangraknare/": {
+      "hash": "b248ddb16f4f13727c93179bbf354f85bed36e37ccbac1e540d29babd323141b",
+      "route": "/sv/verktyg/kategorier/sport/pingis-poangraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/reflextest-snabbhet/": {
+      "hash": "3328f98accacb54764390a990e11e113b7aee08189ba55c76ccf56e005bfc407",
+      "route": "/sv/verktyg/kategorier/sport/reflextest-snabbhet/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/round-robin-liga-manager/": {
+      "hash": "df4eed24b8e2d98edfc8e7c23ae52e0467a46a13b35f9a71911cfc56be9362ca",
+      "route": "/sv/verktyg/kategorier/sport/round-robin-liga-manager/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/rugby-poangraknare/": {
+      "hash": "b775b3cb32bc5cb2eba9f7463ad727e0614e88486725cc05759916e1a9ed85a7",
+      "route": "/sv/verktyg/kategorier/sport/rugby-poangraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/snooker-ram-raknare-och-break-kalkylator/": {
+      "hash": "20e50d6d62a9c4e1580b4bfb6277397a05e0c9b196d36a8c86e154e2ccf38558",
+      "route": "/sv/verktyg/kategorier/sport/snooker-ram-raknare-och-break-kalkylator/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/sport-resultattavla/": {
+      "hash": "5c1d4849fabce76bbdee1a73eaa997ca4a7b3b44d83942ebf39198111a2c5bad",
+      "route": "/sv/verktyg/kategorier/sport/sport-resultattavla/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/straffsparkslaggning-raknare/": {
+      "hash": "ed30925f216ccdbc0554537ecd3ded3f92c17b1d1f4485beaa6cf2cd4eb5c42e",
+      "route": "/sv/verktyg/kategorier/sport/straffsparkslaggning-raknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/streetball-3x3-resultatraknare/": {
+      "hash": "07861c0f39b2946ad7bc3a8eb0816829c1aa3c5e1a9a41826cfd628a3586fe17",
+      "route": "/sv/verktyg/kategorier/sport/streetball-3x3-resultatraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/tennis-poangraknare/": {
+      "hash": "50ce2d62baad0e52fa7a0a1be1a70d929739db5ab7a0bbc87301a2b8a5a27b4b",
+      "route": "/sv/verktyg/kategorier/sport/tennis-poangraknare/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/tranings-tracker/": {
+      "hash": "ff3f1d45c24cacd9c27e9427181945ff4f93fc36fbddaf8cdfd8376f6c353b68",
+      "route": "/sv/verktyg/kategorier/sport/tranings-tracker/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/turnering/": {
+      "hash": "00bcb2caa19c9171344c6914efab59a15376fa36d8eee1651e218f3f6a53a272",
+      "route": "/sv/verktyg/kategorier/sport/turnering/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/vo2-max-kalkylator/": {
+      "hash": "49d2b7b91f05b16ba23e489a977473485cefdbf54cc84a8c44d38aaa89987eea",
+      "route": "/sv/verktyg/kategorier/sport/vo2-max-kalkylator/"
+    },
+    "https://www.gamebob.dev/sv/verktyg/kategorier/sport/volleyboll-resultattavla/": {
+      "hash": "438a2fdb930a68bb6c78df784dc6a08f2352d25c0d4acf0c8173567a413fa2c3",
+      "route": "/sv/verktyg/kategorier/sport/volleyboll-resultattavla/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/basketbol-skor-tablosu/": {
+      "hash": "49d3e2c3ab6e391747242d3a75ba28664045ae767fe8faa004333895a433be8f",
+      "route": "/tr/araclar/kategoriler/spor/basketbol-skor-tablosu/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/beyzbol-skor-takip/": {
+      "hash": "f9b3f1e4a722eb213ffb971416c0b314ef9355dc08fb4d93f468aa66b15d8498",
+      "route": "/tr/araclar/kategoriler/spor/beyzbol-skor-takip/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/dart-skor-takipcisi/": {
+      "hash": "5b2e963ceee78d86a73cb615d4031c7bccbc2b10c64dfe9e3224fab0018b12d6",
+      "route": "/tr/araclar/kategoriler/spor/dart-skor-takipcisi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/devreli-lig-yoneticisi/": {
+      "hash": "302d3bd81a4e38daa2701be938326f35b4c73c3b337966a352974762a8a5c934",
+      "route": "/tr/araclar/kategoriler/spor/devreli-lig-yoneticisi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/egzersizle-yakanan-kalori-hesaplayici/": {
+      "hash": "58c43a558fd3afd7b4f53cc75ef31229eb1a810dfa0ec0f5d3166fccfff21b05",
+      "route": "/tr/araclar/kategoriler/spor/egzersizle-yakanan-kalori-hesaplayici/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/elo-hesaplayici/": {
+      "hash": "f56721102967ea2d025cfb881358ed7bd17629d3e3fc9a1bfb0cc314f0af032c",
+      "route": "/tr/araclar/kategoriler/spor/elo-hesaplayici/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/futbol-skor/": {
+      "hash": "b25c5bd60cb2cf4f19521e52d7b708251a1c08bb56810dec373e21fe704172fb",
+      "route": "/tr/araclar/kategoriler/spor/futbol-skor/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/gym-antrenman-takip/": {
+      "hash": "482b03057824fa456efb436e1669848f4bf3bd27b3e83e60a89e2206329e0c06",
+      "route": "/tr/araclar/kategoriler/spor/gym-antrenman-takip/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/": {
+      "hash": "12dec2f93f02ded8f57c1848cfc41205a17abd18ff6fa53c4dd185617a3e2396",
+      "route": "/tr/araclar/kategoriler/spor/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/kosu-temposu-hesaplama/": {
+      "hash": "6c74e8c99fce3975020b777ccf2e9b1c9ac0553dbeb4b218a291bc741af99518",
+      "route": "/tr/araclar/kategoriler/spor/kosu-temposu-hesaplama/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/padel-skor-takipcisi/": {
+      "hash": "7c4dade9a4073c7122c64f0b08716c2f8b5b526e82f2c445238446135256cc7b",
+      "route": "/tr/araclar/kategoriler/spor/padel-skor-takipcisi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/penalti-atisari-hesaplayici/": {
+      "hash": "95c272e0b3d654d4f9dc3ace1583cfc5cada8bf9541f0a7a98068707cc75712f",
+      "route": "/tr/araclar/kategoriler/spor/penalti-atisari-hesaplayici/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/pinpon-skor-takipcisi/": {
+      "hash": "53669229396aab0325641bbbad1e81d043eda37a7633b59e441247a89109e802",
+      "route": "/tr/araclar/kategoriler/spor/pinpon-skor-takipcisi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/plaj-voleybolu-skor-takipcisi/": {
+      "hash": "c8714ff208f0c9ab31c9b30e814d5be92d9e4ddead00c9cab49ab7f3ba6fa860",
+      "route": "/tr/araclar/kategoriler/spor/plaj-voleybolu-skor-takipcisi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/rugby-skor-takip/": {
+      "hash": "521c50a36dccba1d72c59c25ed914532e8fcb7904f7cdbe89f0a5facea6ecfe7",
+      "route": "/tr/araclar/kategoriler/spor/rugby-skor-takip/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/snooker-frame-takip-ve-break-hesaplama/": {
+      "hash": "aeec2378415df0f0cd0de2894c52a7db7832f60c14966f500dd75191365a5457",
+      "route": "/tr/araclar/kategoriler/spor/snooker-frame-takip-ve-break-hesaplama/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/spor-skor-tablosu/": {
+      "hash": "b7482364c903bb93a449d32d672d39002041fb56f9a31d58b654eb0c6b38982b",
+      "route": "/tr/araclar/kategoriler/spor/spor-skor-tablosu/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/streetball-3x3-skor-takipcisi/": {
+      "hash": "25b18cb89e1559258ed336a3a7ae0b43feaf01ed71a0ebdd0879ad58baf66992",
+      "route": "/tr/araclar/kategoriler/spor/streetball-3x3-skor-takipcisi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/tenis-skor-takipcisi/": {
+      "hash": "2de7477c1ca6939920b706613880c0fb21d7a238e41959950fbafedd25721da1",
+      "route": "/tr/araclar/kategoriler/spor/tenis-skor-takipcisi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/tepki-testi/": {
+      "hash": "0019e00323e654fdc7986e60cbe852f8c3ab4394274023c9b00321e00055de59",
+      "route": "/tr/araclar/kategoriler/spor/tepki-testi/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/turnuva/": {
+      "hash": "caf4e61f0e5c4a9402735bd179c22dd95709222d7e35c05a17414a531481dcd9",
+      "route": "/tr/araclar/kategoriler/spor/turnuva/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/vo2-max-hesaplama/": {
+      "hash": "c1e3ffdf479b9940a67dfec728c5573b24282d002d07d3656e9e4d6eaab39e8a",
+      "route": "/tr/araclar/kategoriler/spor/vo2-max-hesaplama/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/voleybol-skor-tablosu/": {
+      "hash": "f9431ad232b88599d582a1b90e5b3e4fe8d298304b6c7149d38fcbaf1cfca71a",
+      "route": "/tr/araclar/kategoriler/spor/voleybol-skor-tablosu/"
+    },
+    "https://www.gamebob.dev/tr/araclar/kategoriler/spor/yuzme-css-hesaplayici/": {
+      "hash": "dddc278e2f255e700fb9d8ce94176a5c7bd238fe98692d967bf1eb50cfc7152f",
+      "route": "/tr/araclar/kategoriler/spor/yuzme-css-hesaplayici/"
+    },
+    "https://www.jjlmoya.es/utilidades/anotador-beisbol/": {
+      "hash": "1f6a4deb33788d6bda136338d3503c70107b25dacd84a12fbdf1dd2f33b0aa9c",
+      "route": "/utilidades/anotador-beisbol/"
+    },
+    "https://www.jjlmoya.es/utilidades/calculadora-calorias-quemadas-ejercicio/": {
+      "hash": "61f58cb9abb40b5795d45eb7afe83c6a69460003fa49fa9d44cad739e4fc9365",
+      "route": "/utilidades/calculadora-calorias-quemadas-ejercicio/"
+    },
+    "https://www.jjlmoya.es/utilidades/calculadora-css-natacion/": {
+      "hash": "d22c9e6ffcc5b5cbe1792444f59894110b3429b3bc8a28ce9a3c7d7589cfd8aa",
+      "route": "/utilidades/calculadora-css-natacion/"
+    },
+    "https://www.jjlmoya.es/utilidades/calculadora-elo/": {
+      "hash": "d769b07f8012aa634cc52261e537fcb906f4fe86113ac5618afe8217887a9cd1",
+      "route": "/utilidades/calculadora-elo/"
+    },
+    "https://www.jjlmoya.es/utilidades/calculadora-ritmos-running/": {
+      "hash": "f6e65773e1de7ffd9bfb12bef83c759e2180e111cce4ec0fcbf77af0b101b9b3",
+      "route": "/utilidades/calculadora-ritmos-running/"
+    },
+    "https://www.jjlmoya.es/utilidades/calculadora-vo2-max/": {
+      "hash": "5e803b8969b847d2c7a9a127afd5442554fd600c4e6177770bd52ab50ef64509",
+      "route": "/utilidades/calculadora-vo2-max/"
+    },
+    "https://www.jjlmoya.es/utilidades/categorias/deporte/": {
+      "hash": "6300836dc60d7d2dae2e8e9a6b8bc25f0404917c62573c2a748b4597efc592a4",
+      "route": "/utilidades/categorias/deporte/"
+    },
+    "https://www.jjlmoya.es/utilidades/gestor-liga-todos-contra-todos/": {
+      "hash": "17d5385939ff26b1db0c75a848d2a2a42492853537428768c04313112f5e9da4",
+      "route": "/utilidades/gestor-liga-todos-contra-todos/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador/": {
+      "hash": "ca630967cab426988609122e5247ec5221416a38d26a79a9fd6fa7f4072e4f93",
+      "route": "/utilidades/marcador/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-baloncesto/": {
+      "hash": "e52280aceb77130ab60715534b783c120e6af2b1f42898cac90619c49a5b726a",
+      "route": "/utilidades/marcador-baloncesto/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-de-dardos/": {
+      "hash": "a6b3e4b27572a26b9abd46bfced749a170050c85d73b37850b0c98c45490c78b",
+      "route": "/utilidades/marcador-de-dardos/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-de-padel/": {
+      "hash": "cffba436d1c7dcb93f73dfc8c8f890867330f6b0d5b80253a76cfc9ab2eb8851",
+      "route": "/utilidades/marcador-de-padel/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-de-ping-pong/": {
+      "hash": "7ee2cfa319e3a7f0e7bc7c466b4c2b953b82b7c06e6d2b224e0f64593f6e48b1",
+      "route": "/utilidades/marcador-de-ping-pong/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-de-rugby/": {
+      "hash": "303658ffb399329af832c0226f77a11c8e25d24e020f06057f3816d065cf2728",
+      "route": "/utilidades/marcador-de-rugby/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-de-snooker-calculador-de-breaks/": {
+      "hash": "d1c0600b6d51d5e2ea6cf43ec88df8ff955be1dc2b0761053626ed176f42d9e1",
+      "route": "/utilidades/marcador-de-snooker-calculador-de-breaks/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-de-tenis/": {
+      "hash": "e6f94ea0aa4b2d21d1fb9341297aaa9901ac3a59f364acfb6df593836ab513a5",
+      "route": "/utilidades/marcador-de-tenis/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-futbol/": {
+      "hash": "1c6e5580ae0b796509c0cf944ff6dbdff4ce380a64b7939f4609c2e4e2a874ac",
+      "route": "/utilidades/marcador-futbol/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-penaltis/": {
+      "hash": "f56518c12024e9a0a7546600a6afc1da4c13cd1cde4a6ca9fda221b1b3193f68",
+      "route": "/utilidades/marcador-penaltis/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-streetball-3x3/": {
+      "hash": "a0db0e2a7b465d1b3f55fd46c6465781cfbc6b280c56490e4cb2504066491805",
+      "route": "/utilidades/marcador-streetball-3x3/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-voleibol/": {
+      "hash": "d6fb8d7efa62816abb1b1a8ebc3f8c7876e309ff2a2eb168645ece5735bf96fe",
+      "route": "/utilidades/marcador-voleibol/"
+    },
+    "https://www.jjlmoya.es/utilidades/marcador-voleibol-playa/": {
+      "hash": "efe26033c4eba3274908ab242428aa121ae90758b67574d21ab803b8a6edb40a",
+      "route": "/utilidades/marcador-voleibol-playa/"
+    },
+    "https://www.jjlmoya.es/utilidades/seguimiento-entrenamiento-gym/": {
+      "hash": "1556c7a7ba07e87ec58aff6133ab9c10528881b84f7cf9b2bcfe2639a91b15a0",
+      "route": "/utilidades/seguimiento-entrenamiento-gym/"
+    },
+    "https://www.jjlmoya.es/utilidades/test-reflejos/": {
+      "hash": "bfd7a3a8236fad9ecc7e019c7dd672cb8a7c7b4add6c54e7ba36c8a5b0b43d10",
+      "route": "/utilidades/test-reflejos/"
+    },
+    "https://www.jjlmoya.es/utilidades/torneo/": {
+      "hash": "571acd5b90d15062568e92806e051a79f0108009a70704eaf7dfaef09017146a",
+      "route": "/utilidades/torneo/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/baseball-scorekeeper/": {
+      "hash": "7f848ed62da5eea817476630486fd3b2287d0dfc316ca34a2dbfca25e98b5e95",
+      "route": "/zh/utilities/categories/sports/baseball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/basketball-scoreboard/": {
+      "hash": "0bdf754c0e2d6ac6da37243fc9120bbeadb356c8b453d1c48f9f0ce2109bb184",
+      "route": "/zh/utilities/categories/sports/basketball-scoreboard/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/beach-volleyball-scorekeeper/": {
+      "hash": "5f9b9755dcfca7c1a04102a451cb8e1a711446afc42e83b02b874f0466e031d1",
+      "route": "/zh/utilities/categories/sports/beach-volleyball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/calories-burned-by-exercise-calculator/": {
+      "hash": "47de2d04739110931252fdfdbc96a9209385e908febc3b48699cdab7944712b2",
+      "route": "/zh/utilities/categories/sports/calories-burned-by-exercise-calculator/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/css-swim-calculator/": {
+      "hash": "2f27b8175e25137d0583521b2ddee25479720f944eabd3da012010002584b82c",
+      "route": "/zh/utilities/categories/sports/css-swim-calculator/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/darts-scorekeeper/": {
+      "hash": "1ad083dcc812e485396e484dd57672c32405455bd96dcc316a4b841506b570bc",
+      "route": "/zh/utilities/categories/sports/darts-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/elo-rating-calculator/": {
+      "hash": "ad1e9b8b3a4234c239980e1249ea3112f7b8eeae02373f142df0318d668c502c",
+      "route": "/zh/utilities/categories/sports/elo-rating-calculator/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/football-scorekeeper/": {
+      "hash": "54c776be60239aef76da7cc0bf3829d9c0c3b1cefbdc390b83171983f222e1f2",
+      "route": "/zh/utilities/categories/sports/football-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/gym-workout-tracker/": {
+      "hash": "15924447b79740146144f7e6653a51134c900eafe3b79cd94945d4f8d8a65d09",
+      "route": "/zh/utilities/categories/sports/gym-workout-tracker/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/": {
+      "hash": "8d1432235c5ec44ec29914040146d64960716697cfe218ea9d00b087fa8b5cc8",
+      "route": "/zh/utilities/categories/sports/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/padel-scorekeeper/": {
+      "hash": "ad06c696c77f4dcd6151ee48f08cb4957ca1a1132e5c8cf77a88ea8045cf8d47",
+      "route": "/zh/utilities/categories/sports/padel-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/penalty-shootout-calculator/": {
+      "hash": "4e21c2a3871936a4e25592bbd3a4c616c313d543463548c82f81550cade4e2dc",
+      "route": "/zh/utilities/categories/sports/penalty-shootout-calculator/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/ping-pong-scorekeeper/": {
+      "hash": "67a02221c07966fee715971767675fd155150821ea0c093fcfff4f70b9e384d4",
+      "route": "/zh/utilities/categories/sports/ping-pong-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/reaction-test/": {
+      "hash": "fcac28e13f773f6028f6e0aae38626c82c47b7d8df266d7f04ac2d0927501515",
+      "route": "/zh/utilities/categories/sports/reaction-test/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/round-robin-league-manager/": {
+      "hash": "42dff4d656ce230cfc7d5c016d68a9e28f11790eca78cb266f69c34c594d1516",
+      "route": "/zh/utilities/categories/sports/round-robin-league-manager/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/rugby-scorekeeper/": {
+      "hash": "e4dcdb7ef3a4829dd5f708bfe48e6fc792daf46b621dbe3326ba971457b20097",
+      "route": "/zh/utilities/categories/sports/rugby-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/running-pace-predictor/": {
+      "hash": "fb894187c8f65912c38c2d811a336462ac8acd6e6fc77dcc70dbbe0020f0b02e",
+      "route": "/zh/utilities/categories/sports/running-pace-predictor/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/snooker-frame-tracker-break-calculator/": {
+      "hash": "9d91e3ff1277b0c13ddcfb88fa24dec974205861545f96852d8ff6bc0a898f76",
+      "route": "/zh/utilities/categories/sports/snooker-frame-tracker-break-calculator/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/sports-scoreboard/": {
+      "hash": "4607aa004418368b54fd87ec086faeef7f4b742cb4511cc8f071feaddfbca045",
+      "route": "/zh/utilities/categories/sports/sports-scoreboard/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/": {
+      "hash": "43ec28d462eace4543ff082b9f61c1d9e41a3a3dcffee399277d61d5e278118a",
+      "route": "/zh/utilities/categories/sports/streetball-3x3-basketball-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/tennis-scorekeeper/": {
+      "hash": "4c39f8348664b6929b865076b119dde6fa3ef4e7ef33bac903826b8765f9ddd2",
+      "route": "/zh/utilities/categories/sports/tennis-scorekeeper/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/tournament/": {
+      "hash": "d74f4f16fc90d74746c16ffc53dac735667b011ae89e56471b27087207cb7600",
+      "route": "/zh/utilities/categories/sports/tournament/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/vo2-max-calculator/": {
+      "hash": "6ae195ef82275af34ca6dff5eb85211a2465fd8a008deb44f4b60b3a95029925",
+      "route": "/zh/utilities/categories/sports/vo2-max-calculator/"
+    },
+    "https://www.gamebob.dev/zh/utilities/categories/sports/volleyball-scorekeeper/": {
+      "hash": "3cf6c8d952dbdc72eeba5f80536a0e0e55fc65a80b67a86a75b65768e1e430ca",
+      "route": "/zh/utilities/categories/sports/volleyball-scorekeeper/"
+    }
+  }
+}
