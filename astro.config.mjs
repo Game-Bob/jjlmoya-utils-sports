@@ -2,9 +2,15 @@ import { defineConfig } from "astro/config";
 import icon from "astro-icon";
 
 export default defineConfig({
+    output: "static",
+    site: "https://www.gamebob.dev",
     integrations: [icon()],
+    trailingSlash: "always",
+    build: {
+        assets: "_utilities/sports",
+    },
     server: {
-        port: 3022,
+        port: 3037,
         host: true
     },
     vite: {
@@ -16,4 +22,3 @@ export default defineConfig({
         }
     }
 });
-

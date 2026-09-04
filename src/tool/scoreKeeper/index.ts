@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { scoreKeeper } from './entry';
 export * from './entry';
 export const SCORE_KEEPER_TOOL: ToolDefinition = {
