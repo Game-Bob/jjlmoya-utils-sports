@@ -1,6 +1,5 @@
 export interface RugbyScoreKeeperUI {
   title: string;
-  description: string;
   home: string;
   away: string;
   score: string;
@@ -8,26 +7,20 @@ export interface RugbyScoreKeeperUI {
   conversion: string;
   penalty: string;
   dropGoal: string;
-  conversionYes: string;
-  conversionNo: string;
   sinBin: string;
   sinBinTitle: string;
   sinBinPlayer: string;
   sinBinAdd: string;
   sinBinEmpty: string;
-  sinBinReturn: string;
   matchClock: string;
   half: string;
   half1: string;
   half2: string;
   startMatch: string;
-  pauseMatch: string;
-  resumeMatch: string;
   resetMatch: string;
   resetConfirm: string;
   cancel: string;
   confirm: string;
-  period: string;
   scoringSummary: string;
   tryScored: string;
   conversionSuccess: string;
@@ -35,8 +28,6 @@ export interface RugbyScoreKeeperUI {
   penaltyScored: string;
   dropGoalScored: string;
   totalPoints: string;
-  fullscreen: string;
-  toggleSound: string;
   eventLog: string;
   eventEmpty: string;
   undoBtn: string;
@@ -44,8 +35,6 @@ export interface RugbyScoreKeeperUI {
   timeOn: string;
   fullTime: string;
   minutesShort: string;
-  savedLocally: string;
-  saveUnavailable: string;
   teamLabel: string;
   durationLabel: string;
 }

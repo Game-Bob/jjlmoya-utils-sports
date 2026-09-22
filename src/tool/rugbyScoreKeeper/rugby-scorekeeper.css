@@ -53,27 +53,6 @@
   gap: 10px;
 }
 
-.rg-save-status {
-  align-self: flex-end;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--rg-text-muted);
-  font-size: 0.7rem;
-  font-weight: 600;
-}
-
-.rg-save-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--rg-success);
-  box-shadow: 0 0 0 3px rgba(46, 160, 67, 0.14);
-}
-
-.rg-save-status.is-error { color: var(--rg-danger); }
-.rg-save-status.is-error .rg-save-dot { background: var(--rg-danger); }
-
 .theme-dark .rg-app {
   --rg-gold: #e3b341;
   --rg-field: #238636;

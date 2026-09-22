@@ -15,11 +15,6 @@ const t = (ui ?? {}) as unknown as RugbyScoreKeeperUI;
 
   <div class="rg-main-card">
 
-  <div class="rg-save-status" id="rg-save-status" role="status">
-    <span class="rg-save-dot" aria-hidden="true"></span>
-    <span id="rg-save-status-text">{t.savedLocally}</span>
-  </div>
-
   <div class="rg-strip">
     <div class="rg-team rg-team-home">
       <input type="text" class="rg-name" id="rg-name-home" value={t.home} maxlength="40" aria-label={t.home} />

@@ -53,17 +53,8 @@ function session(ctx: RuntimeContext): RugbySession {
   };
 }
 
-function showSaveStatus(saved: boolean, ui: RugbyScoreKeeperUI) {
-  const status = q('rg-save-status');
-  const text = q('rg-save-status-text');
-  status?.classList.toggle('is-error', !saved);
-  if (text) text.textContent = saved ? ui.savedLocally : ui.saveUnavailable;
-}
-
-function persist(ctx: RuntimeContext, ui: RugbyScoreKeeperUI): boolean {
-  const saved = ctx.storage ? saveRugbySession(ctx.storage, session(ctx)) : false;
-  showSaveStatus(saved, ui);
-  return saved;
+function persist(ctx: RuntimeContext): void {
+  if (ctx.storage) saveRugbySession(ctx.storage, session(ctx));
 }
 
 function toggleConversion(team: TeamKey | null) {
@@ -147,7 +138,7 @@ function wireScoreButtons(ctx: RuntimeContext, ui: RugbyScoreKeeperUI) {
         if (ctx.state.matchEnded) return;
         const message = applyScore(ctx, team, button.dataset.action as ScoreAction, ui);
         if (message) showBanner(message, true);
-        persist(ctx, ui); renderAll(ctx, ui);
+        persist(ctx); renderAll(ctx, ui);
       });
     });
   });
@@ -163,7 +154,7 @@ function syncClock(ctx: RuntimeContext, clock: ClockId, ui: RugbyScoreKeeperUI) 
   if (clock.value) return;
   clock.value = setInterval(() => {
     ctx.state = tickClock(ctx.state, 1);
-    persist(ctx, ui); renderAll(ctx, ui);
+    persist(ctx); renderAll(ctx, ui);
     if (!ctx.state.clockRunning) {
       stopClock(clock);
       if (ctx.state.matchEnded) showBanner(ui.fullTime, false);
@@ -176,7 +167,7 @@ function handleClock(ctx: RuntimeContext, clock: ClockId, ui: RugbyScoreKeeperUI
   if (!ctx.state.matchStarted) ctx.state = startMatch(ctx.state);
   else if (ctx.state.half === 1 && ctx.state.elapsed >= 2400) ctx.state = startSecondHalf(ctx.state);
   else ctx.state = toggleClock(ctx.state);
-  persist(ctx, ui); renderAll(ctx, ui); syncClock(ctx, clock, ui);
+  persist(ctx); renderAll(ctx, ui); syncClock(ctx, clock, ui);
 }
 
 function handleSinBin(ctx: RuntimeContext, ui: RugbyScoreKeeperUI) {
@@ -185,20 +176,20 @@ function handleSinBin(ctx: RuntimeContext, ui: RugbyScoreKeeperUI) {
   ctx.state = addSinBin(ctx.state, input.value, ctx.sinBinDuration, ctx.sinBinTeam);
   showBanner(`${ui.sinBin} · ${ctx.teamNames[ctx.sinBinTeam]} · ${formatSinBinTime(ctx.sinBinDuration)}`, false);
   input.value = '';
-  persist(ctx, ui); renderAll(ctx, ui); input.focus();
+  persist(ctx); renderAll(ctx, ui); input.focus();
 }
 
-function wireChoices(ctx: RuntimeContext, ui: RugbyScoreKeeperUI) {
+function wireChoices(ctx: RuntimeContext) {
   document.querySelectorAll<HTMLElement>('[data-sinbin-team]').forEach((button) => {
     button.addEventListener('click', () => {
       ctx.sinBinTeam = button.dataset.sinbinTeam as TeamKey;
-      persist(ctx, ui); renderChoices(ctx);
+      persist(ctx); renderChoices(ctx);
     });
   });
   document.querySelectorAll<HTMLElement>('[data-sinbin-duration]').forEach((button) => {
     button.addEventListener('click', () => {
       ctx.sinBinDuration = Number(button.dataset.sinbinDuration) as SinBinDuration;
-      persist(ctx, ui); renderChoices(ctx);
+      persist(ctx); renderChoices(ctx);
     });
   });
 }
@@ -211,7 +202,7 @@ function wireTeamNames(ctx: RuntimeContext, ui: RugbyScoreKeeperUI) {
     input.maxLength = 40;
     input.addEventListener('input', () => {
       ctx.teamNames[team] = input.value.trim() || ui[team];
-      persist(ctx, ui); renderAll(ctx, ui);
+      persist(ctx); renderAll(ctx, ui);
     });
   });
 }
@@ -231,7 +222,7 @@ function wireReset(ctx: RuntimeContext, clock: ClockId, ui: RugbyScoreKeeperUI) 
   q('rg-modal-confirm')?.addEventListener('click', () => {
     stopClock(clock); ctx.state = createInitialState(); ctx.convTeam = null;
     if (ctx.storage) clearRugbySession(ctx.storage);
-    persist(ctx, ui); renderAll(ctx, ui); setModal(false);
+    persist(ctx); renderAll(ctx, ui); setModal(false);
   });
   q('rg-modal')?.addEventListener('click', (event) => {
     if (event.target === q('rg-modal')) setModal(false);
@@ -246,15 +237,15 @@ export function initRugbyScorekeeper() {
   const ui = getUI();
   const ctx = createContext(ui);
   const clock: ClockId = { value: undefined };
-  wireScoreButtons(ctx, ui); wireChoices(ctx, ui); wireTeamNames(ctx, ui); wireReset(ctx, clock, ui);
+  wireScoreButtons(ctx, ui); wireChoices(ctx); wireTeamNames(ctx, ui); wireReset(ctx, clock, ui);
   q('rg-btn-clock')?.addEventListener('click', () => handleClock(ctx, clock, ui));
   q('rg-btn-sinbin')?.addEventListener('click', () => handleSinBin(ctx, ui));
   q('rg-btn-undo')?.addEventListener('click', () => {
-    ctx.state = undoLast(ctx.state); ctx.convTeam = null; persist(ctx, ui); renderAll(ctx, ui);
+    ctx.state = undoLast(ctx.state); ctx.convTeam = null; persist(ctx); renderAll(ctx, ui);
   });
   q<HTMLInputElement>('rg-sinbin-input')?.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') handleSinBin(ctx, ui);
   });
-  window.addEventListener('pagehide', () => { persist(ctx, ui); stopClock(clock); });
-  persist(ctx, ui); renderAll(ctx, ui); syncClock(ctx, clock, ui);
+  window.addEventListener('pagehide', () => { persist(ctx); stopClock(clock); });
+  persist(ctx); renderAll(ctx, ui); syncClock(ctx, clock, ui);
 }
