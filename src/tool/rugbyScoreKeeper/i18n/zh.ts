@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: '时间开',
     fullTime: '比赛结束',
     minutesShort: '分钟',
+    savedLocally: '已保存到此设备',
+    saveUnavailable: '无法保存',
+    teamLabel: '球队',
+    durationLabel: '时长',
   },
 };

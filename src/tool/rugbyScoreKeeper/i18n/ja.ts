@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: 'タイムオン',
     fullTime: '試合終了',
     minutesShort: '分',
+    savedLocally: 'この端末に保存済み',
+    saveUnavailable: '保存できません',
+    teamLabel: 'チーム',
+    durationLabel: '時間',
   },
 };

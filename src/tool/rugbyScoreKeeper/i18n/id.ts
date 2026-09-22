@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: 'Waktu Berjalan',
     fullTime: 'Pertandingan Selesai',
     minutesShort: 'mnt',
+    savedLocally: 'Tersimpan di perangkat ini',
+    saveUnavailable: 'Penyimpanan tidak tersedia',
+    teamLabel: 'Tim',
+    durationLabel: 'Durasi',
   },
 };

@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: 'Tid igång',
     fullTime: 'Matchen är slut',
     minutesShort: 'min',
+    savedLocally: 'Sparat på den här enheten',
+    saveUnavailable: 'Det går inte att spara',
+    teamLabel: 'Lag',
+    durationLabel: 'Längd',
   },
 };

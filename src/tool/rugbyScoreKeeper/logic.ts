@@ -21,6 +21,7 @@ export interface TeamScore {
 
 export interface SinBinEntry {
   id: number;
+  team: TeamKey;
   player: string;
   remaining: number;
   total: number;
@@ -105,13 +106,13 @@ export function scoreDropGoal(state: MatchState, team: TeamKey): MatchState {
   return s;
 }
 
-export function addSinBin(state: MatchState, player: string, duration: number): MatchState {
+export function addSinBin(state: MatchState, player: string, duration: number, team: TeamKey = 'home'): MatchState {
   const cleanPlayer = player.trim();
   if (state.matchEnded || !cleanPlayer || !Number.isFinite(duration) || duration <= 0) return state;
   const s = structuredClone(state);
   const id = Math.max(Date.now(), ...s.sinBin.map((entry) => entry.id + 1));
-  s.sinBin.push({ id, player: cleanPlayer, remaining: duration, total: duration });
-  pushEvent(s, 'sinbin', 'home', { label: `${cleanPlayer} SIN BIN`, player: cleanPlayer, sinBinId: id });
+  s.sinBin.push({ id, team, player: cleanPlayer, remaining: duration, total: duration });
+  pushEvent(s, 'sinbin', team, { label: `${cleanPlayer} SIN BIN`, player: cleanPlayer, sinBinId: id });
   return s;
 }
 
@@ -127,17 +128,13 @@ export function tickSinBin(state: MatchState, delta: number): MatchState {
 export function tickClock(state: MatchState, delta: number): MatchState {
   const s = structuredClone(state);
   if (!s.clockRunning || s.matchEnded || !Number.isFinite(delta) || delta <= 0) return s;
-  s.elapsed += delta;
-  if (s.elapsed >= 2400 && s.half === 1) {
-    s.elapsed = 2400;
-    s.clockRunning = false;
-  }
-  if (s.elapsed >= 4800) {
-    s.elapsed = 4800;
-    s.clockRunning = false;
-    s.matchEnded = true;
-  }
-  return tickSinBin(s, delta);
+  const limit = s.half === 1 ? 2400 : 4800;
+  const nextElapsed = Math.min(s.elapsed + delta, limit);
+  const appliedDelta = nextElapsed - s.elapsed;
+  s.elapsed = nextElapsed;
+  s.clockRunning = s.elapsed < limit;
+  s.matchEnded = s.elapsed === 4800;
+  return tickSinBin(s, appliedDelta);
 }
 
 export function startMatch(state: MatchState): MatchState {

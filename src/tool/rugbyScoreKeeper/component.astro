@@ -8,16 +8,21 @@ interface Props {
 }
 
 const { ui } = Astro.props;
-const t = (ui ?? {}) as RugbyScoreKeeperUI;
+const t = (ui ?? {}) as unknown as RugbyScoreKeeperUI;
 ---
 
 <div class="rg-app" id="rg-app" data-rg-ui={JSON.stringify(t)}>
 
   <div class="rg-main-card">
 
+  <div class="rg-save-status" id="rg-save-status" role="status">
+    <span class="rg-save-dot" aria-hidden="true"></span>
+    <span id="rg-save-status-text">{t.savedLocally}</span>
+  </div>
+
   <div class="rg-strip">
-    <div class="rg-team">
-      <input type="text" class="rg-name" id="rg-name-home" value={t.home} aria-label={t.home} />
+    <div class="rg-team rg-team-home">
+      <input type="text" class="rg-name" id="rg-name-home" value={t.home} maxlength="40" aria-label={t.home} />
       <div class="rg-score" id="rg-score-home" aria-live="polite">0</div>
       <div class="rg-bonus" id="rg-bonus-home"></div>
     </div>
@@ -25,8 +30,8 @@ const t = (ui ?? {}) as RugbyScoreKeeperUI;
       <span class="rg-vs">VS</span>
       <div class="rg-half-badge" id="rg-half-badge">{t.half1}</div>
     </div>
-    <div class="rg-team">
-      <input type="text" class="rg-name" id="rg-name-away" value={t.away} aria-label={t.away} />
+    <div class="rg-team rg-team-away">
+      <input type="text" class="rg-name" id="rg-name-away" value={t.away} maxlength="40" aria-label={t.away} />
       <div class="rg-score" id="rg-score-away" aria-live="polite">0</div>
       <div class="rg-bonus" id="rg-bonus-away"></div>
     </div>
@@ -34,23 +39,24 @@ const t = (ui ?? {}) as RugbyScoreKeeperUI;
 
   <div class="rg-columns">
     <div class="rg-col" data-team="home">
-      <div class="rg-col-label">{t.home}</div>
-      <button class="rg-btn rg-btn-try" data-action="try">+5 {t.tryLabel}</button>
-      <button class="rg-btn rg-btn-conv" id="rg-conv-home" data-action="conv" disabled>+2 {t.conversion}</button>
-      <button class="rg-btn rg-btn-pen" data-action="pen">+3 {t.penalty}</button>
-      <button class="rg-btn rg-btn-drop" data-action="drop">+3 {t.dropGoal}</button>
+      <div class="rg-col-label" id="rg-col-label-home">{t.home}</div>
+      <button type="button" class="rg-btn rg-btn-try" data-action="try">{t.tryLabel}</button>
+      <button type="button" class="rg-btn rg-btn-conv" id="rg-conv-home" data-action="conv" disabled>{t.conversion}</button>
+      <button type="button" class="rg-btn rg-btn-pen" data-action="pen">{t.penalty}</button>
+      <button type="button" class="rg-btn rg-btn-drop" data-action="drop">{t.dropGoal}</button>
     </div>
     <div class="rg-col" data-team="away">
-      <div class="rg-col-label">{t.away}</div>
-      <button class="rg-btn rg-btn-try" data-action="try">+5 {t.tryLabel}</button>
-      <button class="rg-btn rg-btn-conv" id="rg-conv-away" data-action="conv" disabled>+2 {t.conversion}</button>
-      <button class="rg-btn rg-btn-pen" data-action="pen">+3 {t.penalty}</button>
-      <button class="rg-btn rg-btn-drop" data-action="drop">+3 {t.dropGoal}</button>
+      <div class="rg-col-label" id="rg-col-label-away">{t.away}</div>
+      <button type="button" class="rg-btn rg-btn-try" data-action="try">{t.tryLabel}</button>
+      <button type="button" class="rg-btn rg-btn-conv" id="rg-conv-away" data-action="conv" disabled>{t.conversion}</button>
+      <button type="button" class="rg-btn rg-btn-pen" data-action="pen">{t.penalty}</button>
+      <button type="button" class="rg-btn rg-btn-drop" data-action="drop">{t.dropGoal}</button>
     </div>
   </div>
 
   <div class="rg-mid-row">
     <div class="rg-clock-panel">
+      <div class="rg-panel-header">{t.matchClock}</div>
       <div class="rg-clock-ring">
         <svg class="rg-clock-svg" viewBox="0 0 120 120">
           <circle class="rg-clock-bg" cx="60" cy="60" r="54" />
@@ -61,17 +67,23 @@ const t = (ui ?? {}) as RugbyScoreKeeperUI;
           <div class="rg-clock-label">{t.half} <span id="rg-half-label">1</span></div>
         </div>
       </div>
-      <button class="rg-btn rg-btn-clock" id="rg-btn-clock">{t.startMatch}</button>
+      <button type="button" class="rg-btn rg-btn-clock" id="rg-btn-clock">{t.startMatch}</button>
     </div>
     <div class="rg-sinbin-panel">
-      <div class="rg-panel-header">{t.sinBin}</div>
+      <div class="rg-panel-header">{t.sinBinTitle}</div>
       <div class="rg-sinbin-form">
-        <input type="text" class="rg-input" id="rg-sinbin-input" placeholder={t.sinBinPlayer} aria-label={t.sinBinPlayer} />
-        <select class="rg-select" id="rg-sinbin-duration" aria-label={t.sinBin + " duration"}>
-          <option value="600">10 {t.minutesShort}</option>
-          <option value="300">5 {t.minutesShort}</option>
-        </select>
-        <button class="rg-btn rg-btn-yellow" id="rg-btn-sinbin">{t.sinBinAdd}</button>
+        <input type="text" class="rg-input" id="rg-sinbin-input" maxlength="80" placeholder={t.sinBinPlayer} aria-label={t.sinBinPlayer} />
+        <div class="rg-choice-row">
+          <div class="rg-choice-group" role="group" aria-label={t.teamLabel}>
+            <button type="button" class="rg-choice rg-choice-home is-active" data-sinbin-team="home" aria-pressed="true">{t.home}</button>
+            <button type="button" class="rg-choice rg-choice-away" data-sinbin-team="away" aria-pressed="false">{t.away}</button>
+          </div>
+          <div class="rg-choice-group" role="group" aria-label={t.durationLabel}>
+            <button type="button" class="rg-choice is-active" data-sinbin-duration="600" aria-pressed="true">10 {t.minutesShort}</button>
+            <button type="button" class="rg-choice" data-sinbin-duration="300" aria-pressed="false">5 {t.minutesShort}</button>
+          </div>
+        </div>
+        <button type="button" class="rg-btn rg-btn-yellow" id="rg-btn-sinbin">{t.sinBinAdd}</button>
       </div>
       <div class="rg-sinbin-list" id="rg-sinbin-list">
         <div class="rg-sinbin-empty">{t.sinBinEmpty}</div>
@@ -85,13 +97,13 @@ const t = (ui ?? {}) as RugbyScoreKeeperUI;
       <div class="rg-history-list" id="rg-history-list">
         <div class="rg-history-empty">{t.eventEmpty}</div>
       </div>
-      <button class="rg-btn rg-btn-undo" id="rg-btn-undo" disabled>{t.undoBtn}</button>
+      <button type="button" class="rg-btn rg-btn-undo" id="rg-btn-undo" disabled>{t.undoBtn}</button>
     </div>
     <div class="rg-summary">
       <div class="rg-panel-header">{t.scoringSummary}</div>
       <table class="rg-table">
         <thead>
-          <tr><th></th><th>{t.home}</th><th>{t.away}</th></tr>
+          <tr><th></th><th class="rg-th-home" id="rg-summary-home">{t.home}</th><th class="rg-th-away" id="rg-summary-away">{t.away}</th></tr>
         </thead>
         <tbody id="rg-summary-body">
           <tr><td>{t.tryScored}</td><td>0</td><td>0</td></tr>
@@ -114,25 +126,25 @@ const t = (ui ?? {}) as RugbyScoreKeeperUI;
     <div class="rg-banner-text" id="rg-banner-text"></div>
   </div>
 
-  <div class="rg-reset-modal" id="rg-modal" role="dialog" aria-modal="true" aria-labelledby="rg-modal-title">
+  <div class="rg-reset-modal" id="rg-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="rg-modal-title">
     <div class="rg-modal-content">
       <h2 class="rg-modal-title" id="rg-modal-title">{t.resetMatch}</h2>
       <div class="rg-modal-text">{t.resetConfirm}</div>
       <div class="rg-modal-btns">
-        <button class="rg-btn rg-btn-modal-cancel" id="rg-modal-cancel">{t.cancel}</button>
-        <button class="rg-btn rg-btn-modal-confirm" id="rg-modal-confirm">{t.confirm}</button>
+        <button type="button" class="rg-btn rg-btn-modal-cancel" id="rg-modal-cancel">{t.cancel}</button>
+        <button type="button" class="rg-btn rg-btn-modal-confirm" id="rg-modal-confirm">{t.confirm}</button>
       </div>
     </div>
   </div>
 
   <div class="rg-actions">
-    <button class="rg-btn rg-btn-reset" id="rg-btn-reset">{t.resetMatch}</button>
+    <button type="button" class="rg-btn rg-btn-reset" id="rg-btn-reset">{t.resetMatch}</button>
   </div>
 
   </div>
 </div>
 
 <script>
-  import { initRugbyScorekeeper } from './ui-init';
+  import { initRugbyScorekeeper } from './ui-runtime';
   initRugbyScorekeeper();
 </script>

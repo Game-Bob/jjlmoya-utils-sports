@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: 'Время вкл',
     fullTime: 'Матч окончен',
     minutesShort: 'мин',
+    savedLocally: 'Сохранено на этом устройстве',
+    saveUnavailable: 'Сохранение недоступно',
+    teamLabel: 'Команда',
+    durationLabel: 'Длительность',
   },
 };

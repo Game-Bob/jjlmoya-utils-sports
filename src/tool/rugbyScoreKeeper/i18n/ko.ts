@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: '타임 온',
     fullTime: '경기 종료',
     minutesShort: '분',
+    savedLocally: '이 기기에 저장됨',
+    saveUnavailable: '저장할 수 없음',
+    teamLabel: '팀',
+    durationLabel: '시간',
   },
 };

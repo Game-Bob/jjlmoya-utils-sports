@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: 'Tiempo en Marcha',
     fullTime: 'Fin del partido',
     minutesShort: 'min',
+    savedLocally: 'Guardado en este dispositivo',
+    saveUnavailable: 'No se puede guardar',
+    teamLabel: 'Equipo',
+    durationLabel: 'Duración',
   },
 };

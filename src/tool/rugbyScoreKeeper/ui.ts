@@ -44,4 +44,8 @@ export interface RugbyScoreKeeperUI {
   timeOn: string;
   fullTime: string;
   minutesShort: string;
+  savedLocally: string;
+  saveUnavailable: string;
+  teamLabel: string;
+  durationLabel: string;
 }

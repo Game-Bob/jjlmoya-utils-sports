@@ -70,9 +70,11 @@ describe('rugbyScoreKeeper game clock', () => {
   });
 
   it('undoes a sin-bin event and its timer together', () => {
-    const withSinBin = addSinBin(createInitialState(), '  Player <x>  ', 600);
+    const withSinBin = addSinBin(createInitialState(), '  Player <x>  ', 600, 'away');
     expect(withSinBin.sinBin).toHaveLength(1);
     expect(withSinBin.sinBin[0]?.player).toBe('Player <x>');
+    expect(withSinBin.sinBin[0]?.team).toBe('away');
+    expect(withSinBin.history[0]?.team).toBe('away');
     const undone = undoLast(withSinBin);
     expect(undone.sinBin).toEqual([]);
     expect(undone.history).toEqual([]);
@@ -98,5 +100,14 @@ describe('rugbyScoreKeeper game clock', () => {
     expect(losingBonus(state.home, state.away, 'home')).toBe(false);
     const homeTry = scoreTry(state, 'home');
     expect(losingBonus(homeTry.home, homeTry.away, 'away')).toBe(true);
+  });
+
+  it('only reduces sin-bin time by clock time actually played before halftime', () => {
+    let state = addSinBin(createInitialState(), 'Number 4', 600, 'home');
+    state = startMatch({ ...state, elapsed: 2390 });
+    state = tickClock(state, 120);
+    expect(state.elapsed).toBe(2400);
+    expect(state.clockRunning).toBe(false);
+    expect(state.sinBin[0]?.remaining).toBe(590);
   });
 });

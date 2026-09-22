@@ -216,5 +216,9 @@ export const content: RugbyScoreKeeperLocaleContent = {
     timeOn: 'Süre başladı',
     fullTime: 'Maç bitti',
     minutesShort: 'dk',
+    savedLocally: 'Bu cihazda kaydedildi',
+    saveUnavailable: 'Kaydetme kullanılamıyor',
+    teamLabel: 'Takım',
+    durationLabel: 'Süre',
   },
 };
