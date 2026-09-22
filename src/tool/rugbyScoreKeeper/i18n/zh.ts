@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: '撤销上一步',
     timeOff: '时间停',
     timeOn: '时间开',
+    fullTime: '比赛结束',
+    minutesShort: '分钟',
   },
 };

@@ -1,39 +1,38 @@
 import type { TeamKey, MatchState, TeamScore } from './logic';
+import type { RugbyScoreKeeperUI } from './ui';
+import { escapeHtml, eventLabel } from './ui-helpers';
 import {
   createInitialState, scoreTry, scoreConversion, scorePenalty, scoreDropGoal,
-  addSinBin, tickClock, startMatch, toggleClock, teamTotal,
+  addSinBin, tickClock, startMatch, startSecondHalf, toggleClock, teamTotal,
   formatTime, formatSinBinTime, undoLast, bonusPoints, losingBonus,
 } from './logic';
 
-interface RGUI {
-  home: string; away: string; tryLabel: string; conversion: string; penalty: string;
-  dropGoal: string; sinBin: string; sinBinPlayer: string; sinBinAdd: string;
-  sinBinEmpty: string; matchClock: string; half: string; half1: string;
-  half2: string; startMatch: string; resetMatch: string; resetConfirm: string;
-  cancel: string; confirm: string; scoringSummary: string; tryScored: string;
-  conversionSuccess: string; penaltyScored: string; dropGoalScored: string;
-  totalPoints: string; fullscreen: string; toggleSound: string;
-  eventLog: string; eventEmpty: string; undoBtn: string; timeOff: string; timeOn: string;
-}
+type ClockId = { v: ReturnType<typeof setInterval> | undefined };
 
-function getUI(): RGUI {
+function getUI(): RugbyScoreKeeperUI {
   const app = document.getElementById('rg-app') as HTMLElement;
-  return JSON.parse(app?.dataset.rgUi ?? '{}') as RGUI;
+  return JSON.parse(app?.dataset.rgUi ?? '{}') as RugbyScoreKeeperUI;
 }
 
-function q<T extends HTMLElement = HTMLElement>(id: string): T | null {
+function q<T extends Element = HTMLElement>(id: string): T | null {
   return document.getElementById(id) as T | null;
+}
+
+function renderHalf(s: MatchState) {
+  const label = q('rg-half-label');
+  const badge = q('rg-half-badge');
+  if (label) label.textContent = String(s.half);
+  if (badge) badge.textContent = s.half === 1 ? getUI().half1 : getUI().half2;
 }
 
 function renderScoreboard(s: MatchState) {
   const sh = q('rg-score-home');
   const sa = q('rg-score-away');
   const ct = q('rg-clock-time');
-  const hl = q('rg-half-label');
   if (sh) sh.textContent = String(teamTotal(s.home));
   if (sa) sa.textContent = String(teamTotal(s.away));
   if (ct) ct.textContent = formatTime(s.elapsed);
-  if (hl) hl.textContent = String(s.half);
+  renderHalf(s);
   const cf = q<SVGPathElement>('rg-clock-fill');
   if (cf) {
     const max = s.half === 1 ? 2400 : 4800;
@@ -58,9 +57,10 @@ function renderHistory(s: MatchState) {
     return;
   }
   if (undo) undo.removeAttribute('disabled');
+  const ui = getUI();
   list.innerHTML = s.history.map((e) => {
     const cls = e.team === 'home' ? 'rg-ev-home' : 'rg-ev-away';
-    return `<div class="rg-history-event ${cls}"><span class="rg-ev-min">${e.minute}</span><span class="rg-ev-label">${e.label}</span></div>`;
+    return `<div class="rg-history-event ${cls}"><span class="rg-ev-min">${escapeHtml(e.minute)}</span><span class="rg-ev-label">${escapeHtml(eventLabel(e, ui))}</span></div>`;
   }).join('');
   requestAnimationFrame(() => { list.scrollTo(0, 1e9); });
 }
@@ -87,12 +87,13 @@ function renderSinBin(s: MatchState) {
     sl.innerHTML = `<div class="rg-sinbin-empty">${getUI().sinBinEmpty}</div>`;
     return;
   }
+  const ui = getUI();
   sl.innerHTML = s.sinBin.map((e) => {
-    const pct = (e.remaining / e.total) * 100;
+    const pct = Math.max(0, Math.min(100, (e.remaining / e.total) * 100));
     let cls = 'rg-sinbin-safe';
     if (pct < 25) cls = 'rg-sinbin-critical';
     else if (pct < 60) cls = 'rg-sinbin-warn';
-    return `<div class="rg-sinbin-card ${cls}"><div class="rg-sinbin-player">${e.player}</div><div class="rg-sinbin-time">${formatSinBinTime(e.remaining)}</div><div class="rg-sinbin-bar"><div class="rg-sinbin-fill" style="width:${pct}%"></div></div><div class="rg-sinbin-return">${pct <= 0 ? getUI().sinBinEmpty : ''}</div></div>`;
+    return `<div class="rg-sinbin-card ${cls}"><div class="rg-sinbin-player">${escapeHtml(e.player)}</div><div class="rg-sinbin-time">${formatSinBinTime(e.remaining)}</div><div class="rg-sinbin-bar"><div class="rg-sinbin-fill" style="width:${pct}%"></div></div><div class="rg-sinbin-return">${pct <= 0 ? ui.sinBinEmpty : ''}</div></div>`;
   }).join('');
 }
 
@@ -102,10 +103,11 @@ function renderSummary(s: MatchState) {
   if (!sb) return;
   const bodyRows = sb.querySelectorAll('tr');
   bodyRows.forEach((row, i) => {
-    if (i >= rows.length) return;
+    const key = rows[i];
+    if (!key) return;
     const tds = row.querySelectorAll('td');
-    if (tds[1]) tds[1].textContent = String(s.home[rows[i]]);
-    if (tds[2]) tds[2].textContent = String(s.away[rows[i]]);
+    if (tds[1]) tds[1].textContent = String(s.home[key]);
+    if (tds[2]) tds[2].textContent = String(s.away[key]);
   });
   const hTotal = teamTotal(s.home);
   const aTotal = teamTotal(s.away);
@@ -115,11 +117,11 @@ function renderSummary(s: MatchState) {
   if (ta) { ta.textContent = String(aTotal); }
 }
 
-function showBanner(html: string, isPeak: boolean) {
+function showBanner(message: string, isPeak: boolean) {
   const bn = q('rg-banner');
   const bt = q('rg-banner-text');
   if (!bn || !bt) return;
-  bt.innerHTML = html;
+  bt.textContent = message;
   bn.className = `rg-banner ${isPeak ? 'rg-banner-peak' : 'rg-banner-warn'}`;
   bn.style.display = 'flex';
   bn.classList.remove('rg-banner-hide');
@@ -131,8 +133,8 @@ function showBanner(html: string, isPeak: boolean) {
 }
 
 function toggleConv(team: TeamKey | null) {
-  const ch = q(`rg-conv-home`);
-  const ca = q(`rg-conv-away`);
+  const ch = q<HTMLButtonElement>(`rg-conv-home`);
+  const ca = q<HTMLButtonElement>(`rg-conv-away`);
   if (ch) ch.disabled = team !== 'home';
   if (ca) ca.disabled = team !== 'away';
 }
@@ -149,33 +151,25 @@ function teamName(team: TeamKey): string {
 }
 
 function handleScoreClick(ctx: { state: MatchState; convTeam: TeamKey | null }, team: TeamKey, action: string) {
+  if (ctx.state.matchEnded) return;
   const name = teamName(team);
+  const ui = getUI();
   if (action === 'try') {
-    ctx.state = scoreTry(ctx.state, team);
-    ctx.convTeam = team;
-    toggleConv(team);
-    showBanner(`TRY! ${name} +5`, true);
-    renderScoreboard(ctx.state);
+    ctx.state = scoreTry(ctx.state, team); ctx.convTeam = team;
+    toggleConv(team); showBanner(`${ui.tryScored} ${name} +5`, true); renderScoreboard(ctx.state);
     return;
   }
   if (action === 'conv' && ctx.convTeam) {
-    ctx.state = scoreConversion(ctx.state, ctx.convTeam, true);
-    toggleConv(null);
-    ctx.convTeam = null;
-    showBanner(`CONVERSION! +2`, true);
-    renderScoreboard(ctx.state);
+    ctx.state = scoreConversion(ctx.state, ctx.convTeam, true); toggleConv(null); ctx.convTeam = null;
+    showBanner(`${ui.conversionSuccess} +2`, true); renderScoreboard(ctx.state);
     return;
   }
   if (action === 'pen') {
-    ctx.state = scorePenalty(ctx.state, team);
-    showBanner(`PENALTY! ${name} +3`, true);
-    renderScoreboard(ctx.state);
+    ctx.state = scorePenalty(ctx.state, team); showBanner(`${ui.penaltyScored} ${name} +3`, true); renderScoreboard(ctx.state);
     return;
   }
   if (action === 'drop') {
-    ctx.state = scoreDropGoal(ctx.state, team);
-    showBanner(`DROP GOAL! ${name} +3`, true);
-    renderScoreboard(ctx.state);
+    ctx.state = scoreDropGoal(ctx.state, team); showBanner(`${ui.dropGoalScored} ${name} +3`, true); renderScoreboard(ctx.state);
   }
 }
 
@@ -188,22 +182,33 @@ function wireScoreButtons(ctx: { state: MatchState; convTeam: TeamKey | null }) 
   });
 }
 
-function handleClock(ctx: { state: MatchState }, clockId: { v: number }, ui: RGUI) {
+function runClock(ctx: { state: MatchState }, clockId: ClockId, btn: HTMLElement, ui: RugbyScoreKeeperUI) {
+  clockId.v = setInterval(() => {
+    ctx.state = tickClock(ctx.state, 1);
+    renderScoreboard(ctx.state);
+    if (ctx.state.half === 1 && ctx.state.elapsed === 2400 && !ctx.state.clockRunning) {
+      btn.textContent = ui.half2;
+    }
+    if (ctx.state.matchEnded) {
+      if (clockId.v) clearInterval(clockId.v);
+      btn.textContent = ui.startMatch;
+      showBanner(ui.fullTime, false);
+    }
+  }, 1000);
+}
+
+function handleClock(ctx: { state: MatchState }, clockId: ClockId, ui: RugbyScoreKeeperUI) {
   const btn = q('rg-btn-clock');
   if (!btn) return;
   if (!ctx.state.matchStarted) {
     ctx.state = startMatch(ctx.state);
     btn.textContent = ui.timeOff;
     renderScoreboard(ctx.state);
-    clockId.v = setInterval(() => {
-      ctx.state = tickClock(ctx.state, 1);
-      renderScoreboard(ctx.state);
-      if (ctx.state.matchEnded) {
-        clearInterval(clockId.v);
-        btn.textContent = ui.startMatch;
-        showBanner('FULL TIME! Match is over', false);
-      }
-    }, 1000);
+    runClock(ctx, clockId, btn, ui);
+  } else if (ctx.state.half === 1 && ctx.state.elapsed >= 2400) {
+    ctx.state = startSecondHalf(ctx.state);
+    btn.textContent = ui.timeOff;
+    renderScoreboard(ctx.state);
   } else if (ctx.state.clockRunning) {
     ctx.state = toggleClock(ctx.state);
     btn.textContent = ui.timeOn;
@@ -218,7 +223,7 @@ function handleSinBin(ctx: { state: MatchState }) {
   const dur = q<HTMLSelectElement>('rg-sinbin-duration');
   if (!inp || !dur || !inp.value.trim()) return;
   ctx.state = addSinBin(ctx.state, inp.value.trim(), Number(dur.value));
-  showBanner(`SIN BIN ${dur.value === '600' ? '10min' : '5min'}`, false);
+  showBanner(`${getUI().sinBin} ${formatSinBinTime(Number(dur.value))}`, false);
   inp.value = '';
   renderScoreboard(ctx.state);
 }
@@ -230,8 +235,8 @@ function handleUndo(ctx: { state: MatchState; convTeam: TeamKey | null }) {
   renderScoreboard(ctx.state);
 }
 
-function confirmReset(ctx: { state: MatchState; convTeam: TeamKey | null }, clockId: { v: number }, ui: RGUI) {
-  clearInterval(clockId.v);
+function confirmReset(ctx: { state: MatchState; convTeam: TeamKey | null }, clockId: ClockId, ui: RugbyScoreKeeperUI) {
+  if (clockId.v) clearInterval(clockId.v);
   ctx.state = createInitialState();
   ctx.convTeam = null;
   toggleConv(null);
@@ -244,7 +249,7 @@ function confirmReset(ctx: { state: MatchState; convTeam: TeamKey | null }, cloc
 export function initRugbyScorekeeper() {
   const ui = getUI();
   const ctx = { state: createInitialState(), convTeam: null as TeamKey | null };
-  const clockId = { v: 0 };
+  const clockId: ClockId = { v: undefined };
 
   wireScoreButtons(ctx);
   onBtn('rg-btn-clock', () => handleClock(ctx, clockId, ui));

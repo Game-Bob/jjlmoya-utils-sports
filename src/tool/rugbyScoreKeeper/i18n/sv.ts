@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: 'Ångra senaste',
     timeOff: 'Tid stoppad',
     timeOn: 'Tid igång',
+    fullTime: 'Matchen är slut',
+    minutesShort: 'min',
   },
 };

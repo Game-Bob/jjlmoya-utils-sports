@@ -623,3 +623,15 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
 }
+
+@media (max-width: 560px) {
+  .rg-app { padding: 8px; }
+  .rg-main-card { padding: 8px; }
+  .rg-strip { padding: 10px 8px; }
+  .rg-divider { padding: 0 4px; }
+  .rg-mid-row, .rg-bottom-row { grid-template-columns: 1fr; }
+  .rg-sinbin-form { flex-wrap: wrap; }
+  .rg-sinbin-form .rg-input { flex-basis: 100%; }
+  .rg-sinbin-form .rg-btn-yellow { flex: 1; }
+  .rg-btn { min-height: 44px; }
+}

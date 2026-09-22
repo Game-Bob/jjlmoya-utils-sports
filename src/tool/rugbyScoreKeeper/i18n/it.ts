@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: 'Annulla Ultimo',
     timeOff: 'Tempo Fermo',
     timeOn: 'Tempo in Gioco',
+    fullTime: 'Fine partita',
+    minutesShort: 'min',
   },
 };

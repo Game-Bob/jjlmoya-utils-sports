@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: 'Letztes Rückgängig',
     timeOff: 'Zeit Gestoppt',
     timeOn: 'Zeit Läuft',
+    fullTime: 'Spielende',
+    minutesShort: 'Min.',
   },
 };

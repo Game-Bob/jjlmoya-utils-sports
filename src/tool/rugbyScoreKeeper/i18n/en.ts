@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: 'Undo Last',
     timeOff: 'Time Off',
     timeOn: 'Time On',
+    fullTime: 'Full time',
+    minutesShort: 'min',
   },
 };

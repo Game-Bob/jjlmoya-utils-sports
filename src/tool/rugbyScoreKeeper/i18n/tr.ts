@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: 'Son işlemi geri al',
     timeOff: 'Süre durdu',
     timeOn: 'Süre başladı',
+    fullTime: 'Maç bitti',
+    minutesShort: 'dk',
   },
 };

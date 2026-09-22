@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: 'Batalkan terakhir',
     timeOff: 'Waktu Berhenti',
     timeOn: 'Waktu Berjalan',
+    fullTime: 'Pertandingan Selesai',
+    minutesShort: 'mnt',
   },
 };

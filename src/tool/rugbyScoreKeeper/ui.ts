@@ -42,4 +42,6 @@ export interface RugbyScoreKeeperUI {
   undoBtn: string;
   timeOff: string;
   timeOn: string;
+  fullTime: string;
+  minutesShort: string;
 }

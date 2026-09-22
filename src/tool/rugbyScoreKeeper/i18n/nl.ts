@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: 'Ongedaan Maken Laatste',
     timeOff: 'Tijd Stil',
     timeOn: 'Tijd Loopt',
+    fullTime: 'Einde wedstrijd',
+    minutesShort: 'min',
   },
 };

@@ -214,5 +214,7 @@ export const content: RugbyScoreKeeperLocaleContent = {
     undoBtn: '最後を元に戻す',
     timeOff: 'タイムオフ',
     timeOn: 'タイムオン',
+    fullTime: '試合終了',
+    minutesShort: '分',
   },
 };
