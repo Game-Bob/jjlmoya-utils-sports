@@ -15,6 +15,9 @@ export interface DartsScoreKeeperUI {
   dart: string;
   score301: string;
   score501: string;
+  modeLabel?: string;
+  soloMode?: string;
+  versusMode?: string;
   doubleOut: string;
   noCheckout: string;
 }

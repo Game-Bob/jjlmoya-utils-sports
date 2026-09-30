@@ -70,11 +70,37 @@
 
 .tn-header-panel {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1.25rem;
   background: var(--tn-bg-panel);
   border-bottom: 1px solid var(--tn-border-base);
+}
+
+.tn-mode-group {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  border: 1px solid var(--tn-border-base);
+  border-radius: 999px;
+  background: var(--tn-bg-console);
+}
+
+.tn-mode-btn {
+  padding: 0.42rem 0.72rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--tn-text-muted);
+  background: transparent;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tn-mode-btn.tn-mode-active {
+  color: #0d1118;
+  background: var(--tn-color-active-border);
 }
 
 .tn-header-actions {
@@ -107,6 +133,24 @@
   gap: 1rem;
   padding: 1.5rem;
   background: var(--tn-bg-panel);
+}
+
+.tn-mode-solo .tn-scoreboard {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.tn-mode-solo #tn-card-b {
+  display: none;
+}
+
+.tn-mode-solo .tn-history-grid {
+  max-width: 22rem;
+  margin-inline: auto;
+}
+
+.tn-history-solo .tn-history-header-row,
+.tn-history-solo .tn-history-row {
+  grid-template-columns: minmax(0, 1fr) 3rem;
 }
 
 .tn-player-card {

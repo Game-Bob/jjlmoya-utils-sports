@@ -63,14 +63,17 @@ function renderTurnDots(score: DartsMatchScore): void {
   }
 }
 
-function renderHistoryHeader(t: DartsScoreKeeperUI, histGrid: HTMLElement): void {
+function renderHistoryHeader(score: DartsMatchScore, t: DartsScoreKeeperUI, histGrid: HTMLElement): void {
   const nameA = el('tn-name-a') as HTMLInputElement;
   const nameB = el('tn-name-b') as HTMLInputElement;
   const labelA = nameA ? nameA.value : t.playerA;
   const labelB = nameB ? nameB.value : t.playerB;
   const headerRow = document.createElement('div');
   headerRow.className = 'tn-history-header-row';
-  headerRow.innerHTML = `
+  headerRow.innerHTML = score.mode === 'solo' ? `
+    <span class="tn-hist-name tn-hist-a">${labelA}</span>
+    <span class="tn-hist-round-lbl">Rnd</span>
+  ` : `
     <span class="tn-hist-name tn-hist-a">${labelA}</span>
     <span class="tn-hist-round-lbl">Rnd</span>
     <span class="tn-hist-name tn-hist-b">${labelB}</span>
@@ -78,7 +81,7 @@ function renderHistoryHeader(t: DartsScoreKeeperUI, histGrid: HTMLElement): void
   histGrid.appendChild(headerRow);
 }
 
-function renderHistoryRow(round: { roundNum: number; a?: typeof score.history[0]; b?: typeof score.history[0] }, histGrid: HTMLElement): void {
+function renderHistoryRow(round: { roundNum: number; a?: typeof score.history[0]; b?: typeof score.history[0] }, histGrid: HTMLElement, solo: boolean): void {
   const row = document.createElement('div');
   row.className = 'tn-history-row';
   const renderTurn = (turn?: typeof round.a) => {
@@ -88,7 +91,10 @@ function renderHistoryRow(round: { roundNum: number; a?: typeof score.history[0]
     }
     return `<span class="tn-hist-val">${turn.points} <span class="tn-hist-sub">(${turn.scoreAfter})</span></span>`;
   };
-  row.innerHTML = `
+  row.innerHTML = solo ? `
+    <div class="tn-hist-cell tn-hist-cell-a">${renderTurn(round.a)}</div>
+    <div class="tn-hist-cell tn-hist-cell-round">${round.roundNum}</div>
+  ` : `
     <div class="tn-hist-cell tn-hist-cell-a">${renderTurn(round.a)}</div>
     <div class="tn-hist-cell tn-hist-cell-round">${round.roundNum}</div>
     <div class="tn-hist-cell tn-hist-cell-b">${renderTurn(round.b)}</div>
@@ -100,7 +106,8 @@ function renderHistoryList(score: DartsMatchScore, t: DartsScoreKeeperUI): void 
   const histGrid = el('tn-history-list');
   if (!histGrid) return;
   histGrid.innerHTML = '';
-  renderHistoryHeader(t, histGrid);
+  renderHistoryHeader(score, t, histGrid);
+  histGrid.classList.toggle('tn-history-solo', score.mode === 'solo');
   interface RoundRow {
     roundNum: number;
     a?: typeof score.history[0];
@@ -120,7 +127,7 @@ function renderHistoryList(score: DartsMatchScore, t: DartsScoreKeeperUI): void 
     }
   });
   rounds.slice(-6).reverse().forEach((round) => {
-    renderHistoryRow(round, histGrid);
+    renderHistoryRow(round, histGrid, score.mode === 'solo');
   });
 }
 

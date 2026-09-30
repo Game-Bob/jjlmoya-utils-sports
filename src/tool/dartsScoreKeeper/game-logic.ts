@@ -1,5 +1,6 @@
 export type PlayerKey = 'a' | 'b';
 export type DartsFormat = '501' | '301';
+export type DartsMode = 'solo' | 'versus';
 
 export interface PlayerState {
   remainingScore: number;
@@ -31,6 +32,7 @@ export interface TurnRecord {
 
 export interface DartsMatchScore {
   format: DartsFormat;
+  mode: DartsMode;
   doubleOut: boolean;
   playerA: PlayerState;
   playerB: PlayerState;
@@ -50,10 +52,15 @@ export function createInitialPlayer(score: number): PlayerState {
   };
 }
 
-export function createInitialScore(format: DartsFormat = '501', doubleOut: boolean = true): DartsMatchScore {
+export function createInitialScore(
+  format: DartsFormat = '501',
+  doubleOut: boolean = true,
+  mode: DartsMode = 'versus',
+): DartsMatchScore {
   const start = format === '501' ? 501 : 301;
   return {
     format,
+    mode,
     doubleOut,
     playerA: createInitialPlayer(start),
     playerB: createInitialPlayer(start),
@@ -184,7 +191,11 @@ function concludeTurn(score: DartsMatchScore): void {
     isBusted: score.turn.isBusted,
   };
   score.history.push(record);
-  score.activePlayer = score.activePlayer === 'a' ? 'b' : 'a';
+  if (score.mode === 'solo') {
+    score.activePlayer = 'a';
+  } else {
+    score.activePlayer = score.activePlayer === 'a' ? 'b' : 'a';
+  }
   score.turn = {
     throws: [],
     isBusted: false,

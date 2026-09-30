@@ -2,6 +2,7 @@ import type { DartsScoreKeeperUI } from './ui';
 import {
   type DartsMatchScore,
   type DartsFormat,
+  type DartsMode,
   createInitialScore,
   processThrow,
 } from './game-logic';
@@ -10,8 +11,9 @@ import {
   render,
 } from './render';
 import { buildDartboardSVG } from './dartboard';
+import { setupMode, syncMode } from './mode';
+import { clearStoredScore, loadInitialScore, persistScore } from './score-storage';
 
-const STORAGE_KEY = 'dt_match_state';
 const NAMES_KEY = 'dt_names';
 
 interface GameContext {
@@ -183,49 +185,42 @@ function setupViewToggles(card: HTMLElement): void {
   });
 }
 
-function loadInitialScore(): DartsMatchScore {
-  try {
-    const s = localStorage.getItem(STORAGE_KEY);
-    if (s) return JSON.parse(s);
-  } catch {
-    return createInitialScore();
-  }
-  return createInitialScore();
-}
-
 function createSaveFn(stateRef: { score: DartsMatchScore; history: DartsMatchScore[] }, t: DartsScoreKeeperUI): (s: DartsMatchScore, pushHistory?: boolean) => void {
   return (s: DartsMatchScore, pushHistory = true) => {
     if (pushHistory) stateRef.history.push(JSON.parse(JSON.stringify(stateRef.score)));
     stateRef.score = s;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(stateRef.score));
+    persistScore(stateRef.score);
     render(stateRef.score, t);
   };
 }
 
-function createApiObject(stateRef: { score: DartsMatchScore; history: DartsMatchScore[] }, save: (s: DartsMatchScore, pushHistory?: boolean) => void, t: DartsScoreKeeperUI) {
+function createApiObject(stateRef: { score: DartsMatchScore; history: DartsMatchScore[] }, save: (s: DartsMatchScore, pushHistory?: boolean) => void, t: DartsScoreKeeperUI, card: HTMLElement) {
   return {
     resetAll() {
-      localStorage.removeItem(STORAGE_KEY);
+      clearStoredScore();
       stateRef.history = [];
-      save(createInitialScore(stateRef.score.format, stateRef.score.doubleOut), false);
+      save(createInitialScore(stateRef.score.format, stateRef.score.doubleOut, stateRef.score.mode), false);
     },
     setFormat(f: DartsFormat) {
       document.querySelectorAll('.tn-format-btn').forEach((b) => b.classList.remove('tn-format-active'));
       document.querySelector(`[data-dt-format="${f}"]`)?.classList.add('tn-format-active');
-      save(createInitialScore(f, stateRef.score.doubleOut));
+      save(createInitialScore(f, stateRef.score.doubleOut, stateRef.score.mode));
     },
     toggleDoubleOut() {
       const nextD = !stateRef.score.doubleOut;
       document.querySelector('[data-dt-doubleout]')?.classList.toggle('tn-doubleout-active', nextD);
-      save(createInitialScore(stateRef.score.format, nextD));
+      save(createInitialScore(stateRef.score.format, nextD, stateRef.score.mode));
+    },
+    setMode(mode: DartsMode) {
+      syncMode(card, mode);
+      save(createInitialScore(stateRef.score.format, stateRef.score.doubleOut, mode));
     },
     undo() {
       const prev = stateRef.history.pop();
-      if (prev) {
-        stateRef.score = prev;
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(stateRef.score));
-        render(stateRef.score, t);
-      }
+      if (!prev) return;
+      stateRef.score = prev;
+      persistScore(stateRef.score);
+      render(stateRef.score, t);
     }
   };
 }
@@ -248,11 +243,13 @@ function runInit(): void {
       document.querySelector(`[data-dt-mod="${m}"]`)?.classList.add('tn-mod-active');
     }
   };
-  const api = createApiObject(stateRef, save, t);
+  syncMode(card, stateRef.score.mode);
+  const api = createApiObject(stateRef, save, t, card);
   bindClickDelegation({ stateRef, t, saveFn: save }, multRef);
   setupResetModal(card, api);
   setupUndoAndFormat(card, api);
   setupMultiplier(card, multRef);
+  setupMode(card, api.setMode);
   setupViewToggles(card);
 }
 
